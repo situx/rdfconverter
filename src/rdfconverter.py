@@ -210,8 +210,10 @@ def convertToRDF(df,typemap,autotypemap,g,geosparql=True):
         lang=typemap["language"]
     else:
         lang="en"
-
-    cls=typemap.get("class")
+    if "class" in typemap:
+        cls=typemap.get("class")
+    else:
+        cls="http://www.w3.org/ns/prov#Entity"
     if isinstance(cls,dict):
         thecls = URIRef(typemap.get("class").get("uri"))
         g.add((thecls, RDF.type, OWL.Class))
