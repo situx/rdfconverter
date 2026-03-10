@@ -3,7 +3,8 @@
     "class":{"uri":"http://archaeoinformatics.link/ontology#MilitaryCamp","labels":{"en":"Military Camp","de":"Militärcamp"}},
     "id":"fid",
     "columns":{
-        "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
+        "ID":{"prop":"obj","ignore":true},
+        "limesobject": {"prefix":"Kleinkastell","suffix":"!","propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
         "limescategory": {"propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"subclass", "order": 2},
         "limestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}}
     },
