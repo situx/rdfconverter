@@ -236,6 +236,9 @@ class RDFConverter:
             cls=typemap.get("class")
         else:
             cls="http://www.w3.org/ns/prov#Entity"
+        clsmappings=[]
+        if "classmappings" in typemap:
+            clsmappings=typemap["classmappings"]
         if isinstance(cls,dict):
             thecls = URIRef(typemap.get("class").get("uri"))
             g.add((thecls, RDF.type, OWL.Class))
@@ -269,6 +272,11 @@ class RDFConverter:
             seencols=set()
             if counter%100==0:
                 print("ROW: "+str(counter)+"/"+str(rowcount))
+            for clsmap in clsmappings:
+                g.add((URIRef(curid),RDF.type,URIRef(clsmappings[clsmap]["uri"])))
+                if "labels" in clsmappings[clsmap]:
+                    for lab in clsmappings[clsmap]["labels"]:
+                        g.add((URIRef(curid),RDFS.label,Literal(clsmappings[clsmap]["labels"][lab],lang=lab)))
             for x in typemap["columns"]:
                 subclass = False
                 intypemap=False
