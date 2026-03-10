@@ -9,11 +9,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Creating OGC API Features Deployment 🔧
+    - name: Converting dataset to RDF 🔧
       run: |
          sudo apt-get install python3 python3-setuptools python3-pip python3-dev  -y
          sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
-         python3 src/rdfconverter.py
+         python3 src/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output limes.ttl --mapping mapping/sample.json
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
