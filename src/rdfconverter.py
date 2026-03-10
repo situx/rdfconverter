@@ -272,11 +272,11 @@ class RDFConverter:
             seencols=set()
             if counter%100==0:
                 print("ROW: "+str(counter)+"/"+str(rowcount))
-            for clsmap in clsmappings:
-                g.add((URIRef(curid),RDF.type,URIRef(clsmappings[clsmap]["uri"])))
-                if "labels" in clsmappings[clsmap]:
-                    for lab in clsmappings[clsmap]["labels"]:
-                        g.add((URIRef(curid),RDFS.label,Literal(clsmappings[clsmap]["labels"][lab],lang=lab)))
+            for clsmap in typemap["clsmappings"]:
+                g.add((URIRef(curid),RDF.type,URIRef(typemap["clsmappings"][clsmap]["uri"])))
+                if "labels" in typemap["clsmappings"][clsmap]:
+                    for lab in typemap["clsmappings"][clsmap]["labels"]:
+                        g.add((URIRef(curid),RDFS.label,Literal(typemap["clsmappings"][clsmap]["labels"][lab],lang=lab)))
             for x in typemap["columns"]:
                 subclass = False
                 intypemap=False
