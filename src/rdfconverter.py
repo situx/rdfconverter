@@ -127,6 +127,12 @@ class RDFConverter:
                 g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
                 subclass=True
+            else:
+                subclsuri=ns+thevalue.replace("/","").replace(" ","_")
+                g.add((URIRef(subclsuri), RDFS.subClassOf, thecls))
+                #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
+                g.add((URIRef(curid), RDF.type, URIRef(subclsuri)))
+                g.add((URIRef(subclsuri),RDFS.label,Literal(thevalue,lang=lang)))
         return [g,subclass]
 
 
