@@ -312,5 +312,5 @@ with open("curautotypemap.json","w") as f:
 
 g=convertToRDF(df,typemap,autotypemap,g,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")]))
-g.serialize(path[0:path.rfind(".")]+".ttl",format="turtle")
+g.serialize(args.output+"/"+path[0:path.rfind(".")]+".ttl",format="turtle")
 
