@@ -113,9 +113,15 @@ class RDFConverter:
                     g.add((URIRef(curid), theiri, Literal(sp, datatype=URIRef(
                         curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
         if curcol["prop"]=="obj":
-            g.add((theiri, RDF.type, OWL.ObjectProperty))
-            g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
-            g.add((URIRef(curid), theiri, URIRef(thevalue)))
+            if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
+                g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
+                #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
+                g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
+            else:
+                g.add((theiri, RDF.type, OWL.ObjectProperty))
+                g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
+                g.add((URIRef(curid), theiri, URIRef(thevalue)))
         if curcol["prop"]=="anno":
             g.add((theiri, RDF.type, OWL.AnnotationProperty))
             g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
@@ -133,6 +139,7 @@ class RDFConverter:
                 #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
                 g.add((URIRef(curid), RDF.type, URIRef(subclsuri)))
                 g.add((URIRef(subclsuri),RDFS.label,Literal(thevalue,lang=lang)))
+                subclass=True
         return [g,subclass]
 
 
