@@ -186,7 +186,7 @@ def convertToRDF(df,typemap,autotypemap,g,geosparql=True):
     if "namespace" in typemap:
         dns=typemap["namespace"]
     else:
-        attns="http://purl.org/suni/data/"
+        dns="http://purl.org/suni/data/"
     if "attnamespace" in typemap:
         attns=typemap["attnamespace"]
     else:
