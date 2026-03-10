@@ -178,14 +178,29 @@ def processColumns(prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap
 
 def convertToRDF(df,typemap,autotypemap,g,geosparql=True):
     #print(df)
-    idcol=typemap["id"]
-    dns=typemap["namespace"]
-    attns=typemap["attnamespace"]
+    idcol=None
+    dns=None
+    attns=None
+    if "id" in typemap:
+        idcol=typemap["id"]
+    if "namespace" in typemap:
+        dns=typemap["namespace"]
+    else:
+        attns="http://purl.org/suni/data/"
+    if "attnamespace" in typemap:
+        attns=typemap["attnamespace"]
+    else:
+        attns="http://purl.org/suni/"
     if "nsprefix" in typemap:
         nsprefix=typemap["nsprefix"]
-    else:
+    elif "namespace" in typemap:
         nsprefix=typemap["namespace"][typemap["namespace"].rfind("/")+1:]
-    attnsprefix = typemap["attnamespace"][typemap["attnamespace"].rfind("/") + 1:].replace("#","")
+    else:
+        nsprefix="suni"
+    if "attnamespace" in typemap:
+        attnsprefix = typemap["attnamespace"][typemap["attnamespace"].rfind("/") + 1:].replace("#","")
+    else:
+        attnsprefix="sunid"
     g.bind(nsprefix,dns)
     g.bind(attnsprefix, attns)
     g.bind("sf","http://www.opengis.net/ont/sf#")
@@ -219,21 +234,21 @@ def convertToRDF(df,typemap,autotypemap,g,geosparql=True):
     rowcount=len(df)
     counter=0
     for row in df.to_dict(orient='records'):
-        curid=dns+str(row[idcol])
-        #print(row)
+        if idcol==None:
+            curid=dns+str(counter)
+        else:
+            curid=dns+str(row[idcol])
         subclass=False
         seencols=set()
         if counter%100==0:
             print("ROW: "+str(counter)+"/"+str(rowcount))
         for x in typemap["columns"]:
-            #print("CConfig: "+str(x))
             subclass = False
             intypemap=False
             res=processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap)
             seencols=res["seencols"]
         counter+=1
         notseencols=thecols.symmetric_difference(seencols)
-        #print("Not seen cols: "+str(notseencols))
         for x in notseencols:
             if x in autotypemap["columns"] and x != idcol and x != "geometry":
                 curcol = autotypemap["columns"][x]
@@ -250,6 +265,7 @@ def convertToRDF(df,typemap,autotypemap,g,geosparql=True):
         if subclass==False:
             g.add((URIRef(curid), RDF.type, thecls))
     return g
+
 outpath=[]
 dataexports=[]
 filestoprocess = []
@@ -273,9 +289,6 @@ for path in args.input:
 
 g = Graph()
 subrend=None
-#for fp in filestoprocess:
-#    print(fp)
-
 
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=";")
