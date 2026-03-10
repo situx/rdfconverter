@@ -1,10 +1,13 @@
 {
     "datanamespace":"http://lod.squirrel.link/data/limes/",
-    "class":"http://archaeoinformatics.link/ontology#MilitaryCamp",
+    "class":{"uri":"http://archaeoinformatics.link/ontology#MilitaryCamp","labels":{"en":"Military Camp","de":"Militärcamp"}},
     "id":"fid",
     "columns":{
         "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
         "limescategory": {"propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"subclass", "order": 2},
         "limtestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}}
+    },
+    "addcolumns":{
+        "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno", "order": 1},
     }
 }

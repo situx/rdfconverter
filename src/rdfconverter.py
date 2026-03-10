@@ -88,6 +88,8 @@ class RDFConverter:
         else:
             theiri = URIRef(ns + x)
         if curcol["prop"]=="data":
+            prefix=curcol.get("prefix","")
+            suffix=curcol.get("suffix","")
             if "sepchar" in curcol:
                 spl=thevalue.split(curcol["sepchar"])
             else:
