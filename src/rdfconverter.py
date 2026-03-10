@@ -307,17 +307,17 @@ elif path.endswith(".geojson") or path.endswith(".shp") or path.endswith(".gml")
     df=gpd.read_file(path)
 
 ddf=df.to_dict(orient='records')
-
+conv=RDFConverter()
 autotypemap = {"columns":{}}
 for column in df:
-    autotypemap["columns"][column] = detectColumnType(df[column].to_dict())
+    autotypemap["columns"][column] = conv.detectColumnType(df[column].to_dict())
 
 if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
 with open("curautotypemap.json","w") as f:
     json.dump(str(args.output[0])+"/"+autotypemap,f,indent=2,sort_keys=True)
-conv=RDFConverter()
+
 g=conv.convertToRDF(df,typemap,autotypemap,g,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")]))
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")]+".ttl",format="turtle")
