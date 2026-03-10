@@ -114,9 +114,7 @@ class RDFConverter:
                         curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
         if curcol["prop"]=="obj":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
-                g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
-                #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
-                g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                g.add((URIRefu(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
             else:
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
