@@ -4,6 +4,6 @@
     "id":"fid",
     "columns":{
         "limesobject": {"propuri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
-        "limescategory": {"propuri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"subclass", "order": 2},
+        "limescategory": {"propuri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"subclass", "order": 2}
     }
 }
