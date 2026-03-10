@@ -22,7 +22,7 @@ def resolveWildcardPath(thepath):
                 result.append(normpath + file)
     return result
 
-class RDFConverter():
+class RDFConverter:
 
     def detectColumnType(self,resultmap,columnname=""):
         intcount,doublecount,datecount,uricount = 0,0,0,0
@@ -57,8 +57,9 @@ class RDFConverter():
         if datecount == len(resultmap):
             return {"type": "range", "prop":"data","xsdtype": "xsd:date", "unique": (tokencount == len(uniquestrings)),"category":False}
         if uricount == len(resultmap):
-        return {"range": "xsd:anyURI", "prop":"data","xsdtype": "xsd:anyURI", "unique": (tokencount == len(uniquestrings)),"category":False}
+            return {"range": "xsd:anyURI", "prop":"data","xsdtype": "xsd:anyURI", "unique": (tokencount == len(uniquestrings)),"category":False}
         return {"range":"xsd:string","prop":"data","unique":(stringcount==len(uniquestrings)),"category":(stringcount <= len(uniquestrings))}
+
 
 
     def checkForBooleanAsString(self,uniquestrings):
