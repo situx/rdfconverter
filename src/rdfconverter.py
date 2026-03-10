@@ -87,6 +87,10 @@ class RDFConverter:
             theiri = URIRef(curcol["propiri"])
         else:
             theiri = URIRef(ns + x)
+        if "proplabels" in curcol and "en" in curcol["proplabels"]:
+            propirilabel=str(curcol["proplabels"]["en"])
+        else:
+            propirilabel=str(x)
         prefix=curcol.get("prefix","")
         suffix=curcol.get("suffix","")
         if curcol["prop"]=="data":
@@ -102,7 +106,7 @@ class RDFConverter:
             for sp in spl:
                 if unit!=None:
                     g.add((theiri, RDF.type,OWL.ObjectProperty))
-                    g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
+                    g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                     valueinstanceiri=curid+str("_")+str(theiri[theiri.rfind("/")+1:])+"_value"
                     g.add((URIRef(curid), theiri, URIRef(valueinstanceiri)))
                     g.add((URIRef(valueinstanceiri),RDF.type,URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
@@ -110,8 +114,8 @@ class RDFConverter:
                     g.add((URIRef(valueinstanceiri), URIRef(unitprop),URIRef(unit)))
                     g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
                 else:
-                    g.add((theiri, RDF.type,OWL.DatatypeProperty))
-                    g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
+                    g.add((theiri, RDF.type,OWL.DatatypeProperty)) 
+                    g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                     g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
                         curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
         if curcol["prop"]=="obj":
@@ -120,13 +124,13 @@ class RDFConverter:
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
             elif thevalue.startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
-                g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
+                g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                 g.add((URIRef(curid), theiri, URIRef(thevalue)))
             else:
                 g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
         if curcol["prop"]=="anno":
             g.add((theiri, RDF.type, OWL.AnnotationProperty))
-            g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
+            g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
             g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
