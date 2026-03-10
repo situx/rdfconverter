@@ -315,10 +315,10 @@ for column in df:
 if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
-with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")])+"autotypemap.json","w") as f:
+with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")])++"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")])+"_autotypemap.json","w") as f:
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
 g=conv.convertToRDF(df,typemap,autotypemap,g,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")]))
-g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")]+".ttl",format="turtle")
+g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")]+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")])+".ttl",format="turtle")
 
