@@ -206,7 +206,10 @@ def convertToRDF(df,typemap,autotypemap,g,geosparql=True):
     g.bind("sf","http://www.opengis.net/ont/sf#")
     g.bind("om","http://www.ontology-of-units-of-measure.org/resource/om-2/")
     g.bind("qudt","http://qudt.org/schema/qudt#")
-    lang=typemap["language"]
+    if "language" in typemap:
+        lang=typemap["language"]
+    else:
+        lang="en"
 
     cls=typemap.get("class")
     if isinstance(cls,dict):
