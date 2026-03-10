@@ -253,7 +253,7 @@ class RDFConverter:
             for x in typemap["columns"]:
                 subclass = False
                 intypemap=False
-                res=processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap)
+                res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap)
                 seencols=res["seencols"]
             counter+=1
             notseencols=thecols.symmetric_difference(seencols)
