@@ -214,11 +214,11 @@ class RDFConverter:
         elif "namespace" in typemap:
             nsprefix=typemap["namespace"][typemap["namespace"].rfind("/")+1:]
         else:
-            nsprefix="suni"
+            nsprefix="sunid"
         if "attnamespace" in typemap:
             attnsprefix = typemap["attnamespace"][typemap["attnamespace"].rfind("/") + 1:].replace("#","")
         else:
-            attnsprefix="sunid"
+            attnsprefix="suni"
         g.bind(nsprefix,dns)
         g.bind(attnsprefix, attns)
         g.bind("sf","http://www.opengis.net/ont/sf#")
