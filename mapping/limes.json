@@ -8,6 +8,6 @@
         "limestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}}
     },
     "addcolumns":{
-        "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno", "order": 1},
+        "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno"}
     }
 }
