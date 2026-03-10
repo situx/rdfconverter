@@ -7,557 +7,415 @@
 sunid:ID a owl:DatatypeProperty ;
     rdfs:label "ID"@en .
 
-suni:0 a <> ;
+suni:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
     sunid:ID 63 ;
-    sunid:fid 1 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
     sunid:limesobject "Anhausen"^^xsd:string ;
     sunid:limestown "Neuwied"^^xsd:string ;
     sunid:limestownpart "Heimbach-Weis"^^xsd:string .
 
-suni:1 a <> ;
-    sunid:ID 64 ;
-    sunid:fid 2 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hillscheid"^^xsd:string ;
-    sunid:limestown "Hillscheid"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:10 a <> ;
-    sunid:ID 73 ;
-    sunid:fid 11 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Saalburg 2"^^xsd:string ;
-    sunid:limestown "Bad Homburg"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:11 a <> ;
-    sunid:ID 74 ;
-    sunid:fid 12 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Lochmühle"^^xsd:string ;
-    sunid:limestown "Friedrichsdorf"^^xsd:string ;
-    sunid:limestownpart "Köppern"^^xsd:string .
-
-suni:12 a <> ;
-    sunid:ID 75 ;
-    sunid:fid 13 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Rittergräber"^^xsd:string ;
-    sunid:limestown "Rosbach"^^xsd:string ;
-    sunid:limestownpart "Nieder-Rosbach"^^xsd:string .
-
-suni:13 a <> ;
-    sunid:ID 76 ;
-    sunid:fid 14 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hunnenkirchhof 1"^^xsd:string ;
-    sunid:limestown "Butzbach"^^xsd:string ;
-    sunid:limestownpart "Nieder-Weisel"^^xsd:string .
-
-suni:14 a <> ;
-    sunid:ID 77 ;
-    sunid:fid 15 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hunnenkirchhof 2"^^xsd:string ;
-    sunid:limestown "Butzbach"^^xsd:string ;
-    sunid:limestownpart "Nieder-Weisel"^^xsd:string .
-
-suni:15 a <> ;
-    sunid:ID 78 ;
-    sunid:fid 16 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Ockstädter Wald"^^xsd:string ;
-    sunid:limestown "Friedberg"^^xsd:string ;
-    sunid:limestownpart "Ockstadt"^^xsd:string .
-
-suni:16 a <> ;
-    sunid:ID 79 ;
-    sunid:fid 17 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Eichkopf"^^xsd:string ;
-    sunid:limestown "Ober-Mörlen"^^xsd:string ;
-    sunid:limestownpart "Langenhain-Ziegenberg"^^xsd:string .
-
-suni:17 a <> ;
-    sunid:ID 80 ;
-    sunid:fid 18 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Kaisergrube"^^xsd:string ;
-    sunid:limestown "Ober-Mörlen"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:18 a <> ;
-    sunid:ID 81 ;
-    sunid:fid 19 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Schrenzer"^^xsd:string ;
-    sunid:limestown "Butzbach"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:19 a <> ;
-    sunid:ID 82 ;
-    sunid:fid 20 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Dicker Wald 2"^^xsd:string ;
-    sunid:limestown "Münzenberg"^^xsd:string ;
-    sunid:limestownpart "Gambach"^^xsd:string .
-
-suni:2 a <> ;
-    sunid:ID 65 ;
-    sunid:fid 3 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Becheln"^^xsd:string ;
-    sunid:limestown "Lahnstein"^^xsd:string ;
-    sunid:limestownpart "Oberlahnstein/Becheln"^^xsd:string .
-
-suni:20 a <> ;
-    sunid:ID 83 ;
-    sunid:fid 21 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Dicker Wald 1"^^xsd:string ;
-    sunid:limestown "Münzenberg"^^xsd:string ;
-    sunid:limestownpart "Gambach"^^xsd:string .
-
-suni:21 a <> ;
-    sunid:ID 84 ;
-    sunid:fid 22 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Holzheimer Unterwald"^^xsd:string ;
-    sunid:limestown "Pohlheim"^^xsd:string ;
-    sunid:limestownpart "Holzheim"^^xsd:string .
-
-suni:22 a <> ;
-    sunid:ID 85 ;
-    sunid:fid 23 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Feldheimer Wald"^^xsd:string ;
-    sunid:limestown "Hungen"^^xsd:string ;
-    sunid:limestownpart "Inheiden"^^xsd:string .
-
-suni:23 a <> ;
-    sunid:ID 86 ;
-    sunid:fid 24 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Buchkopf"^^xsd:string ;
-    sunid:limestown "Altenstadt"^^xsd:string ;
-    sunid:limestownpart "Höchst"^^xsd:string .
-
-suni:24 a <> ;
-    sunid:ID 87 ;
-    sunid:fid 25 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Neuwirtshaus"^^xsd:string ;
-    sunid:limestown "Hanau"^^xsd:string ;
-    sunid:limestownpart "Wolfgang"^^xsd:string .
-
-suni:25 a <> ;
-    sunid:ID 88 ;
-    sunid:fid 26 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Haselburg"^^xsd:string ;
-    sunid:limestown "Walldürn"^^xsd:string ;
-    sunid:limestownpart "Reinhardsachsen"^^xsd:string .
-
-suni:26 a <> ;
-    sunid:ID 89 ;
-    sunid:fid 27 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Rehberg"^^xsd:string ;
-    sunid:limestown "Buchen"^^xsd:string ;
-    sunid:limestownpart "Hettingen"^^xsd:string .
-
-suni:27 a <> ;
-    sunid:ID 90 ;
-    sunid:fid 28 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hintere Kalbe"^^xsd:string ;
-    sunid:limestown "Osterburken"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:28 a <> ;
-    sunid:ID 91 ;
-    sunid:fid 29 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hankertsmühle"^^xsd:string ;
-    sunid:limestown "Mainhardt"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:29 a <> ;
-    sunid:ID 92 ;
-    sunid:fid 30 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Ebnisee"^^xsd:string ;
-    sunid:limestown "Kaisersbach"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:3 a <> ;
-    sunid:ID 66 ;
-    sunid:fid 4 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Pfarrhofen"^^xsd:string ;
-    sunid:limestown "Miehlen"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:30 a <> ;
-    sunid:ID 93 ;
-    sunid:fid 31 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Rötelsee"^^xsd:string ;
-    sunid:limestown "Welzheim"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:31 a <> ;
-    sunid:ID 94 ;
-    sunid:fid 32 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Kleindeinbach"^^xsd:string ;
-    sunid:limestown "Schwäbisch Gmünd"^^xsd:string ;
-    sunid:limestownpart "Großdeinbach"^^xsd:string .
-
-suni:32 a <> ;
-    sunid:ID 95 ;
-    sunid:fid 33 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Freimühle"^^xsd:string ;
-    sunid:limestown "Schwäbisch Gmünd"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:33 a <> ;
-    sunid:ID 96 ;
-    sunid:fid 34 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hinterer Schlossberg"^^xsd:string ;
-    sunid:limestown "Gunzenhausen"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:34 a <> ;
-    sunid:ID 97 ;
-    sunid:fid 35 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Gündersbach"^^xsd:string ;
-    sunid:limestown "Pfofeld"^^xsd:string ;
-    sunid:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string .
-
-suni:35 a <> ;
-    sunid:ID 98 ;
-    sunid:fid 36 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Raitenbuch"^^xsd:string ;
-    sunid:limestown "Raitenbuch"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:36 a <> ;
-    sunid:ID 99 ;
-    sunid:fid 37 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Kaldorf"^^xsd:string ;
-    sunid:limestown "Titting"^^xsd:string ;
-    sunid:limestownpart "Kaldorf"^^xsd:string .
-
-suni:37 a <> ;
-    sunid:ID 100 ;
-    sunid:fid 38 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Biebig"^^xsd:string ;
-    sunid:limestown "Titting"^^xsd:string ;
-    sunid:limestownpart "Altdorf"^^xsd:string .
-
-suni:38 a <> ;
-    sunid:ID 101 ;
-    sunid:fid 39 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hegelohe"^^xsd:string ;
-    sunid:limestown "Titting"^^xsd:string ;
-    sunid:limestownpart "Altdorf"^^xsd:string .
-
-suni:39 a <> ;
-    sunid:ID 102 ;
-    sunid:fid 40 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Güssgraben"^^xsd:string ;
-    sunid:limestown "Altmannstein"^^xsd:string ;
-    sunid:limestownpart "Schambach"^^xsd:string .
-
-suni:4 a <> ;
-    sunid:ID 67 ;
-    sunid:fid 5 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Dörsterberg"^^xsd:string ;
-    sunid:limestown "Heidenrod"^^xsd:string ;
-    sunid:limestownpart "Laufenselden"^^xsd:string .
-
-suni:40 a <> ;
-    sunid:ID 103 ;
-    sunid:fid 41 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hinterer Seeberg"^^xsd:string ;
-    sunid:limestown "Altmannstein"^^xsd:string ;
-    sunid:limestownpart "Steinsdorf (i), Schambach"^^xsd:string .
-
-suni:41 a <> ;
-    sunid:ID 104 ;
-    sunid:fid 42 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Rheinbrohl"^^xsd:string ;
-    sunid:limestown "Rheinbrohl"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:42 a <> ;
-    sunid:ID 105 ;
-    sunid:fid 43 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Ferbach"^^xsd:string ;
-    sunid:limestown "Weitersburg / Höhr-Grenzhausen"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:43 a <> ;
-    sunid:ID 106 ;
-    sunid:fid 44 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Pohl"^^xsd:string ;
-    sunid:limestown "Pohl"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:44 a <> ;
-    sunid:ID 107 ;
-    sunid:fid 45 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Kemel 2"^^xsd:string ;
-    sunid:limestown "Heidenrod"^^xsd:string ;
-    sunid:limestownpart "Kemel"^^xsd:string .
-
-suni:45 a <> ;
-    sunid:ID 108 ;
-    sunid:fid 46 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Kemel 1"^^xsd:string ;
-    sunid:limestown "Heidenrod"^^xsd:string ;
-    sunid:limestownpart "Kemel"^^xsd:string .
-
-suni:46 a <> ;
-    sunid:ID 109 ;
-    sunid:fid 47 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Adolfseck"^^xsd:string ;
-    sunid:limestown "Bad Schwalbach"^^xsd:string ;
-    sunid:limestownpart "Adolfseck"^^xsd:string .
-
-suni:47 a <> ;
-    sunid:ID 110 ;
-    sunid:fid 48 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Alteburg-Heftrich 2"^^xsd:string ;
-    sunid:limestown "Idstein"^^xsd:string ;
-    sunid:limestownpart "Heftrich"^^xsd:string .
-
-suni:48 a <> ;
-    sunid:ID 111 ;
-    sunid:fid 49 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Alteburg-Heftrich 1"^^xsd:string ;
-    sunid:limestown "Idstein"^^xsd:string ;
-    sunid:limestownpart "Heftrich"^^xsd:string .
-
-suni:49 a <> ;
-    sunid:ID 112 ;
-    sunid:fid 50 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Degerfeld"^^xsd:string ;
-    sunid:limestown "Butzbach"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:5 a <> ;
-    sunid:ID 68 ;
-    sunid:fid 6 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Eichelgarten"^^xsd:string ;
-    sunid:limestown "Idstein"^^xsd:string ;
-    sunid:limestownpart "Lenzhahn/Dasbach"^^xsd:string .
-
-suni:50 a <> ;
-    sunid:ID 113 ;
-    sunid:fid 51 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Hainhaus"^^xsd:string ;
-    sunid:limestown "Pohlheim"^^xsd:string ;
-    sunid:limestownpart "Grüningen"^^xsd:string .
-
-suni:51 a <> ;
-    sunid:ID 114 ;
-    sunid:fid 52 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Langsdorf"^^xsd:string ;
-    sunid:limestown "Lich"^^xsd:string ;
-    sunid:limestownpart "Bettenhausen"^^xsd:string .
-
-suni:52 a <> ;
-    sunid:ID 115 ;
-    sunid:fid 53 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Lochberg"^^xsd:string ;
-    sunid:limestown "Echzell"^^xsd:string ;
-    sunid:limestownpart "Bingenheim"^^xsd:string .
-
-suni:53 a <> ;
-    sunid:ID 116 ;
-    sunid:fid 54 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Haselheck"^^xsd:string ;
-    sunid:limestown "Echzell"^^xsd:string ;
-    sunid:limestownpart "Bisses"^^xsd:string .
-
-suni:54 a <> ;
-    sunid:ID 117 ;
-    sunid:fid 55 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Inheiden 1"^^xsd:string ;
-    sunid:limestown "Hungen"^^xsd:string ;
-    sunid:limestownpart "Inheiden"^^xsd:string .
-
-suni:55 a <> ;
-    sunid:ID 118 ;
-    sunid:fid 56 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Inheiden 2"^^xsd:string ;
-    sunid:limestown "Hungen"^^xsd:string ;
-    sunid:limestownpart "Inheiden"^^xsd:string .
-
-suni:56 a <> ;
-    sunid:ID 119 ;
-    sunid:fid 57 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Unter-Widdersheim"^^xsd:string ;
-    sunid:limestown "Nidda"^^xsd:string ;
-    sunid:limestownpart "Unter-Widdersheim"^^xsd:string .
-
-suni:57 a <> ;
-    sunid:ID 120 ;
-    sunid:fid 58 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Wingertsberg"^^xsd:string ;
-    sunid:limestown "Hungen"^^xsd:string ;
-    sunid:limestownpart "Steinheim"^^xsd:string .
-
-suni:58 a <> ;
-    sunid:ID 121 ;
-    sunid:fid 59 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Staden"^^xsd:string ;
-    sunid:limestown "Florstadt"^^xsd:string ;
-    sunid:limestownpart "Staden"^^xsd:string .
-
-suni:59 a <> ;
-    sunid:ID 122 ;
-    sunid:fid 60 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Massohl"^^xsd:string ;
-    sunid:limestown "Hungen"^^xsd:string ;
-    sunid:limestownpart "Steinheim"^^xsd:string .
-
-suni:6 a <> ;
-    sunid:ID 69 ;
-    sunid:fid 7 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Maisel"^^xsd:string ;
-    sunid:limestown "Glashütten"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:60 a <> ;
-    sunid:ID 123 ;
-    sunid:fid 61 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Stammheim"^^xsd:string ;
-    sunid:limestown "Florstadt"^^xsd:string ;
-    sunid:limestownpart "Stammheim"^^xsd:string .
-
-suni:61 a <> ;
-    sunid:ID 124 ;
-    sunid:fid 62 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Langendiebach"^^xsd:string ;
-    sunid:limestown "Erlensee"^^xsd:string ;
-    sunid:limestownpart "Langendiebach"^^xsd:string .
-
-suni:62 a <> ;
-    sunid:ID 125 ;
-    sunid:fid 63 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Altheimer Straße"^^xsd:string ;
-    sunid:limestown "Buchen"^^xsd:string ;
-    sunid:limestownpart "Hettingen"^^xsd:string .
-
-suni:63 a <> ;
-    sunid:ID 126 ;
-    sunid:fid 64 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Holderbusch"^^xsd:string ;
-    sunid:limestown "Buchen"^^xsd:string ;
-    sunid:limestownpart "Rinschheim"^^xsd:string .
-
-suni:64 a <> ;
-    sunid:ID 127 ;
-    sunid:fid 65 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Salzberg"^^xsd:string ;
-    sunid:limestown "Osterburken"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:65 a <> ;
-    sunid:ID 128 ;
-    sunid:fid 66 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Lehnenwiesen"^^xsd:string ;
-    sunid:limestown "Widdern"^^xsd:string ;
-    sunid:limestownpart "Unterkessach"^^xsd:string .
-
-suni:66 a <> ;
-    sunid:ID 129 ;
-    sunid:fid 67 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Sindringen"^^xsd:string ;
-    sunid:limestown "Forchtenberg"^^xsd:string ;
-    sunid:limestownpart "Sindringen"^^xsd:string .
-
-suni:67 a <> ;
-    sunid:ID 130 ;
-    sunid:fid 68 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Herrenwiesen"^^xsd:string ;
-    sunid:limestown "Mainhardt"^^xsd:string ;
-    sunid:limestownpart "???"^^xsd:string .
-
-suni:7 a <> ;
-    sunid:ID 70 ;
-    sunid:fid 8 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Altes Jagdhaus"^^xsd:string ;
-    sunid:limestown "Oberursel"^^xsd:string ;
-    sunid:limestownpart "Oberstedten"^^xsd:string .
-
-suni:8 a <> ;
-    sunid:ID 71 ;
-    sunid:fid 9 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
-    sunid:limesobject "Heidenstock"^^xsd:string ;
-    sunid:limestown "Bad Homburg"^^xsd:string ;
-    sunid:limestownpart "Ober-Eschbach"^^xsd:string .
-
-suni:9 a <> ;
+suni:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
     sunid:ID 72 ;
-    sunid:fid 10 ;
-    sunid:limescategory "Kleinkastell"^^xsd:string ;
     sunid:limesobject "Saalburg 1"^^xsd:string ;
     sunid:limestown "Bad Homburg"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-sunid:fid a owl:DatatypeProperty ;
-    rdfs:label "fid"@en .
+suni:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 73 ;
+    sunid:limesobject "Saalburg 2"^^xsd:string ;
+    sunid:limestown "Bad Homburg"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
 
-sunid:limescategory a owl:DatatypeProperty ;
-    rdfs:label "limescategory"@en .
+suni:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 74 ;
+    sunid:limesobject "Lochmühle"^^xsd:string ;
+    sunid:limestown "Friedrichsdorf"^^xsd:string ;
+    sunid:limestownpart "Köppern"^^xsd:string .
 
-sunid:limesobject a owl:DatatypeProperty ;
+suni:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 75 ;
+    sunid:limesobject "Rittergräber"^^xsd:string ;
+    sunid:limestown "Rosbach"^^xsd:string ;
+    sunid:limestownpart "Nieder-Rosbach"^^xsd:string .
+
+suni:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 76 ;
+    sunid:limesobject "Hunnenkirchhof 1"^^xsd:string ;
+    sunid:limestown "Butzbach"^^xsd:string ;
+    sunid:limestownpart "Nieder-Weisel"^^xsd:string .
+
+suni:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 77 ;
+    sunid:limesobject "Hunnenkirchhof 2"^^xsd:string ;
+    sunid:limestown "Butzbach"^^xsd:string ;
+    sunid:limestownpart "Nieder-Weisel"^^xsd:string .
+
+suni:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 78 ;
+    sunid:limesobject "Ockstädter Wald"^^xsd:string ;
+    sunid:limestown "Friedberg"^^xsd:string ;
+    sunid:limestownpart "Ockstadt"^^xsd:string .
+
+suni:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 79 ;
+    sunid:limesobject "Eichkopf"^^xsd:string ;
+    sunid:limestown "Ober-Mörlen"^^xsd:string ;
+    sunid:limestownpart "Langenhain-Ziegenberg"^^xsd:string .
+
+suni:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 80 ;
+    sunid:limesobject "Kaisergrube"^^xsd:string ;
+    sunid:limestown "Ober-Mörlen"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 81 ;
+    sunid:limesobject "Schrenzer"^^xsd:string ;
+    sunid:limestown "Butzbach"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 64 ;
+    sunid:limesobject "Hillscheid"^^xsd:string ;
+    sunid:limestown "Hillscheid"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 82 ;
+    sunid:limesobject "Dicker Wald 2"^^xsd:string ;
+    sunid:limestown "Münzenberg"^^xsd:string ;
+    sunid:limestownpart "Gambach"^^xsd:string .
+
+suni:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 83 ;
+    sunid:limesobject "Dicker Wald 1"^^xsd:string ;
+    sunid:limestown "Münzenberg"^^xsd:string ;
+    sunid:limestownpart "Gambach"^^xsd:string .
+
+suni:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 84 ;
+    sunid:limesobject "Holzheimer Unterwald"^^xsd:string ;
+    sunid:limestown "Pohlheim"^^xsd:string ;
+    sunid:limestownpart "Holzheim"^^xsd:string .
+
+suni:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 85 ;
+    sunid:limesobject "Feldheimer Wald"^^xsd:string ;
+    sunid:limestown "Hungen"^^xsd:string ;
+    sunid:limestownpart "Inheiden"^^xsd:string .
+
+suni:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 86 ;
+    sunid:limesobject "Buchkopf"^^xsd:string ;
+    sunid:limestown "Altenstadt"^^xsd:string ;
+    sunid:limestownpart "Höchst"^^xsd:string .
+
+suni:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 87 ;
+    sunid:limesobject "Neuwirtshaus"^^xsd:string ;
+    sunid:limestown "Hanau"^^xsd:string ;
+    sunid:limestownpart "Wolfgang"^^xsd:string .
+
+suni:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 88 ;
+    sunid:limesobject "Haselburg"^^xsd:string ;
+    sunid:limestown "Walldürn"^^xsd:string ;
+    sunid:limestownpart "Reinhardsachsen"^^xsd:string .
+
+suni:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 89 ;
+    sunid:limesobject "Rehberg"^^xsd:string ;
+    sunid:limestown "Buchen"^^xsd:string ;
+    sunid:limestownpart "Hettingen"^^xsd:string .
+
+suni:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 90 ;
+    sunid:limesobject "Hintere Kalbe"^^xsd:string ;
+    sunid:limestown "Osterburken"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 91 ;
+    sunid:limesobject "Hankertsmühle"^^xsd:string ;
+    sunid:limestown "Mainhardt"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 65 ;
+    sunid:limesobject "Becheln"^^xsd:string ;
+    sunid:limestown "Lahnstein"^^xsd:string ;
+    sunid:limestownpart "Oberlahnstein/Becheln"^^xsd:string .
+
+suni:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 92 ;
+    sunid:limesobject "Ebnisee"^^xsd:string ;
+    sunid:limestown "Kaisersbach"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 93 ;
+    sunid:limesobject "Rötelsee"^^xsd:string ;
+    sunid:limestown "Welzheim"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 94 ;
+    sunid:limesobject "Kleindeinbach"^^xsd:string ;
+    sunid:limestown "Schwäbisch Gmünd"^^xsd:string ;
+    sunid:limestownpart "Großdeinbach"^^xsd:string .
+
+suni:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 95 ;
+    sunid:limesobject "Freimühle"^^xsd:string ;
+    sunid:limestown "Schwäbisch Gmünd"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 96 ;
+    sunid:limesobject "Hinterer Schlossberg"^^xsd:string ;
+    sunid:limestown "Gunzenhausen"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 97 ;
+    sunid:limesobject "Gündersbach"^^xsd:string ;
+    sunid:limestown "Pfofeld"^^xsd:string ;
+    sunid:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string .
+
+suni:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 98 ;
+    sunid:limesobject "Raitenbuch"^^xsd:string ;
+    sunid:limestown "Raitenbuch"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 99 ;
+    sunid:limesobject "Kaldorf"^^xsd:string ;
+    sunid:limestown "Titting"^^xsd:string ;
+    sunid:limestownpart "Kaldorf"^^xsd:string .
+
+suni:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 100 ;
+    sunid:limesobject "Biebig"^^xsd:string ;
+    sunid:limestown "Titting"^^xsd:string ;
+    sunid:limestownpart "Altdorf"^^xsd:string .
+
+suni:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 101 ;
+    sunid:limesobject "Hegelohe"^^xsd:string ;
+    sunid:limestown "Titting"^^xsd:string ;
+    sunid:limestownpart "Altdorf"^^xsd:string .
+
+suni:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 66 ;
+    sunid:limesobject "Pfarrhofen"^^xsd:string ;
+    sunid:limestown "Miehlen"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 102 ;
+    sunid:limesobject "Güssgraben"^^xsd:string ;
+    sunid:limestown "Altmannstein"^^xsd:string ;
+    sunid:limestownpart "Schambach"^^xsd:string .
+
+suni:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 103 ;
+    sunid:limesobject "Hinterer Seeberg"^^xsd:string ;
+    sunid:limestown "Altmannstein"^^xsd:string ;
+    sunid:limestownpart "Steinsdorf (i), Schambach"^^xsd:string .
+
+suni:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 104 ;
+    sunid:limesobject "Rheinbrohl"^^xsd:string ;
+    sunid:limestown "Rheinbrohl"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 105 ;
+    sunid:limesobject "Ferbach"^^xsd:string ;
+    sunid:limestown "Weitersburg / Höhr-Grenzhausen"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 106 ;
+    sunid:limesobject "Pohl"^^xsd:string ;
+    sunid:limestown "Pohl"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 107 ;
+    sunid:limesobject "Kemel 2"^^xsd:string ;
+    sunid:limestown "Heidenrod"^^xsd:string ;
+    sunid:limestownpart "Kemel"^^xsd:string .
+
+suni:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 108 ;
+    sunid:limesobject "Kemel 1"^^xsd:string ;
+    sunid:limestown "Heidenrod"^^xsd:string ;
+    sunid:limestownpart "Kemel"^^xsd:string .
+
+suni:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 109 ;
+    sunid:limesobject "Adolfseck"^^xsd:string ;
+    sunid:limestown "Bad Schwalbach"^^xsd:string ;
+    sunid:limestownpart "Adolfseck"^^xsd:string .
+
+suni:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 110 ;
+    sunid:limesobject "Alteburg-Heftrich 2"^^xsd:string ;
+    sunid:limestown "Idstein"^^xsd:string ;
+    sunid:limestownpart "Heftrich"^^xsd:string .
+
+suni:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 111 ;
+    sunid:limesobject "Alteburg-Heftrich 1"^^xsd:string ;
+    sunid:limestown "Idstein"^^xsd:string ;
+    sunid:limestownpart "Heftrich"^^xsd:string .
+
+suni:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 67 ;
+    sunid:limesobject "Dörsterberg"^^xsd:string ;
+    sunid:limestown "Heidenrod"^^xsd:string ;
+    sunid:limestownpart "Laufenselden"^^xsd:string .
+
+suni:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 112 ;
+    sunid:limesobject "Degerfeld"^^xsd:string ;
+    sunid:limestown "Butzbach"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 113 ;
+    sunid:limesobject "Hainhaus"^^xsd:string ;
+    sunid:limestown "Pohlheim"^^xsd:string ;
+    sunid:limestownpart "Grüningen"^^xsd:string .
+
+suni:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 114 ;
+    sunid:limesobject "Langsdorf"^^xsd:string ;
+    sunid:limestown "Lich"^^xsd:string ;
+    sunid:limestownpart "Bettenhausen"^^xsd:string .
+
+suni:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 115 ;
+    sunid:limesobject "Lochberg"^^xsd:string ;
+    sunid:limestown "Echzell"^^xsd:string ;
+    sunid:limestownpart "Bingenheim"^^xsd:string .
+
+suni:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 116 ;
+    sunid:limesobject "Haselheck"^^xsd:string ;
+    sunid:limestown "Echzell"^^xsd:string ;
+    sunid:limestownpart "Bisses"^^xsd:string .
+
+suni:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 117 ;
+    sunid:limesobject "Inheiden 1"^^xsd:string ;
+    sunid:limestown "Hungen"^^xsd:string ;
+    sunid:limestownpart "Inheiden"^^xsd:string .
+
+suni:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 118 ;
+    sunid:limesobject "Inheiden 2"^^xsd:string ;
+    sunid:limestown "Hungen"^^xsd:string ;
+    sunid:limestownpart "Inheiden"^^xsd:string .
+
+suni:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 119 ;
+    sunid:limesobject "Unter-Widdersheim"^^xsd:string ;
+    sunid:limestown "Nidda"^^xsd:string ;
+    sunid:limestownpart "Unter-Widdersheim"^^xsd:string .
+
+suni:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 120 ;
+    sunid:limesobject "Wingertsberg"^^xsd:string ;
+    sunid:limestown "Hungen"^^xsd:string ;
+    sunid:limestownpart "Steinheim"^^xsd:string .
+
+suni:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 121 ;
+    sunid:limesobject "Staden"^^xsd:string ;
+    sunid:limestown "Florstadt"^^xsd:string ;
+    sunid:limestownpart "Staden"^^xsd:string .
+
+suni:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 68 ;
+    sunid:limesobject "Eichelgarten"^^xsd:string ;
+    sunid:limestown "Idstein"^^xsd:string ;
+    sunid:limestownpart "Lenzhahn/Dasbach"^^xsd:string .
+
+suni:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 122 ;
+    sunid:limesobject "Massohl"^^xsd:string ;
+    sunid:limestown "Hungen"^^xsd:string ;
+    sunid:limestownpart "Steinheim"^^xsd:string .
+
+suni:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 123 ;
+    sunid:limesobject "Stammheim"^^xsd:string ;
+    sunid:limestown "Florstadt"^^xsd:string ;
+    sunid:limestownpart "Stammheim"^^xsd:string .
+
+suni:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 124 ;
+    sunid:limesobject "Langendiebach"^^xsd:string ;
+    sunid:limestown "Erlensee"^^xsd:string ;
+    sunid:limestownpart "Langendiebach"^^xsd:string .
+
+suni:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 125 ;
+    sunid:limesobject "Altheimer Straße"^^xsd:string ;
+    sunid:limestown "Buchen"^^xsd:string ;
+    sunid:limestownpart "Hettingen"^^xsd:string .
+
+suni:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 126 ;
+    sunid:limesobject "Holderbusch"^^xsd:string ;
+    sunid:limestown "Buchen"^^xsd:string ;
+    sunid:limestownpart "Rinschheim"^^xsd:string .
+
+suni:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 127 ;
+    sunid:limesobject "Salzberg"^^xsd:string ;
+    sunid:limestown "Osterburken"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 128 ;
+    sunid:limesobject "Lehnenwiesen"^^xsd:string ;
+    sunid:limestown "Widdern"^^xsd:string ;
+    sunid:limestownpart "Unterkessach"^^xsd:string .
+
+suni:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 129 ;
+    sunid:limesobject "Sindringen"^^xsd:string ;
+    sunid:limestown "Forchtenberg"^^xsd:string ;
+    sunid:limestownpart "Sindringen"^^xsd:string .
+
+suni:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 130 ;
+    sunid:limesobject "Herrenwiesen"^^xsd:string ;
+    sunid:limestown "Mainhardt"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 69 ;
+    sunid:limesobject "Maisel"^^xsd:string ;
+    sunid:limestown "Glashütten"^^xsd:string ;
+    sunid:limestownpart "???"^^xsd:string .
+
+suni:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 70 ;
+    sunid:limesobject "Altes Jagdhaus"^^xsd:string ;
+    sunid:limestown "Oberursel"^^xsd:string ;
+    sunid:limestownpart "Oberstedten"^^xsd:string .
+
+suni:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+    sunid:ID 71 ;
+    sunid:limesobject "Heidenstock"^^xsd:string ;
+    sunid:limestown "Bad Homburg"^^xsd:string ;
+    sunid:limestownpart "Ober-Eschbach"^^xsd:string .
+
+sunid:limesobject a owl:AnnotationProperty ;
     rdfs:label "limesobject"@en .
 
 sunid:limestown a owl:DatatypeProperty ;
@@ -566,5 +424,5 @@ sunid:limestown a owl:DatatypeProperty ;
 sunid:limestownpart a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
 
-<> a owl:Class .
+<http://archaeoinformatics.link/ontology#MilitaryCamp> a owl:Class .
 
