@@ -283,6 +283,9 @@ print("The following arguments were not recognized: " + str(unknown))
 if args.input == None or args.input[0] == "None" or args.input == "":
     print("No input files specified... trying to find files in the script folder")
     exit()
+if args.output == None or args.output[0] == "None" or args.input == "":
+    print("No output paths specified...")
+    exit()
 for path in args.input:
     if " " in path:
         for itemm in path.split(" "):
@@ -312,5 +315,5 @@ with open("curautotypemap.json","w") as f:
 
 g=convertToRDF(df,typemap,autotypemap,g,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")]))
-g.serialize(args.output+"/"+path[0:path.rfind(".")]+".ttl",format="turtle")
+g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")]+".ttl",format="turtle")
 
