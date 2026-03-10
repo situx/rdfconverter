@@ -7,409 +7,477 @@
 sunid:ID a owl:DatatypeProperty ;
     rdfs:label "ID"@en .
 
-suni:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 63 ;
     sunid:limesobject "Anhausen"^^xsd:string ;
     sunid:limestown "Neuwied"^^xsd:string ;
     sunid:limestownpart "Heimbach-Weis"^^xsd:string .
 
-suni:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 72 ;
     sunid:limesobject "Saalburg 1"^^xsd:string ;
     sunid:limestown "Bad Homburg"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 73 ;
     sunid:limesobject "Saalburg 2"^^xsd:string ;
     sunid:limestown "Bad Homburg"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 74 ;
     sunid:limesobject "Lochmühle"^^xsd:string ;
     sunid:limestown "Friedrichsdorf"^^xsd:string ;
     sunid:limestownpart "Köppern"^^xsd:string .
 
-suni:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 75 ;
     sunid:limesobject "Rittergräber"^^xsd:string ;
     sunid:limestown "Rosbach"^^xsd:string ;
     sunid:limestownpart "Nieder-Rosbach"^^xsd:string .
 
-suni:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 76 ;
     sunid:limesobject "Hunnenkirchhof 1"^^xsd:string ;
     sunid:limestown "Butzbach"^^xsd:string ;
     sunid:limestownpart "Nieder-Weisel"^^xsd:string .
 
-suni:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 77 ;
     sunid:limesobject "Hunnenkirchhof 2"^^xsd:string ;
     sunid:limestown "Butzbach"^^xsd:string ;
     sunid:limestownpart "Nieder-Weisel"^^xsd:string .
 
-suni:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 78 ;
     sunid:limesobject "Ockstädter Wald"^^xsd:string ;
     sunid:limestown "Friedberg"^^xsd:string ;
     sunid:limestownpart "Ockstadt"^^xsd:string .
 
-suni:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 79 ;
     sunid:limesobject "Eichkopf"^^xsd:string ;
     sunid:limestown "Ober-Mörlen"^^xsd:string ;
     sunid:limestownpart "Langenhain-Ziegenberg"^^xsd:string .
 
-suni:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 80 ;
     sunid:limesobject "Kaisergrube"^^xsd:string ;
     sunid:limestown "Ober-Mörlen"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 81 ;
     sunid:limesobject "Schrenzer"^^xsd:string ;
     sunid:limestown "Butzbach"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 64 ;
     sunid:limesobject "Hillscheid"^^xsd:string ;
     sunid:limestown "Hillscheid"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 82 ;
     sunid:limesobject "Dicker Wald 2"^^xsd:string ;
     sunid:limestown "Münzenberg"^^xsd:string ;
     sunid:limestownpart "Gambach"^^xsd:string .
 
-suni:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 83 ;
     sunid:limesobject "Dicker Wald 1"^^xsd:string ;
     sunid:limestown "Münzenberg"^^xsd:string ;
     sunid:limestownpart "Gambach"^^xsd:string .
 
-suni:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 84 ;
     sunid:limesobject "Holzheimer Unterwald"^^xsd:string ;
     sunid:limestown "Pohlheim"^^xsd:string ;
     sunid:limestownpart "Holzheim"^^xsd:string .
 
-suni:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 85 ;
     sunid:limesobject "Feldheimer Wald"^^xsd:string ;
     sunid:limestown "Hungen"^^xsd:string ;
     sunid:limestownpart "Inheiden"^^xsd:string .
 
-suni:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 86 ;
     sunid:limesobject "Buchkopf"^^xsd:string ;
     sunid:limestown "Altenstadt"^^xsd:string ;
     sunid:limestownpart "Höchst"^^xsd:string .
 
-suni:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 87 ;
     sunid:limesobject "Neuwirtshaus"^^xsd:string ;
     sunid:limestown "Hanau"^^xsd:string ;
     sunid:limestownpart "Wolfgang"^^xsd:string .
 
-suni:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 88 ;
     sunid:limesobject "Haselburg"^^xsd:string ;
     sunid:limestown "Walldürn"^^xsd:string ;
     sunid:limestownpart "Reinhardsachsen"^^xsd:string .
 
-suni:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 89 ;
     sunid:limesobject "Rehberg"^^xsd:string ;
     sunid:limestown "Buchen"^^xsd:string ;
     sunid:limestownpart "Hettingen"^^xsd:string .
 
-suni:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 90 ;
     sunid:limesobject "Hintere Kalbe"^^xsd:string ;
     sunid:limestown "Osterburken"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 91 ;
     sunid:limesobject "Hankertsmühle"^^xsd:string ;
     sunid:limestown "Mainhardt"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 65 ;
     sunid:limesobject "Becheln"^^xsd:string ;
     sunid:limestown "Lahnstein"^^xsd:string ;
     sunid:limestownpart "Oberlahnstein/Becheln"^^xsd:string .
 
-suni:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 92 ;
     sunid:limesobject "Ebnisee"^^xsd:string ;
     sunid:limestown "Kaisersbach"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 93 ;
     sunid:limesobject "Rötelsee"^^xsd:string ;
     sunid:limestown "Welzheim"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 94 ;
     sunid:limesobject "Kleindeinbach"^^xsd:string ;
     sunid:limestown "Schwäbisch Gmünd"^^xsd:string ;
     sunid:limestownpart "Großdeinbach"^^xsd:string .
 
-suni:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 95 ;
     sunid:limesobject "Freimühle"^^xsd:string ;
     sunid:limestown "Schwäbisch Gmünd"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 96 ;
     sunid:limesobject "Hinterer Schlossberg"^^xsd:string ;
     sunid:limestown "Gunzenhausen"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 97 ;
     sunid:limesobject "Gündersbach"^^xsd:string ;
     sunid:limestown "Pfofeld"^^xsd:string ;
     sunid:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string .
 
-suni:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 98 ;
     sunid:limesobject "Raitenbuch"^^xsd:string ;
     sunid:limestown "Raitenbuch"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 99 ;
     sunid:limesobject "Kaldorf"^^xsd:string ;
     sunid:limestown "Titting"^^xsd:string ;
     sunid:limestownpart "Kaldorf"^^xsd:string .
 
-suni:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 100 ;
     sunid:limesobject "Biebig"^^xsd:string ;
     sunid:limestown "Titting"^^xsd:string ;
     sunid:limestownpart "Altdorf"^^xsd:string .
 
-suni:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 101 ;
     sunid:limesobject "Hegelohe"^^xsd:string ;
     sunid:limestown "Titting"^^xsd:string ;
     sunid:limestownpart "Altdorf"^^xsd:string .
 
-suni:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 66 ;
     sunid:limesobject "Pfarrhofen"^^xsd:string ;
     sunid:limestown "Miehlen"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 102 ;
     sunid:limesobject "Güssgraben"^^xsd:string ;
     sunid:limestown "Altmannstein"^^xsd:string ;
     sunid:limestownpart "Schambach"^^xsd:string .
 
-suni:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 103 ;
     sunid:limesobject "Hinterer Seeberg"^^xsd:string ;
     sunid:limestown "Altmannstein"^^xsd:string ;
     sunid:limestownpart "Steinsdorf (i), Schambach"^^xsd:string .
 
-suni:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 104 ;
     sunid:limesobject "Rheinbrohl"^^xsd:string ;
     sunid:limestown "Rheinbrohl"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 105 ;
     sunid:limesobject "Ferbach"^^xsd:string ;
     sunid:limestown "Weitersburg / Höhr-Grenzhausen"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 106 ;
     sunid:limesobject "Pohl"^^xsd:string ;
     sunid:limestown "Pohl"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 107 ;
     sunid:limesobject "Kemel 2"^^xsd:string ;
     sunid:limestown "Heidenrod"^^xsd:string ;
     sunid:limestownpart "Kemel"^^xsd:string .
 
-suni:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 108 ;
     sunid:limesobject "Kemel 1"^^xsd:string ;
     sunid:limestown "Heidenrod"^^xsd:string ;
     sunid:limestownpart "Kemel"^^xsd:string .
 
-suni:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 109 ;
     sunid:limesobject "Adolfseck"^^xsd:string ;
     sunid:limestown "Bad Schwalbach"^^xsd:string ;
     sunid:limestownpart "Adolfseck"^^xsd:string .
 
-suni:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 110 ;
     sunid:limesobject "Alteburg-Heftrich 2"^^xsd:string ;
     sunid:limestown "Idstein"^^xsd:string ;
     sunid:limestownpart "Heftrich"^^xsd:string .
 
-suni:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 111 ;
     sunid:limesobject "Alteburg-Heftrich 1"^^xsd:string ;
     sunid:limestown "Idstein"^^xsd:string ;
     sunid:limestownpart "Heftrich"^^xsd:string .
 
-suni:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 67 ;
     sunid:limesobject "Dörsterberg"^^xsd:string ;
     sunid:limestown "Heidenrod"^^xsd:string ;
     sunid:limestownpart "Laufenselden"^^xsd:string .
 
-suni:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 112 ;
     sunid:limesobject "Degerfeld"^^xsd:string ;
     sunid:limestown "Butzbach"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 113 ;
     sunid:limesobject "Hainhaus"^^xsd:string ;
     sunid:limestown "Pohlheim"^^xsd:string ;
     sunid:limestownpart "Grüningen"^^xsd:string .
 
-suni:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 114 ;
     sunid:limesobject "Langsdorf"^^xsd:string ;
     sunid:limestown "Lich"^^xsd:string ;
     sunid:limestownpart "Bettenhausen"^^xsd:string .
 
-suni:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 115 ;
     sunid:limesobject "Lochberg"^^xsd:string ;
     sunid:limestown "Echzell"^^xsd:string ;
     sunid:limestownpart "Bingenheim"^^xsd:string .
 
-suni:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 116 ;
     sunid:limesobject "Haselheck"^^xsd:string ;
     sunid:limestown "Echzell"^^xsd:string ;
     sunid:limestownpart "Bisses"^^xsd:string .
 
-suni:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 117 ;
     sunid:limesobject "Inheiden 1"^^xsd:string ;
     sunid:limestown "Hungen"^^xsd:string ;
     sunid:limestownpart "Inheiden"^^xsd:string .
 
-suni:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 118 ;
     sunid:limesobject "Inheiden 2"^^xsd:string ;
     sunid:limestown "Hungen"^^xsd:string ;
     sunid:limestownpart "Inheiden"^^xsd:string .
 
-suni:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 119 ;
     sunid:limesobject "Unter-Widdersheim"^^xsd:string ;
     sunid:limestown "Nidda"^^xsd:string ;
     sunid:limestownpart "Unter-Widdersheim"^^xsd:string .
 
-suni:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 120 ;
     sunid:limesobject "Wingertsberg"^^xsd:string ;
     sunid:limestown "Hungen"^^xsd:string ;
     sunid:limestownpart "Steinheim"^^xsd:string .
 
-suni:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 121 ;
     sunid:limesobject "Staden"^^xsd:string ;
     sunid:limestown "Florstadt"^^xsd:string ;
     sunid:limestownpart "Staden"^^xsd:string .
 
-suni:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 68 ;
     sunid:limesobject "Eichelgarten"^^xsd:string ;
     sunid:limestown "Idstein"^^xsd:string ;
     sunid:limestownpart "Lenzhahn/Dasbach"^^xsd:string .
 
-suni:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 122 ;
     sunid:limesobject "Massohl"^^xsd:string ;
     sunid:limestown "Hungen"^^xsd:string ;
     sunid:limestownpart "Steinheim"^^xsd:string .
 
-suni:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 123 ;
     sunid:limesobject "Stammheim"^^xsd:string ;
     sunid:limestown "Florstadt"^^xsd:string ;
     sunid:limestownpart "Stammheim"^^xsd:string .
 
-suni:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 124 ;
     sunid:limesobject "Langendiebach"^^xsd:string ;
     sunid:limestown "Erlensee"^^xsd:string ;
     sunid:limestownpart "Langendiebach"^^xsd:string .
 
-suni:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 125 ;
     sunid:limesobject "Altheimer Straße"^^xsd:string ;
     sunid:limestown "Buchen"^^xsd:string ;
     sunid:limestownpart "Hettingen"^^xsd:string .
 
-suni:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 126 ;
     sunid:limesobject "Holderbusch"^^xsd:string ;
     sunid:limestown "Buchen"^^xsd:string ;
     sunid:limestownpart "Rinschheim"^^xsd:string .
 
-suni:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 127 ;
     sunid:limesobject "Salzberg"^^xsd:string ;
     sunid:limestown "Osterburken"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 128 ;
     sunid:limesobject "Lehnenwiesen"^^xsd:string ;
     sunid:limestown "Widdern"^^xsd:string ;
     sunid:limestownpart "Unterkessach"^^xsd:string .
 
-suni:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 129 ;
     sunid:limesobject "Sindringen"^^xsd:string ;
     sunid:limestown "Forchtenberg"^^xsd:string ;
     sunid:limestownpart "Sindringen"^^xsd:string .
 
-suni:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 130 ;
     sunid:limesobject "Herrenwiesen"^^xsd:string ;
     sunid:limestown "Mainhardt"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 69 ;
     sunid:limesobject "Maisel"^^xsd:string ;
     sunid:limestown "Glashütten"^^xsd:string ;
     sunid:limestownpart "???"^^xsd:string .
 
-suni:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 70 ;
     sunid:limesobject "Altes Jagdhaus"^^xsd:string ;
     sunid:limestown "Oberursel"^^xsd:string ;
     sunid:limestownpart "Oberstedten"^^xsd:string .
 
-suni:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp> ;
+suni:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
+        sunid:Kleinkastell ;
     sunid:ID 71 ;
     sunid:limesobject "Heidenstock"^^xsd:string ;
     sunid:limestown "Bad Homburg"^^xsd:string ;
@@ -423,6 +491,9 @@ sunid:limestown a owl:DatatypeProperty ;
 
 sunid:limestownpart a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
+
+sunid:Kleinkastell rdfs:label "Kleinkastell"@en ;
+    rdfs:subClassOf <http://archaeoinformatics.link/ontology#MilitaryCamp> .
 
 <http://archaeoinformatics.link/ontology#MilitaryCamp> a owl:Class .
 
