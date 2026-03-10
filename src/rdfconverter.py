@@ -274,6 +274,7 @@ class RDFConverter:
                 print("ROW: "+str(counter)+"/"+str(rowcount))
             if "classmappings" in typemap:
                 for clsmap in typemap["classmappings"]:
+                    print(clsmap)
                     g.add((URIRef(curid),RDF.type,URIRef(clsmap["uri"])))
                     if "labels" in clsmap:
                         for lab in clsmap["labels"]:
