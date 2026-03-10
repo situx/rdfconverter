@@ -1,0 +1,46 @@
+{
+  "columns": {
+    "ID": {
+      "category": false,
+      "prop": "data",
+      "range": "xsd:integer",
+      "unique": true
+    },
+    "fid": {
+      "category": false,
+      "prop": "data",
+      "range": "xsd:integer",
+      "unique": true
+    },
+    "geometry": {
+      "category": true,
+      "prop": "data",
+      "range": "xsd:string",
+      "unique": true
+    },
+    "limescategory": {
+      "category": false,
+      "prop": "data",
+      "range": "xsd:string",
+      "unique": false
+    },
+    "limesobject": {
+      "category": true,
+      "prop": "data",
+      "range": "xsd:string",
+      "unique": true
+    },
+    "limestown": {
+      "category": false,
+      "prop": "data",
+      "range": "xsd:string",
+      "unique": false
+    },
+    "limestownpart": {
+      "category": false,
+      "prop": "data",
+      "range": "xsd:string",
+      "unique": false
+    }
+  }
+}
