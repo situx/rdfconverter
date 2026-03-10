@@ -118,10 +118,12 @@ class RDFConverter:
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
-            else:
+            elif thevalue.startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
                 g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
                 g.add((URIRef(curid), theiri, URIRef(thevalue)))
+            else:
+                g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
         if curcol["prop"]=="anno":
             g.add((theiri, RDF.type, OWL.AnnotationProperty))
             g.add((theiri, RDFS.label, Literal(str(x), lang="en")))
