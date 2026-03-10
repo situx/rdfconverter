@@ -47,7 +47,7 @@ class RDFConverter:
                 uricount+=1
                 continue
             stringcount+=1
-        bcheck=checkForBooleanAsString(uniquestrings)
+        bcheck=self.checkForBooleanAsString(uniquestrings)
         if bcheck!=False:
             return {"range": "xsd:boolean","prop":"data", "valuemapping":bcheck, "unique": (tokencount == len(uniquestrings)),"category":False}
         if intcount == len(resultmap):
@@ -173,7 +173,7 @@ class RDFConverter:
             if x in typemap["columns"] and x != idcol and x != "geometry":
                 intypemap = True
                 curcol = typemap["columns"][x]
-                res = addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
+                res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
                 g = res[0]
                 subclass = res[1]
                 seencols.add(x)
