@@ -180,11 +180,11 @@ class RDFConverter:
                 else:
                     theiri = URIRef(attns + x)
                 if prefix!="":
-                    res = processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x])
+                    res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x])
                     g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                 else:
-                    res=processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x])
+                    res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x])
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                 g=res["graph"]
