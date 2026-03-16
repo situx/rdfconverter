@@ -309,7 +309,7 @@ class RDFConverter:
                     if x==pair[0] and pair[1] in row:
                         self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
                         processedGeom = True
-            elif "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
+            if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
                 if "propiri" in typemap["columns"][x]:
                     theiri = URIRef(typemap["columns"][x]["propiri"])
                 else:
