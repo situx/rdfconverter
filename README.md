@@ -1,8 +1,6 @@
 # geordfconverter
 Converts relational datasets with or without a schema to RDF
 
-## Automapping
-
 ## Mappingschema Definition
 
 Each mappingschema definition requires the following attributes to be set:
@@ -67,4 +65,12 @@ An addcolumns definition may contain the same attributes as a previously mention
 
 ### Grouping Columns
 
+Columns may be grouped by defining column collections.
 
+
+
+## Automapping
+
+The geordfconverter is able to infer a limited automatic mapping with the following contents:
+* Columns as data properties with their inferred ranges
+* A best guess for the ID property
