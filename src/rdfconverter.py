@@ -95,7 +95,7 @@ class BibTexToRDF:
                 g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(ns+"author_"+str(authoruri))))
             g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/created"), Literal(str(entry["year"]), datatype="http://www.w3.org/2001/XMLSchema#gYear")))
             if "doi" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/doi"), Literal(str(entry["doi"]).replace("\_","_"),datatype="http://www.w3.org/2001/XMLSchema#string")))
+                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/doi"), Literal(str(entry["doi"]).replace("\\_","_"),datatype="http://www.w3.org/2001/XMLSchema#string")))
     
         return {"triples":g,"bibmap":bibmap,"dsuri":dsuri}
 
