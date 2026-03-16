@@ -46,7 +46,7 @@ class BibTexToRDF:
             if "eissn" in entry:
                 g.add((URIRef(ns+"bib_"+str(entry["ID"]), URIRef("http://purl.org/ontology/bibo/eissn"), Literal(str(entry["eissn"]),datatype="http://www.w3.org/2001/XMLSchema#string"))))
             if "isbn" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/isbn"), URIRef(str(entry["isbn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))              
+                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/isbn"), Literal(str(entry["isbn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))              
             if "number" in entry:
                 g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/number"), Literal(str(entry["number"]),datatype="http://www.w3.org/2001/XMLSchema#integer")))
             if "volume" in entry:
