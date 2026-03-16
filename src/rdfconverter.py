@@ -305,10 +305,6 @@ class RDFConverter:
                         g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
                             Literal(str(row[x]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
                     processedGeom=True
-                for pair in self.latlonpairs:
-                    if x==pair[0] and pair[1] in row:
-                        self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
-                        processedGeom = True
             if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
                 if "propiri" in typemap["columns"][x]:
                     theiri = URIRef(typemap["columns"][x]["propiri"])
@@ -351,6 +347,11 @@ class RDFConverter:
                 g = res[0]
                 subclass = res[1]
                 seencols.add(x)
+        if processedGeometry==False:
+            for pair in self.latlonpairs:
+                if x==pair[0] and pair[1] in row:
+                    self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
+                    processedGeom = True
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
     def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},geosparql=True):
