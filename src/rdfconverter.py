@@ -510,6 +510,7 @@ if os.path.exists(args.mapping[0]):
         typemap=json.load(f)
     brdf=None
     issuers={}
+    publishers={}
     if len(args.bibtex)>0 and args.bibtex[0]!="":
         for col in typemap["columns"]:
             if "bifref" in column and column["bibref"]==True:
