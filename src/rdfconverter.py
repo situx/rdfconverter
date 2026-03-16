@@ -490,12 +490,6 @@ for path in args.input:
 g = Graph()
 subrend=None
 
-brdf=None
-if args.bibtex[0]!="":
-    with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
-        bib_database = bibtexparser.load(bibtex_file)
-        print(bib_database.entries)
-        bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,False)
 
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=args.sepchar[0])
@@ -511,6 +505,20 @@ for column in df:
 if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
+    brdf=None
+    if args.bibtex[0]!="":
+        with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
+            bib_database = bibtexparser.load(bibtex_file)
+            print(bib_database.entries)
+            if "namespace" in typemap:
+                ns=typemap["namespace"]
+            else:
+                ns="http://purl.org/suni/data/"
+            if "attnamespace" in typemap:
+                nsont=typemap["attnamespace"]  
+            else:
+                nsont="http://purl.org/suni/"
+            bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,False)
 if not os.path.exists(args.output[0]):
     os.makedirs(args.output[0])
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+"_autotypemap.json","w") as f:
