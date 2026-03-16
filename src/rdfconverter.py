@@ -311,6 +311,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", nargs='*', help="the input file(s) to parse [csv,shp,geojson,gml]", action="store", required=True)
 parser.add_argument("-o", "--output", nargs='*', help="the output path(s)", action="store", required=True)
 parser.add_argument("-m", "--mapping", nargs='*', help="the mapping file path(s)", action="store", required=True)
+parser.add_argument("-s", "--sepchar", nargs='*', help="csv file separator", action="store", required=False,default=";")
 args, unknown=parser.parse_known_args()
 print(args)
 print("The following arguments were not recognized: " + str(unknown))
@@ -331,7 +332,7 @@ g = Graph()
 subrend=None
 
 if path.endswith(".csv"):
-    df = pd.read_csv(path, sep=";")
+    df = pd.read_csv(path, sep=input.sepchar)
 elif path.endswith(".geojson") or path.endswith(".shp") or path.endswith(".gml") or path.endswith(".kml"):
     df=gpd.read_file(path)
 
