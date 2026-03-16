@@ -492,11 +492,10 @@ subrend=None
 
 brdf=None
 if args.bibtex[0]!="":
-    brdf=new BibTexToRDF()
     with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
         print(bib_database.entries)
-        bibres=bibtexToRDF(g,bib_database.entries,ns,nsont,False)
+        bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,False)
 
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=args.sepchar[0])
