@@ -26,6 +26,7 @@ def resolveWildcardPath(thepath):
 class BibTexToRDF:
 
     refnotfound=[]
+    
 
     @staticmethod
     def bibtexToRDF(g,entries,ns,nsont,publishers,issuers,creatormode=None):
@@ -351,7 +352,7 @@ class RDFConverter:
                 seencols.add(x)
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
-    def convertToRDF(self,df,typemap,autotypemap,g,geosparql=True):
+    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},geosparql=True):
         #print(df)
         idcol=None
         dns=None
@@ -502,6 +503,7 @@ autotypemap = {"columns":{}}
 for column in df:
     autotypemap["columns"][column] = conv.detectColumnType(df[column].to_dict())
 
+bibmap={}
 if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
@@ -519,12 +521,14 @@ if os.path.exists(args.mapping[0]):
             else:
                 nsont="http://purl.org/suni/"
             bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,{},{},False)
+            bibmap=bibres["bibmap"]
+            
 if not os.path.exists(args.output[0]):
     os.makedirs(args.output[0])
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+"_autotypemap.json","w") as f:
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
-g=conv.convertToRDF(df,typemap,autotypemap,g,True)
+g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")].replace("/","_")))
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+".ttl",format="turtle")
 
