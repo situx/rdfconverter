@@ -283,7 +283,7 @@ class RDFConverter:
                 seencols.add(x)
                 continue
             if "bibref" in typemap["columns"][x] and typemap["columns"][x]["bibref"] == True:
-                g=processReference(g,bibmap,x,row,curid)
+                g=BibTexToRDF.processReference(g,bibmap,x,row,curid)
             if not processedGeom:
                 if x == "geometry":
                     g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
