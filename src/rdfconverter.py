@@ -286,25 +286,6 @@ class RDFConverter:
             if "bibref" in typemap["columns"][x] and typemap["columns"][x]["bibref"] == True:
                 g=BibTexToRDF.processReference(g,bibmap,x,row,curid)
                 continue
-            if not processedGeom:
-                if x == "geometry":
-                    g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
-                    g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
-                    g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type))))
-                    g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDF.type, OWL.Class))
-                    g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDFS.subClassOf,
-                        URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
-                    g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
-                    g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid), lang="en")))
-                    g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
-                    if "epsg" in typemap:
-                        g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                            Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[x]),
-                                    datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-                    else:
-                        g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                            Literal(str(row[x]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-                    processedGeom=True
             if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
                 if "propiri" in typemap["columns"][x]:
                     theiri = URIRef(typemap["columns"][x]["propiri"])
@@ -348,8 +329,26 @@ class RDFConverter:
                 subclass = res[1]
                 seencols.add(x)
         if processedGeometry==False:
+            if "geometry" in row:
+                g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
+                g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
+                g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type))))
+                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDF.type, OWL.Class))
+                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDFS.subClassOf,
+                    URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+                g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
+                g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid), lang="en")))
+                g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+                if "epsg" in typemap:
+                    g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                        Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row["geometry"]),
+                                datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                else:
+                    g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                        Literal(str(row["geometry"]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                processedGeom=True
             for pair in self.latlonpairs:
-                if x==pair[0] and pair[1] in row:
+                if pair[0] in row and pair[1] in row:
                     self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
                     processedGeom = True
         return {"graph":g,"subclass":subclass,"seencols":seencols}
