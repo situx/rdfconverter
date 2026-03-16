@@ -509,7 +509,14 @@ if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
     brdf=None
+    issuers={}
     if len(args.bibtex)>0 and args.bibtex[0]!="":
+        for col in typemap["columns"]:
+            if "bifref" in column and column["bibref"]==True:
+                if "issuers" in column:
+                    issuers=column["issuers"]
+                if "publishers" in column:
+                    publishers=column["puslishers"]
         with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
             bib_database = bibtexparser.load(bibtex_file)
             print(bib_database.entries)
@@ -521,7 +528,7 @@ if os.path.exists(args.mapping[0]):
                 nsont=typemap["attnamespace"]  
             else:
                 nsont="http://purl.org/suni/"
-            bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,{},{},False)
+            bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,issuers,publishers,False)
             bibmap=bibres["bibmap"]
             
 if not os.path.exists(args.output[0]):
