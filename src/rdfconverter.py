@@ -225,13 +225,20 @@ class RDFConverter:
                     g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
                         curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
         if curcol["prop"]=="obj":
+            concept=""
+            if "concept" in curcol:
+                concept=curcol["concept"]
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
+                if "concept" in curcol:
+                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif thevalue.startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                 g.add((URIRef(curid), theiri, URIRef(thevalue)))
+                if "concept" in curcol:
+                    g.add((URIRef(thevalue),RDF.type,URIRef(curcol["concept"])))
             else:
                 g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
         if curcol["prop"]=="anno":
