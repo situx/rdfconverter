@@ -1,0 +1,17 @@
+{
+    "datanamespace":"http://lod.squirrel.link/data/limes/",
+    "class":{"uri":"http://archaeoinformatics.link/ontology#MilitaryCamp","labels":{"en":"Military Camp","de":"Militärcamp"}},
+    "id":"fid",
+    "classmappings":[
+        {"uri":"https://www.wikidata.org/wiki/Q88205","labels":{"en":"Castrum","de":"Kastell"}}
+    ],
+    "columns":{
+        "ID":{"prop":"obj","ignore":true},
+        "limesobject": {"proplabels":{"en":"label","de":"Label"},"prefix":"Kleinkastell ","suffix":"!","propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
+        "limescategory": {"propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"subclass", "order": 2},
+        "limestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}}
+    },
+    "addcolumns":{
+        "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno"}
+    }
+}
