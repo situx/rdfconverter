@@ -234,6 +234,7 @@ class RDFConverter:
         idcol=None
         dns=None
         attns=None
+        onlyschema=False
         if "id" in typemap:
             idcol=typemap["id"]
         if "namespace" in typemap:
@@ -254,6 +255,8 @@ class RDFConverter:
             attnsprefix = typemap["attnamespace"][typemap["attnamespace"].rfind("/") + 1:].replace("#","")
         else:
             attnsprefix="suni"
+        if "onlyschema" in typemap and typemap["onlyschema"]==True:
+            onlyschema=True
         g.bind(nsprefix,dns)
         g.bind(attnsprefix, attns)
         g.bind("sf","http://www.opengis.net/ont/sf#")
@@ -317,12 +320,13 @@ class RDFConverter:
                 seencols=res["seencols"]
             counter+=1
             notseencols=thecols.symmetric_difference(seencols)
-            for x in notseencols:
-                if x in autotypemap["columns"] and x != idcol and x != "geometry":
-                    curcol = autotypemap["columns"][x]
-                    res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
-                    g = res[0]
-                    subclass = res[1]
+            if onlyschema==False:
+                for x in notseencols:
+                    if x in autotypemap["columns"] and x != idcol and x != "geometry":
+                        curcol = autotypemap["columns"][x]
+                        res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
+                        g = res[0]
+                        subclass = res[1]
             if "addcolumns" in typemap:
                 for addcol in typemap["addcolumns"]:
                     curcol=typemap["addcolumns"][addcol]
