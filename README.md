@@ -61,13 +61,33 @@ Additional columns which are not present in the dataset can be added using an ad
         "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno"}
 }
 ```
-An addcolumns definition may contain the same attributes as a previously mentioned column defintion, but requires a value to be provided, since no actual column is available to process.
+An addcolumns definition may contain the same attributes as a previously mentioned column definition, but requires a value to be provided, since no actual column is available to process.
 
 ### Grouping Columns
 
 Columns may be grouped by defining column collections.
 
+This might be useful when a subpart of the relational table represents a (sub-)entity in RDF, which is related to the entity described by **id**.
 
+### Joining Columns
+
+The value of columns might be joined by defining join columns.
+
+Join columns are virtual columns, which include a list of other column names.
+
+```
+"join_name_proj": {"join": true, "joinchar":"---","propiri": "http://www.example.org#myjoin","prop": "data","columns":[
+  "Name_mod","Date_min"
+]},
+```
+In this example, a property "myjoin" has been defined. It joins the value of the columns "Name_mod" and "Date_min".
+A such joined column will be added in addition to the individually available columns "Name_mod" and "Date_min" unless these columns have been ignored or not included in a "onlyschema" configuration.
+
+The **joinchar** attribute allows configuring a separator character that is added during the joining process between the two values.
+
+In this example, values would be separated by the joincharacter "---".
+
+**Remark**: Joining of columns only works on a String leval, numbers, for instance will not be added together.
 
 ## Automapping
 
