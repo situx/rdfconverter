@@ -16,6 +16,8 @@ jobs:
          mkdir result
          python3 src/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/sampleempty.json
          python3 src/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/limes.json
+         cp mapping/limes.json result/
+         cp mapping.sampleempty.json result/
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
