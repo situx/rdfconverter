@@ -15,33 +15,33 @@ Each mappingschema definition requires the following attributes to be set:
 
 Each relational dataset maps to one or more RDF classes, out of which one class is determined the main class to focus on for the mapping conversion.
 
-``
+```
 "class":{"uri":"http://archaeoinformatics.link/ontology#MilitaryCamp","labels":{"en":"Military Camp","de":"Militärcamp"}}
-``
+```
 
 A main class definition consists of a URI defining the class as well as of a list of labels describing the class in various languages.
 A definition of the class may be added using a "definition" JSON object.
 
 Further classmappings can be added using a JSON array:
 
-``
+```
 "classmappings":[
     {"uri":"https://www.wikidata.org/entity/Q88205","labels":{"en":"Castrum","de":"Kastell"}}
 ]
-``
+```
 
 ### Columnmappings
 
 A column mapping maps a column of a relational dataset to a URI describing its contents and a possible datatype and are defined as a JSON object.
 
-``
+```
 "columns":{
        "ID":{"prop":"obj","ignore":true},
        "limesobject": {"proplabels":{"en":"label","de":"Label"},"prefix":"Kleinkastell ","suffix":"!","propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
        "limescategory": {"propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"subclass", "order": 2},
        "limestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}}
    }
-``
+```
 Each column mapping consists of at least the following entries:
 
 * "ignore": If set to true, this column will be ignored for further processing. Use this flag for columns which are not relevant to RDF conversion.
@@ -58,11 +58,11 @@ Each column mapping consists of at least the following entries:
 
 Additional columns which are not present in the dataset can be added using an addcolumns definition:
 
-``
+```
 "addcolumns":{
         "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno"}
 }
-``
+```
 An addcolumns definition may contain the same attributes as a previously mentioned column defintion, but requires a value to be provided, since no actual column is available to process.
 
 ### Grouping Columns
