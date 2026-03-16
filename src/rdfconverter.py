@@ -518,7 +518,7 @@ if os.path.exists(args.mapping[0]):
                 nsont=typemap["attnamespace"]  
             else:
                 nsont="http://purl.org/suni/"
-            bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,False)
+            bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,{},{},False)
 if not os.path.exists(args.output[0]):
     os.makedirs(args.output[0])
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+"_autotypemap.json","w") as f:
