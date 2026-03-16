@@ -1,5 +1,6 @@
 from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD
 import argparse
+import bibtexparser
 import pandas as pd
 import geopandas as gpd
 import os
@@ -26,7 +27,8 @@ class BibTexToRDF:
 
     refnotfound=[]
 
-    def bibtexToRDF(self,g,entries,ns,nsont,publishers,issuers,creatormode=None):
+    @staticmethod
+    def bibtexToRDF(g,entries,ns,nsont,publishers,issuers,creatormode=None):
         typeToURI={"report":"http://purl.org/ontology/bibo/Report","incollection":"http://purl.org/ontology/bibo/Collection","inbook":"http://purl.org/ontology/bibo/BookSection","inproceedings":"http://purl.org/ontology/bibo/Proceedings","article":"http://purl.org/ontology/bibo/Article","book":"http://purl.org/ontology/bibo/Book","phdthesis":"http://purl.org/ontology/bibo/Thesis","misc":"http://purl.org/ontology/bibo/Document"}
         bibmap={}
         dsuri=None
@@ -97,7 +99,8 @@ class BibTexToRDF:
     
         return {"triples":g,"bibmap":bibmap,"dsuri":dsuri}
 
-    def processReference(self,g,bibmap,key,row,cururi):
+    @staticmethod
+    def processReference(g,bibmap,key,row,cururi):
         refs=row[key].split(";")
         for cref in refs:
             ref=cref.strip()
@@ -279,6 +282,8 @@ class RDFConverter:
             if "ignore" in typemap["columns"][x] and typemap["columns"][x]["ignore"] == True:
                 seencols.add(x)
                 continue
+            if "bibref" in typemap["columns"][x] and typemap["columns"][x]["bibref"] == True:
+                g=processReference(g,bibmap,x,row,curid)
             if not processedGeom:
                 if x == "geometry":
                     g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
@@ -302,7 +307,7 @@ class RDFConverter:
                     if x==pair[0] and pair[1] in row:
                         self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
                         processedGeom = True
-            if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
+            elif "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
                 if "propiri" in typemap["columns"][x]:
                     theiri = URIRef(typemap["columns"][x]["propiri"])
                 else:
@@ -317,7 +322,7 @@ class RDFConverter:
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                 g=res["graph"]
                 seencols=res["seencols"]
-            if "join" in typemap["columns"][x] and typemap["columns"][x]["join"]==True and "columns" in typemap["columns"][x]:
+            elif "join" in typemap["columns"][x] and typemap["columns"][x]["join"]==True and "columns" in typemap["columns"][x]:
                 thejoincol=typemap["columns"][x]
                 joinchar=""
                 if "joinchar" in thejoincol:
@@ -337,7 +342,7 @@ class RDFConverter:
                 g.add((theiri, RDF.type, OWL.DatatypeProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                 g.add((URIRef(curid), theiri, Literal(str(aggval), datatype="http://www.w3.org/2001/XMLSchema#string")))
-            if x in typemap["columns"] and x != idcol and x != "geometry":
+            elif x in typemap["columns"] and x != idcol and x != "geometry":
                 intypemap = True
                 curcol = typemap["columns"][x]
                 res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
@@ -464,6 +469,7 @@ parser.add_argument("-i", "--input", nargs='*', help="the input file(s) to parse
 parser.add_argument("-o", "--output", nargs='*', help="the output path(s)", action="store", required=True)
 parser.add_argument("-m", "--mapping", nargs='*', help="the mapping file path(s)", action="store", required=True)
 parser.add_argument("-s", "--sepchar", nargs='*', help="csv file separator", action="store", required=False,default=";")
+parser.add_argument("-b", "--bibtex", nargs='*', help="a bibtex refeerence library file", action="store", required=False,default="")
 args, unknown=parser.parse_known_args()
 print(args)
 print("The following arguments were not recognized: " + str(unknown))
@@ -480,8 +486,17 @@ for path in args.input:
     else:
         filestoprocess+=resolveWildcardPath(path)
 
+
 g = Graph()
 subrend=None
+
+brdf=None
+if args.bibtex[0]!="":
+    brdf=new BibTexToRDF()
+    with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
+        bib_database = bibtexparser.load(bibtex_file)
+        print(bib_database.entries)
+        bibres=bibtexToRDF(g,bib_database.entries,ns,nsont,False)
 
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=args.sepchar[0])
