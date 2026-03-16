@@ -178,7 +178,7 @@ class RDFConverter:
                 seencols.add(x)
                 continue
             if processedGeom==False:
-                if = "geometry":
+                if x == "geometry":
                     g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                     g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
                     g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type))))
