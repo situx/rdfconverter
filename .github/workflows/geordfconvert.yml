@@ -1,0 +1,75 @@
+name: GeoRDF Converter
+
+permissions:
+  contents: write
+ 
+on:
+  workflow_call:
+   inputs:
+      input:
+        required: false
+        type: string
+        description: "The input file(s) to process"
+        default: main
+      output:
+        required: false
+        description: "The output filepath"
+        default: None
+        type: string
+      mapping:
+        required: false
+        description: "The mapping file to use for conversion"
+        default: docs 
+        type: string
+      ghpages:
+        required: false
+        description: "Indicates whether to create a deployment to a pages branch"
+        default: false
+        type: boolean
+      ghpagesbranch:
+        required: false
+        description: "The branch to deploy the documentation to"
+        default: gh-pages
+        type: string
+      ghpagesfolder:
+        required: false
+        description: "The folder which is used for the pages deployment"
+        default: /
+        type: string
+jobs:
+    mapping-action:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repo
+          if: ${{ inputs.checkout }}
+          uses: actions/checkout@v3
+          with:
+            fetch-depth: '0'
+        - name: Checkout tools repo
+          id: checkout_tools
+          uses: actions/checkout@v3
+          continue-on-error: true
+          with:
+            repository: situx/geordfconverter
+            ref: "${{inputs.version}}"
+            path: geordfconverterscript
+        - name: Checkout tools repo fallback
+          if: steps.checkout_tools.outcome != 'success'
+          uses: actions/checkout@v3
+          with:
+            repository: situx/geordfconverter
+            ref: "main"
+            path: geordfconverterscript    
+        - name: Generate Ontology Documentation
+          run: |
+            sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
+            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.rdffilepath}}" --output "${{inputs.docpath}}" --mapping "${{inputs.mapping}}"  
+        - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@releases/v4
+          if: ${{ inputs.ghpages }}
+          with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            BRANCH: ${{inputs.ghpagesbranch}}
+            FOLDER: ${{inputs.docpath}}/
+            clean: false
+            TARGET-FOLDER: ${{inputs.ghpagesfolder}}
