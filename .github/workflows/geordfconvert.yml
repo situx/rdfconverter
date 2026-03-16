@@ -19,7 +19,12 @@ on:
       mapping:
         required: false
         description: "The mapping file to use for conversion"
-        default: docs 
+        default: ""
+        type: string
+      bibtex:
+        required: false
+        description: "A bibtex file to link to references"
+        default: "" 
         type: string
       sepchar:
         required: false
@@ -66,7 +71,7 @@ jobs:
         - name: Mapping File Contents to RDF
           run: |
             sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
-            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}"  --sepchar "${{inputs.sepchar}}"  
+            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}" --bibtex "${{inputs.bibtex}}" --sepchar "${{inputs.sepchar}}"  
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@releases/v4
           if: ${{ inputs.ghpages }}
