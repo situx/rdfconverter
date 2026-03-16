@@ -149,7 +149,27 @@ class RDFConverter:
         return [g,subclass]
 
 
+    def processLatLonGeometry(g,lat,lon,typemap,curid):
+        g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
+        g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#Point")))
+        g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDF.type, OWL.Class))
+        g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDFS.subClassOf,
+            URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
+        g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid), lang="en")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+        if "epsg" in typemap:
+            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> POINT("+str(lon)+" "+str(lat)+")",
+                        datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        else:
+            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                Literal("POINT("+str(lon)+" "+str(lat)+")", datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        return g
+    
     def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap):
+        processedGeom=False
         for x in typemap["columns"]:
             # print("CConfig: "+str(x))
             subclass = False
@@ -157,23 +177,34 @@ class RDFConverter:
             if "ignore" in typemap["columns"][x] and typemap["columns"][x]["ignore"] == True:
                 seencols.add(x)
                 continue
-            if x == "geometry":
-                g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
-                g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
-                g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type))))
-                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDF.type, OWL.Class))
-                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDFS.subClassOf,
-                    URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
-                g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
-                g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid), lang="en")))
-                g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
-                if "epsg" in typemap:
-                    g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                        Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[x]),
-                                datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-                else:
-                    g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                        Literal(str(row[x]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+            if processedGeom==False:
+                if = "geometry":
+                    g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
+                    g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
+                    g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type))))
+                    g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDF.type, OWL.Class))
+                    g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDFS.subClassOf,
+                        URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+                    g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
+                    g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid), lang="en")))
+                    g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+                    if "epsg" in typemap:
+                        g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                            Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[x]),
+                                    datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                    else:
+                        g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                            Literal(str(row[x]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                    processedGeom=True
+                elif x=="latitude" and "longitude" in row:
+                    self.processLatLonGeometry(g,row["latitude"],row["longitude"],typemap,curid)
+                    processedGeom=True
+                elif x=="Latitude" and "Longitude" in row:
+                    self.processLatLonGeometry(g,row["Latitude"],row["Longitude"],typemap,curid)
+                    processedGeom=True
+                elif x=="lat" and "lon" in row:
+                    self.processLatLonGeometry(g,row["lat"],row["lon"],typemap,curid)
+                    processedGeom=True
             if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
                 if "propiri" in typemap["columns"][x]:
                     theiri = URIRef(typemap["columns"][x]["propiri"])
