@@ -328,7 +328,7 @@ class RDFConverter:
                 g = res[0]
                 subclass = res[1]
                 seencols.add(x)
-        if processedGeometry==False:
+        if processedGeom==False:
             if "geometry" in row:
                 g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
