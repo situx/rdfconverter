@@ -5,698 +5,699 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sunid:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Anhausen!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Anhausen"^^xsd:string ;
     suni:limestown "Neuwied"^^xsd:string ;
     suni:limestownpart "Heimbach-Weis"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Saalburg 1!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown <https://www.wikidata.org/entity/Q4165> ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Saalburg 1"^^xsd:string ;
+    suni:limestown "Bad Homburg"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Saalburg 2!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown <https://www.wikidata.org/entity/Q4165> ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Saalburg 2"^^xsd:string ;
+    suni:limestown "Bad Homburg"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Lochmühle!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Lochmühle"^^xsd:string ;
     suni:limestown "Friedrichsdorf"^^xsd:string ;
     suni:limestownpart "Köppern"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Rittergräber!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Rittergräber"^^xsd:string ;
     suni:limestown "Rosbach"^^xsd:string ;
     suni:limestownpart "Nieder-Rosbach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hunnenkirchhof 1!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hunnenkirchhof 1"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "Nieder-Weisel"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hunnenkirchhof 2!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hunnenkirchhof 2"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "Nieder-Weisel"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Ockstädter Wald!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Ockstädter Wald"^^xsd:string ;
     suni:limestown "Friedberg"^^xsd:string ;
     suni:limestownpart "Ockstadt"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Eichkopf!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Eichkopf"^^xsd:string ;
     suni:limestown "Ober-Mörlen"^^xsd:string ;
     suni:limestownpart "Langenhain-Ziegenberg"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Kaisergrube!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Kaisergrube"^^xsd:string ;
     suni:limestown "Ober-Mörlen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Schrenzer!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Schrenzer"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hillscheid!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hillscheid"^^xsd:string ;
     suni:limestown "Hillscheid"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Dicker Wald 2!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Dicker Wald 2"^^xsd:string ;
     suni:limestown "Münzenberg"^^xsd:string ;
     suni:limestownpart "Gambach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Dicker Wald 1!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Dicker Wald 1"^^xsd:string ;
     suni:limestown "Münzenberg"^^xsd:string ;
     suni:limestownpart "Gambach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Holzheimer Unterwald!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Holzheimer Unterwald"^^xsd:string ;
     suni:limestown "Pohlheim"^^xsd:string ;
     suni:limestownpart "Holzheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Feldheimer Wald!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Feldheimer Wald"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Inheiden"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Buchkopf!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Buchkopf"^^xsd:string ;
     suni:limestown "Altenstadt"^^xsd:string ;
     suni:limestownpart "Höchst"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Neuwirtshaus!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Neuwirtshaus"^^xsd:string ;
     suni:limestown "Hanau"^^xsd:string ;
     suni:limestownpart "Wolfgang"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Haselburg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Haselburg"^^xsd:string ;
     suni:limestown "Walldürn"^^xsd:string ;
     suni:limestownpart "Reinhardsachsen"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Rehberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Rehberg"^^xsd:string ;
     suni:limestown "Buchen"^^xsd:string ;
     suni:limestownpart "Hettingen"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hintere Kalbe!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hintere Kalbe"^^xsd:string ;
     suni:limestown "Osterburken"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hankertsmühle!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hankertsmühle"^^xsd:string ;
     suni:limestown "Mainhardt"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Becheln!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Becheln"^^xsd:string ;
     suni:limestown "Lahnstein"^^xsd:string ;
     suni:limestownpart "Oberlahnstein/Becheln"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Ebnisee!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Ebnisee"^^xsd:string ;
     suni:limestown "Kaisersbach"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Rötelsee!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Rötelsee"^^xsd:string ;
     suni:limestown "Welzheim"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Kleindeinbach!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Kleindeinbach"^^xsd:string ;
     suni:limestown "Schwäbisch Gmünd"^^xsd:string ;
     suni:limestownpart "Großdeinbach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Freimühle!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Freimühle"^^xsd:string ;
     suni:limestown "Schwäbisch Gmünd"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hinterer Schlossberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hinterer Schlossberg"^^xsd:string ;
     suni:limestown "Gunzenhausen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Gündersbach!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Gündersbach"^^xsd:string ;
     suni:limestown "Pfofeld"^^xsd:string ;
     suni:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Raitenbuch!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Raitenbuch"^^xsd:string ;
     suni:limestown "Raitenbuch"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Kaldorf!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Kaldorf"^^xsd:string ;
     suni:limestown "Titting"^^xsd:string ;
     suni:limestownpart "Kaldorf"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Biebig!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Biebig"^^xsd:string ;
     suni:limestown "Titting"^^xsd:string ;
     suni:limestownpart "Altdorf"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hegelohe!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hegelohe"^^xsd:string ;
     suni:limestown "Titting"^^xsd:string ;
     suni:limestownpart "Altdorf"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Pfarrhofen!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Pfarrhofen"^^xsd:string ;
     suni:limestown "Miehlen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Güssgraben!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Güssgraben"^^xsd:string ;
     suni:limestown "Altmannstein"^^xsd:string ;
     suni:limestownpart "Schambach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hinterer Seeberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hinterer Seeberg"^^xsd:string ;
     suni:limestown "Altmannstein"^^xsd:string ;
     suni:limestownpart "Steinsdorf (i), Schambach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Rheinbrohl!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Rheinbrohl"^^xsd:string ;
     suni:limestown "Rheinbrohl"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Ferbach!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Ferbach"^^xsd:string ;
     suni:limestown "Weitersburg / Höhr-Grenzhausen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Pohl!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Pohl"^^xsd:string ;
     suni:limestown "Pohl"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Kemel 2!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Kemel 2"^^xsd:string ;
     suni:limestown "Heidenrod"^^xsd:string ;
     suni:limestownpart "Kemel"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Kemel 1!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Kemel 1"^^xsd:string ;
     suni:limestown "Heidenrod"^^xsd:string ;
     suni:limestownpart "Kemel"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Adolfseck!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Adolfseck"^^xsd:string ;
     suni:limestown "Bad Schwalbach"^^xsd:string ;
     suni:limestownpart "Adolfseck"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Alteburg-Heftrich 2!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Alteburg-Heftrich 2"^^xsd:string ;
     suni:limestown "Idstein"^^xsd:string ;
     suni:limestownpart "Heftrich"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Alteburg-Heftrich 1!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Alteburg-Heftrich 1"^^xsd:string ;
     suni:limestown "Idstein"^^xsd:string ;
     suni:limestownpart "Heftrich"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Dörsterberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Dörsterberg"^^xsd:string ;
     suni:limestown "Heidenrod"^^xsd:string ;
     suni:limestownpart "Laufenselden"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Degerfeld!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Degerfeld"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Hainhaus!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Hainhaus"^^xsd:string ;
     suni:limestown "Pohlheim"^^xsd:string ;
     suni:limestownpart "Grüningen"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Langsdorf!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Langsdorf"^^xsd:string ;
     suni:limestown "Lich"^^xsd:string ;
     suni:limestownpart "Bettenhausen"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Lochberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Lochberg"^^xsd:string ;
     suni:limestown "Echzell"^^xsd:string ;
     suni:limestownpart "Bingenheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Haselheck!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Haselheck"^^xsd:string ;
     suni:limestown "Echzell"^^xsd:string ;
     suni:limestownpart "Bisses"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Inheiden 1!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Inheiden 1"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Inheiden"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Inheiden 2!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Inheiden 2"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Inheiden"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Unter-Widdersheim!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Unter-Widdersheim"^^xsd:string ;
     suni:limestown "Nidda"^^xsd:string ;
     suni:limestownpart "Unter-Widdersheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Wingertsberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Wingertsberg"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Steinheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Staden!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Staden"^^xsd:string ;
     suni:limestown "Florstadt"^^xsd:string ;
     suni:limestownpart "Staden"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Eichelgarten!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Eichelgarten"^^xsd:string ;
     suni:limestown "Idstein"^^xsd:string ;
     suni:limestownpart "Lenzhahn/Dasbach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Massohl!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Massohl"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Steinheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Stammheim!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Stammheim"^^xsd:string ;
     suni:limestown "Florstadt"^^xsd:string ;
     suni:limestownpart "Stammheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Langendiebach!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Langendiebach"^^xsd:string ;
     suni:limestown "Erlensee"^^xsd:string ;
     suni:limestownpart "Langendiebach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Altheimer Straße!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Altheimer Straße"^^xsd:string ;
     suni:limestown "Buchen"^^xsd:string ;
     suni:limestownpart "Hettingen"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Holderbusch!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Holderbusch"^^xsd:string ;
     suni:limestown "Buchen"^^xsd:string ;
     suni:limestownpart "Rinschheim"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Salzberg!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Salzberg"^^xsd:string ;
     suni:limestown "Osterburken"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Lehnenwiesen!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Lehnenwiesen"^^xsd:string ;
     suni:limestown "Widdern"^^xsd:string ;
     suni:limestownpart "Unterkessach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Sindringen!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Sindringen"^^xsd:string ;
     suni:limestown "Forchtenberg"^^xsd:string ;
     suni:limestownpart "Sindringen"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Herrenwiesen!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Herrenwiesen"^^xsd:string ;
     suni:limestown "Mainhardt"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Maisel!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Maisel"^^xsd:string ;
     suni:limestown "Glashütten"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Altes Jagdhaus!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Altes Jagdhaus"^^xsd:string ;
     suni:limestown "Oberursel"^^xsd:string ;
     suni:limestownpart "Oberstedten"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        suni:Kleinkastell,
         <https://www.wikidata.org/wiki/Q88205> ;
-    rdfs:label "Kleinkastell Heidenstock!"^^xsd:string,
-        "Kastell"@de,
+    rdfs:label "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown <https://www.wikidata.org/entity/Q4165> ;
+    suni:limescategory "Kleinkastell"^^xsd:string ;
+    suni:limesobject "Heidenstock"^^xsd:string ;
+    suni:limestown "Bad Homburg"^^xsd:string ;
     suni:limestownpart "Ober-Eschbach"^^xsd:string ;
     rdfs:comment "This is a generic comment"^^xsd:string .
+
+suni:limescategory a owl:DatatypeProperty ;
+    rdfs:label "limescategory"@en .
+
+suni:limesobject a owl:DatatypeProperty ;
+    rdfs:label "limesobject"@en .
+
+suni:limestown a owl:DatatypeProperty ;
+    rdfs:label "limestown"@en .
 
 suni:limestownpart a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
 
 rdfs:comment a owl:AnnotationProperty ;
     rdfs:label "limesobject"@en .
-
-rdfs:label a owl:AnnotationProperty ;
-    rdfs:label "label"@en .
-
-<https://www.wikidata.org/entity/Q4165> rdfs:label "Bad Homburg"@en .
-
-suni:Kleinkastell rdfs:label "Kleinkastell"@en ;
-    rdfs:subClassOf <http://archaeoinformatics.link/ontology#MilitaryCamp> .
 
 <http://archaeoinformatics.link/ontology#MilitaryCamp> a owl:Class ;
     rdfs:label "Militärcamp"@de,
