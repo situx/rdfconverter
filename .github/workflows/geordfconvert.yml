@@ -21,6 +21,11 @@ on:
         description: "The mapping file to use for conversion"
         default: docs 
         type: string
+      sepchar:
+        required: false
+        type: string
+        description: "Separation character for csv input"
+        default: ";"
       ghpages:
         required: false
         description: "Indicates whether to create a deployment to a pages branch"
@@ -61,7 +66,7 @@ jobs:
         - name: Generate Ontology Documentation
           run: |
             sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
-            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}"  
+            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}"  --sepchar "${{inputs.sepchar}}"  
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@releases/v4
           if: ${{ inputs.ghpages }}
