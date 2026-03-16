@@ -509,7 +509,7 @@ if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
     brdf=None
-    if args.bibtex[0]!="":
+    if len(args.bibtex)>0 and args.bibtex[0]!="":
         with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
             bib_database = bibtexparser.load(bibtex_file)
             print(bib_database.entries)
