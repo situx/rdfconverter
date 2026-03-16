@@ -70,7 +70,7 @@ jobs:
             path: geordfconverterscript    
         - name: Mapping File Contents to RDF
           run: |
-            sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
+            sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind bibtexparser
             python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}" --bibtex "${{inputs.bibtex}}" --sepchar "${{inputs.sepchar}}"  
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@releases/v4
