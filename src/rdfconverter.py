@@ -345,6 +345,8 @@ for column in df:
 if os.path.exists(args.mapping[0]):
     with open(args.mapping[0],"r") as f:
         typemap=json.load(f)
+if not os.path.exists(args.output[0]):
+    os.makedirs(args.output[0])
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+"_autotypemap.json","w") as f:
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
