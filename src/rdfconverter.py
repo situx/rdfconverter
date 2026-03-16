@@ -113,7 +113,7 @@ class BibTexToRDF:
             elif ref.startswith("http"):
                 g.add((URIRef(str(cururi)), URIRef("http://purl.org/dc/terms/isReferencedBy"), Literal(str(ref).strip(),datatype="http://www.w3.org/2001/XMLSchema#anyURI")))
             else:
-                self.refnotfound.add(ref)
+                #self.refnotfound.add(ref)
                 g.add((URIRef(str(cururi)),URIRef("http://www.w3.org/2004/02/skos/core#note"), Literal(str(ref))))
                 #print(row["DOC1_Papers"])
         if row[key] in bibmap:
@@ -122,7 +122,7 @@ class BibTexToRDF:
         elif ref.startswith("http"):
             g.add((URIRef(str(cururi)), URIRef("http://purl.org/dc/terms/isReferencedBy"), Literal(str(row[key]).strip(),datatype="http://www.w3.org/2001/XMLSchema#anyURI")))
         else:
-            self.refnotfound.add(row[key])
+            #self.refnotfound.add(row[key])
             g.add((URIRef(str(cururi)),URIRef("http://www.w3.org/2004/02/skos/core#note"), Literal(str(row[key]))))
         return g
 
