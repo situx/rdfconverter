@@ -301,11 +301,15 @@ class RDFConverter:
                 if prefix!="":
                     res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap)
                     g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
-                    g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
+                    g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
+                    if "concept" in typemap["columns"][x]:
+                        g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
                 else:
                     res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap)
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
+                    if "concept" in typemap["columns"][x]:
+                        g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
                 g=res["graph"]
                 seencols=res["seencols"]
             elif "join" in typemap["columns"][x] and typemap["columns"][x]["join"]==True and "columns" in typemap["columns"][x]:
@@ -335,7 +339,7 @@ class RDFConverter:
                 g = res[0]
                 subclass = res[1]
                 seencols.add(x)
-        if processedGeom==False:
+        if prefix=="" and processedGeom==False:
             if "geometry" in row:
                 g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
