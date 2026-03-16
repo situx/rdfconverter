@@ -332,7 +332,7 @@ g = Graph()
 subrend=None
 
 if path.endswith(".csv"):
-    df = pd.read_csv(path, sep=input.sepchar)
+    df = pd.read_csv(path, sep=args.sepchar)
 elif path.endswith(".geojson") or path.endswith(".shp") or path.endswith(".gml") or path.endswith(".kml"):
     df=gpd.read_file(path)
 
