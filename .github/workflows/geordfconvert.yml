@@ -41,7 +41,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout repo
-          if: ${{ inputs.checkout }}
           uses: actions/checkout@v3
           with:
             fetch-depth: '0'
@@ -51,7 +50,6 @@ jobs:
           continue-on-error: true
           with:
             repository: situx/geordfconverter
-            ref: "${{inputs.version}}"
             path: geordfconverterscript
         - name: Checkout tools repo fallback
           if: steps.checkout_tools.outcome != 'success'
@@ -63,7 +61,7 @@ jobs:
         - name: Generate Ontology Documentation
           run: |
             sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
-            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.rdffilepath}}" --output "${{inputs.docpath}}" --mapping "${{inputs.mapping}}"  
+            python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}"  
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@releases/v4
           if: ${{ inputs.ghpages }}
