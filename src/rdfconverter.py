@@ -274,7 +274,7 @@ class RDFConverter:
                 Literal("POINT("+str(lon)+" "+str(lat)+")", datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
         return g
     
-    def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap):
+    def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap):
         processedGeom=False
         for x in typemap["columns"]:
             # print("CConfig: "+str(x))
@@ -285,6 +285,7 @@ class RDFConverter:
                 continue
             if "bibref" in typemap["columns"][x] and typemap["columns"][x]["bibref"] == True:
                 g=BibTexToRDF.processReference(g,bibmap,x,row,curid)
+                continue
             if not processedGeom:
                 if x == "geometry":
                     g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
@@ -314,11 +315,11 @@ class RDFConverter:
                 else:
                     theiri = URIRef(attns + x)
                 if prefix!="":
-                    res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x])
+                    res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap)
                     g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                 else:
-                    res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x])
+                    res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap)
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                 g=res["graph"]
@@ -439,7 +440,7 @@ class RDFConverter:
             for x in typemap["columns"]:
                 subclass = False
                 intypemap=False
-                res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap)
+                res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap)
                 seencols=res["seencols"]
             counter+=1
             notseencols=thecols.symmetric_difference(seencols)
