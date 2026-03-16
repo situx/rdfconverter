@@ -24,13 +24,15 @@ def resolveWildcardPath(thepath):
 
 class BibTexToRDF:
 
-    def bibtexToRDF(self,g,entries,ns,nsont,creatormode=None):
+    refnotfound=[]
+
+    def bibtexToRDF(self,g,entries,ns,nsont,publishers,issuers,creatormode=None):
         typeToURI={"report":"http://purl.org/ontology/bibo/Report","incollection":"http://purl.org/ontology/bibo/Collection","inbook":"http://purl.org/ontology/bibo/BookSection","inproceedings":"http://purl.org/ontology/bibo/Proceedings","article":"http://purl.org/ontology/bibo/Article","book":"http://purl.org/ontology/bibo/Book","phdthesis":"http://purl.org/ontology/bibo/Thesis","misc":"http://purl.org/ontology/bibo/Document"}
         bibmap={}
         dsuri=None
         for entry in entries:
             bibmap[str(entry["ID"])[0:str(entry["ID"]).rfind("_")].replace("_"," ").strip()]=ns+"bib_"+str(entry["ID"])
-            g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(str(typeToURI[entry["ENTRYTYPE"]])))
+            g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(str(typeToURI[entry["ENTRYTYPE"]]))))
             if creatormode!=None:
                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://www.w3.org/ns/dcat#Dataset")))
                dsuri=ns+"bib_"+str(entry["ID"])
@@ -40,7 +42,7 @@ class BibTexToRDF:
             if "issn" in entry:
                 g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/issn"), Literal(str(entry["issn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
             if "eissn" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"]), URIRef("http://purl.org/ontology/bibo/eissn"), Literal(str(entry["eissn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
+                g.add((URIRef(ns+"bib_"+str(entry["ID"]), URIRef("http://purl.org/ontology/bibo/eissn"), Literal(str(entry["eissn"]),datatype="http://www.w3.org/2001/XMLSchema#string"))))
             if "isbn" in entry:
                 g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/isbn"), URIRef(str(entry["isbn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))              
             if "number" in entry:
@@ -56,7 +58,7 @@ class BibTexToRDF:
                     g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/terms/publisher"), Literal(str(entry["publisher"]))))
             if "journal" in entry:
                 if entry["journal"] in issuers:
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/issuer") URIRef(issuers[str(entry["journal"])])))
+                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/issuer"), URIRef(issuers[str(entry["journal"])])))
                     g.add((URIRef(issuers[str(entry["journal"])]), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://purl.org/ontology/bibo/Journal")))
                     g.add((URIRef(issuers[str(entry["journal"])]),URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(entry["journal"]),lang="en")))
                 else:
@@ -78,7 +80,7 @@ class BibTexToRDF:
                         g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(author).strip(),lang="en")))
                         g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://xmlns.com/foaf/0.1/family_Name"), Literal(str(author)[0:str(author).rfind(',')].strip(),lang="en")))
                         g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://xmlns.com/foaf/0.1/firstName"), Literal(str(author)[str(author).rfind(',')+1:].strip(),lang="en")))
-                        g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(ns+"author_"+str(authoruri)))
+                        g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(ns+"author_"+str(authoruri))))
             else:
                 authoruri=str(entry["author"]).replace(","," ").strip()
                 authoruri=authoruri.replace(" ","_")
@@ -107,7 +109,7 @@ class BibTexToRDF:
             elif ref.startswith("http"):
                 g.add((URIRef(str(cururi)), URIRef("http://purl.org/dc/terms/isReferencedBy"), Literal(str(ref).strip(),datatype="http://www.w3.org/2001/XMLSchema#anyURI")))
             else:
-                refnotfound.add(ref)
+                self.refnotfound.add(ref)
                 g.add((URIRef(str(cururi)),URIRef("http://www.w3.org/2004/02/skos/core#note"), Literal(str(ref))))
                 #print(row["DOC1_Papers"])
         if row[key] in bibmap:
@@ -116,12 +118,13 @@ class BibTexToRDF:
         elif ref.startswith("http"):
             g.add((URIRef(str(cururi)), URIRef("http://purl.org/dc/terms/isReferencedBy"), Literal(str(row[key]).strip(),datatype="http://www.w3.org/2001/XMLSchema#anyURI")))
         else:
-            refnotfound.add(row[key])
+            self.refnotfound.add(row[key])
             g.add((URIRef(str(cururi)),URIRef("http://www.w3.org/2004/02/skos/core#note"), Literal(str(row[key]))))
-        return triples
+        return g
 
 class RDFConverter:
 
+    latlonpairs = [["lat", "lon"], ["lat", "long"], ["latitude", "longitude"], ["Lat", "Lon"], ["Lat", "Long"], ["Latitude", "Longitude"]]
     
     def detectColumnType(self,resultmap,columnname=""):
         intcount,doublecount,datecount,uricount = 0,0,0,0
@@ -248,7 +251,7 @@ class RDFConverter:
         return [g,subclass]
 
 
-    def processLatLonGeometry(g,lat,lon,typemap,curid):
+    def processLatLonGeometry(self,g,lat,lon,typemap,curid):
         g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
         g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#Point")))
@@ -276,7 +279,7 @@ class RDFConverter:
             if "ignore" in typemap["columns"][x] and typemap["columns"][x]["ignore"] == True:
                 seencols.add(x)
                 continue
-            if processedGeom==False:
+            if not processedGeom:
                 if x == "geometry":
                     g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                     g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
@@ -295,15 +298,10 @@ class RDFConverter:
                         g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
                             Literal(str(row[x]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
                     processedGeom=True
-                elif x=="latitude" and "longitude" in row:
-                    self.processLatLonGeometry(g,row["latitude"],row["longitude"],typemap,curid)
-                    processedGeom=True
-                elif x=="Latitude" and "Longitude" in row:
-                    self.processLatLonGeometry(g,row["Latitude"],row["Longitude"],typemap,curid)
-                    processedGeom=True
-                elif x=="lat" and "lon" in row:
-                    self.processLatLonGeometry(g,row["lat"],row["lon"],typemap,curid)
-                    processedGeom=True
+                for pair in self.latlonpairs:
+                    if x==pair[0] and pair[1] in row:
+                        self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
+                        processedGeom = True
             if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
                 if "propiri" in typemap["columns"][x]:
                     theiri = URIRef(typemap["columns"][x]["propiri"])
@@ -319,11 +317,26 @@ class RDFConverter:
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                 g=res["graph"]
                 seencols=res["seencols"]
-            if "join" in typemap["columns"][x] and typemap]["columns"][x]["join"]=true and "columns" in typemap["columns"][x]:
+            if "join" in typemap["columns"][x] and typemap["columns"][x]["join"]==True and "columns" in typemap["columns"][x]:
                 thejoincol=typemap["columns"][x]
+                joinchar=""
+                if "joinchar" in thejoincol:
+                    joinchar=thejoincol["joinchar"]
+                if "propiri" in typemap["columns"][x]:
+                    theiri = URIRef(typemap["columns"][x]["propiri"])
+                else:
+                    theiri = URIRef(attns + x)
+                if "proplabels" in curcol and "en" in curcol["proplabels"]:
+                    propirilabel = str(curcol["proplabels"]["en"])
+                else:
+                    propirilabel = str(x)
+                aggval=""
                 for col in thejoincol["columns"]:
-                    
-                    
+                    aggval+=str(row[col])+str(joinchar)
+                aggval=aggval[0:-len(joinchar)]
+                g.add((theiri, RDF.type, OWL.DatatypeProperty))
+                g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
+                g.add((URIRef(curid), theiri, Literal(str(aggval), datatype="http://www.w3.org/2001/XMLSchema#string")))
             if x in typemap["columns"] and x != idcol and x != "geometry":
                 intypemap = True
                 curcol = typemap["columns"][x]
