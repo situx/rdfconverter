@@ -207,6 +207,7 @@ class RDFConverter:
 
     def addPropertyToGraph(self,row,x,g,ns,curid,thecls,lang,curcol):
         subclass=False
+        print("THE GRAPH: "+str(len(g)))
         if row!=None and x not in row:
             return [g,False]
         if row is None:
@@ -255,8 +256,6 @@ class RDFConverter:
                         curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
         if curcol["prop"]=="obj":
             concept=""
-            if "concept" in curcol:
-                concept=curcol["concept"]
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
