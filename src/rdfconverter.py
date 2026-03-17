@@ -456,9 +456,14 @@ class RDFConverter:
         thecols=set(df.dtypes.to_dict().keys())
         rowcount=len(df)
         counter=0
-        for row in df.to_dict(orient='records'):
+        for row in df.to_dict(orient='records'):        
             if idcol==None:
                 curid=dns+str(counter)
+            elif isinstance(idcol,list):
+                curid=dns
+                for ic in idcol:
+                    curid+=str(row[ic])+"_"
+                curid=curid[0:-1]
             else:
                 curid=dns+str(row[idcol])
             subclass=False
