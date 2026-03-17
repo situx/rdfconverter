@@ -632,5 +632,5 @@ with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.se
 g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
-g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld")
+g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
 
