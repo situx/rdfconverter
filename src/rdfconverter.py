@@ -372,9 +372,9 @@ class RDFConverter:
             if "geometry" in row:
                 g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
-                g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type))))
-                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDF.type, OWL.Class))
-                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDFS.subClassOf,
+                g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type))))
+                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type)), RDF.type, OWL.Class))
+                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type)), RDFS.subClassOf,
                     URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
                 g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
@@ -421,6 +421,8 @@ class RDFConverter:
             attnsprefix="suni"
         if "onlyschema" in typemap and typemap["onlyschema"]==True:
             onlyschema=True
+        if "epsg" in typemap:
+            self.epsg=typemap["epsg"]
         if "prefixes" in typemap:
             for pref in typemap["prefixes"]:
                 if str(typemap["prefixes"][pref]).startswith("http"):
@@ -583,10 +585,10 @@ if os.path.exists(args.mapping[0]):
             
 if not os.path.exists(args.output[0]):
     os.makedirs(args.output[0])
-with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+"_autotypemap.json","w") as f:
+with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_autotypemap.json","w") as f:
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
 g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,True)
-print("Serializing result to: "+str(path[0:path.rfind(".")].replace("/","_")))
-g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace("/","_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace("/","_")+".ttl",format="turtle")
+print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
+g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
 
