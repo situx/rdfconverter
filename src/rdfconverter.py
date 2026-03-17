@@ -213,7 +213,7 @@ class RDFConverter:
                 thevalue=""
         else:
             thevalue=row[x]
-        if thevalue="":
+        if thevalue=="":
             return [g,subclass]
         if "propiri" in curcol:
             theiri = URIRef(curcol["propiri"])
