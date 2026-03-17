@@ -1,2936 +1,771 @@
-[
-  {
-    "@id": "http://purl.org/suni/data/39",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 102
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 40
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Güssgraben"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altmannstein"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Schambach"
-      }
-    ]
+{
+  "@context": {
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qudt": "http://qudt.org/schema/qudt#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "suni": "http://purl.org/suni/",
+    "sunid": "http://purl.org/suni/data/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  {
-    "@id": "",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/15",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 78
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 16
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ockstädter Wald"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Friedberg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ockstadt"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/11",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 74
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 12
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Lochmühle"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Friedrichsdorf"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Köppern"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/22",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 85
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 23
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Feldheimer Wald"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hungen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Inheiden"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/43",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 106
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 44
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Pohl"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Pohl"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/20",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 83
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 21
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Dicker Wald 1"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Münzenberg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Gambach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/16",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 79
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 17
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Eichkopf"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ober-Mörlen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Langenhain-Ziegenberg"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/6",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 69
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 7
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Maisel"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Glashütten"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/ID",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "ID"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/12",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 75
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 13
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rittergräber"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rosbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Nieder-Rosbach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/40",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 103
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 41
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hinterer Seeberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altmannstein"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Steinsdorf (i), Schambach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/44",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 107
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 45
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kemel 2"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heidenrod"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kemel"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/limestownpart",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "limestownpart"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/18",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 81
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 19
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Schrenzer"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Butzbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/38",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 101
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 39
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hegelohe"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Titting"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altdorf"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/58",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 121
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 59
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Staden"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Florstadt"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Staden"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/47",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 110
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 48
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Alteburg-Heftrich 2"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Idstein"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heftrich"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/3",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 66
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 4
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Pfarrhofen"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Miehlen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/61",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 124
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 62
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Langendiebach"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Erlensee"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Langendiebach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/41",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 104
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 42
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rheinbrohl"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rheinbrohl"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/53",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 116
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 54
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Haselheck"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Echzell"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bisses"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/limestown",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
+  "@graph": [
+    {
+      "@id": "",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "sunid:37",
+      "@type": "",
+      "suni:ID": 100,
+      "suni:fid": 38,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Biebig",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:6",
+      "@type": "",
+      "suni:ID": 69,
+      "suni:fid": 7,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Maisel",
+      "suni:limestown": "Glashütten",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:48",
+      "@type": "",
+      "suni:ID": 111,
+      "suni:fid": 49,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Alteburg-Heftrich 1",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:11",
+      "@type": "",
+      "suni:ID": 74,
+      "suni:fid": 12,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lochmühle",
+      "suni:limestown": "Friedrichsdorf",
+      "suni:limestownpart": "Köppern"
+    },
+    {
+      "@id": "sunid:2",
+      "@type": "",
+      "suni:ID": 65,
+      "suni:fid": 3,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Becheln",
+      "suni:limestown": "Lahnstein",
+      "suni:limestownpart": "Oberlahnstein/Becheln"
+    },
+    {
+      "@id": "suni:limestown",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
         "@language": "en",
         "@value": "limestown"
       }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/8",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 71
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 9
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heidenstock"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bad Homburg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ober-Eschbach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/28",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 91
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 29
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hankertsmühle"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Mainhardt"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/25",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 88
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 26
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Haselburg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Walldürn"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Reinhardsachsen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/65",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 128
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 66
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Lehnenwiesen"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Widdern"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Unterkessach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/55",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 118
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 56
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Inheiden 2"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hungen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Inheiden"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/64",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 127
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 65
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Salzberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Osterburken"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/24",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 87
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 25
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Neuwirtshaus"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hanau"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Wolfgang"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/42",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 105
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 43
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ferbach"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Weitersburg / Höhr-Grenzhausen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/limescategory",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
+    },
+    {
+      "@id": "sunid:27",
+      "@type": "",
+      "suni:ID": 90,
+      "suni:fid": 28,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hintere Kalbe",
+      "suni:limestown": "Osterburken",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:35",
+      "@type": "",
+      "suni:ID": 98,
+      "suni:fid": 36,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Raitenbuch",
+      "suni:limestown": "Raitenbuch",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:60",
+      "@type": "",
+      "suni:ID": 123,
+      "suni:fid": 61,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Stammheim",
+      "suni:limestown": "Florstadt",
+      "suni:limestownpart": "Stammheim"
+    },
+    {
+      "@id": "sunid:43",
+      "@type": "",
+      "suni:ID": 106,
+      "suni:fid": 44,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Pohl",
+      "suni:limestown": "Pohl",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:52",
+      "@type": "",
+      "suni:ID": 115,
+      "suni:fid": 53,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lochberg",
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bingenheim"
+    },
+    {
+      "@id": "sunid:23",
+      "@type": "",
+      "suni:ID": 86,
+      "suni:fid": 24,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Buchkopf",
+      "suni:limestown": "Altenstadt",
+      "suni:limestownpart": "Höchst"
+    },
+    {
+      "@id": "sunid:45",
+      "@type": "",
+      "suni:ID": 108,
+      "suni:fid": 46,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kemel 1",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:1",
+      "@type": "",
+      "suni:ID": 64,
+      "suni:fid": 2,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hillscheid",
+      "suni:limestown": "Hillscheid",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:50",
+      "@type": "",
+      "suni:ID": 113,
+      "suni:fid": 51,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hainhaus",
+      "suni:limestown": "Pohlheim",
+      "suni:limestownpart": "Grüningen"
+    },
+    {
+      "@id": "sunid:36",
+      "@type": "",
+      "suni:ID": 99,
+      "suni:fid": 37,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kaldorf",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Kaldorf"
+    },
+    {
+      "@id": "sunid:66",
+      "@type": "",
+      "suni:ID": 129,
+      "suni:fid": 67,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Sindringen",
+      "suni:limestown": "Forchtenberg",
+      "suni:limestownpart": "Sindringen"
+    },
+    {
+      "@id": "sunid:28",
+      "@type": "",
+      "suni:ID": 91,
+      "suni:fid": 29,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hankertsmühle",
+      "suni:limestown": "Mainhardt",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:58",
+      "@type": "",
+      "suni:ID": 121,
+      "suni:fid": 59,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Staden",
+      "suni:limestown": "Florstadt",
+      "suni:limestownpart": "Staden"
+    },
+    {
+      "@id": "sunid:53",
+      "@type": "",
+      "suni:ID": 116,
+      "suni:fid": 54,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Haselheck",
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bisses"
+    },
+    {
+      "@id": "sunid:44",
+      "@type": "",
+      "suni:ID": 107,
+      "suni:fid": 45,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kemel 2",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:21",
+      "@type": "",
+      "suni:ID": 84,
+      "suni:fid": 22,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Holzheimer Unterwald",
+      "suni:limestown": "Pohlheim",
+      "suni:limestownpart": "Holzheim"
+    },
+    {
+      "@id": "sunid:54",
+      "@type": "",
+      "suni:ID": 117,
+      "suni:fid": 55,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Inheiden 1",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:59",
+      "@type": "",
+      "suni:ID": 122,
+      "suni:fid": 60,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Massohl",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:46",
+      "@type": "",
+      "suni:ID": 109,
+      "suni:fid": 47,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Adolfseck",
+      "suni:limestown": "Bad Schwalbach",
+      "suni:limestownpart": "Adolfseck"
+    },
+    {
+      "@id": "sunid:49",
+      "@type": "",
+      "suni:ID": 112,
+      "suni:fid": 50,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Degerfeld",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:0",
+      "@type": "",
+      "suni:ID": 63,
+      "suni:fid": 1,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Anhausen",
+      "suni:limestown": "Neuwied",
+      "suni:limestownpart": "Heimbach-Weis"
+    },
+    {
+      "@id": "sunid:30",
+      "@type": "",
+      "suni:ID": 93,
+      "suni:fid": 31,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rötelsee",
+      "suni:limestown": "Welzheim",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:20",
+      "@type": "",
+      "suni:ID": 83,
+      "suni:fid": 21,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dicker Wald 1",
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:41",
+      "@type": "",
+      "suni:ID": 104,
+      "suni:fid": 42,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rheinbrohl",
+      "suni:limestown": "Rheinbrohl",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:14",
+      "@type": "",
+      "suni:ID": 77,
+      "suni:fid": 15,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hunnenkirchhof 2",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:34",
+      "@type": "",
+      "suni:ID": 97,
+      "suni:fid": 35,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Gündersbach",
+      "suni:limestown": "Pfofeld",
+      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
+    },
+    {
+      "@id": "sunid:47",
+      "@type": "",
+      "suni:ID": 110,
+      "suni:fid": 48,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Alteburg-Heftrich 2",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:55",
+      "@type": "",
+      "suni:ID": 118,
+      "suni:fid": 56,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Inheiden 2",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:5",
+      "@type": "",
+      "suni:ID": 68,
+      "suni:fid": 6,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Eichelgarten",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Lenzhahn/Dasbach"
+    },
+    {
+      "@id": "sunid:57",
+      "@type": "",
+      "suni:ID": 120,
+      "suni:fid": 58,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Wingertsberg",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:39",
+      "@type": "",
+      "suni:ID": 102,
+      "suni:fid": 40,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Güssgraben",
+      "suni:limestown": "Altmannstein",
+      "suni:limestownpart": "Schambach"
+    },
+    {
+      "@id": "sunid:18",
+      "@type": "",
+      "suni:ID": 81,
+      "suni:fid": 19,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Schrenzer",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "suni:limescategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
         "@language": "en",
         "@value": "limescategory"
       }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/67",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 130
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 68
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Herrenwiesen"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Mainhardt"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/30",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 93
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 31
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rötelsee"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Welzheim"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/21",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 84
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 22
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Holzheimer Unterwald"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Pohlheim"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Holzheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/9",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 72
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 10
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Saalburg 1"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bad Homburg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/17",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 80
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 18
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kaisergrube"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ober-Mörlen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/19",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 82
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 20
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Dicker Wald 2"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Münzenberg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Gambach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/66",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 129
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 67
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Sindringen"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Forchtenberg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Sindringen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/56",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 119
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 57
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Unter-Widdersheim"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Nidda"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Unter-Widdersheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/62",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 125
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 63
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altheimer Straße"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Buchen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hettingen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/45",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 108
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 46
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kemel 1"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heidenrod"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kemel"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/fid",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
+    },
+    {
+      "@id": "sunid:40",
+      "@type": "",
+      "suni:ID": 103,
+      "suni:fid": 41,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hinterer Seeberg",
+      "suni:limestown": "Altmannstein",
+      "suni:limestownpart": "Steinsdorf (i), Schambach"
+    },
+    {
+      "@id": "sunid:9",
+      "@type": "",
+      "suni:ID": 72,
+      "suni:fid": 10,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Saalburg 1",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:24",
+      "@type": "",
+      "suni:ID": 87,
+      "suni:fid": 25,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Neuwirtshaus",
+      "suni:limestown": "Hanau",
+      "suni:limestownpart": "Wolfgang"
+    },
+    {
+      "@id": "sunid:4",
+      "@type": "",
+      "suni:ID": 67,
+      "suni:fid": 5,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dörsterberg",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Laufenselden"
+    },
+    {
+      "@id": "sunid:67",
+      "@type": "",
+      "suni:ID": 130,
+      "suni:fid": 68,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Herrenwiesen",
+      "suni:limestown": "Mainhardt",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "suni:fid",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
         "@language": "en",
         "@value": "fid"
       }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/29",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 92
+    },
+    {
+      "@id": "suni:ID",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ID"
       }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 30
+    },
+    {
+      "@id": "sunid:32",
+      "@type": "",
+      "suni:ID": 95,
+      "suni:fid": 33,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Freimühle",
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "suni:limestownpart",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limestownpart"
       }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Ebnisee"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kaisersbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/limesobject",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
+    },
+    {
+      "@id": "sunid:29",
+      "@type": "",
+      "suni:ID": 92,
+      "suni:fid": 30,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ebnisee",
+      "suni:limestown": "Kaisersbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:17",
+      "@type": "",
+      "suni:ID": 80,
+      "suni:fid": 18,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kaisergrube",
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:65",
+      "@type": "",
+      "suni:ID": 128,
+      "suni:fid": 66,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lehnenwiesen",
+      "suni:limestown": "Widdern",
+      "suni:limestownpart": "Unterkessach"
+    },
+    {
+      "@id": "sunid:22",
+      "@type": "",
+      "suni:ID": 85,
+      "suni:fid": 23,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Feldheimer Wald",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:56",
+      "@type": "",
+      "suni:ID": 119,
+      "suni:fid": 57,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Unter-Widdersheim",
+      "suni:limestown": "Nidda",
+      "suni:limestownpart": "Unter-Widdersheim"
+    },
+    {
+      "@id": "sunid:16",
+      "@type": "",
+      "suni:ID": 79,
+      "suni:fid": 17,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Eichkopf",
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "Langenhain-Ziegenberg"
+    },
+    {
+      "@id": "sunid:3",
+      "@type": "",
+      "suni:ID": 66,
+      "suni:fid": 4,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Pfarrhofen",
+      "suni:limestown": "Miehlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:26",
+      "@type": "",
+      "suni:ID": 89,
+      "suni:fid": 27,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rehberg",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
+    },
+    {
+      "@id": "sunid:61",
+      "@type": "",
+      "suni:ID": 124,
+      "suni:fid": 62,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Langendiebach",
+      "suni:limestown": "Erlensee",
+      "suni:limestownpart": "Langendiebach"
+    },
+    {
+      "@id": "sunid:38",
+      "@type": "",
+      "suni:ID": 101,
+      "suni:fid": 39,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hegelohe",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:42",
+      "@type": "",
+      "suni:ID": 105,
+      "suni:fid": 43,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ferbach",
+      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:8",
+      "@type": "",
+      "suni:ID": 71,
+      "suni:fid": 9,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Heidenstock",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "Ober-Eschbach"
+    },
+    {
+      "@id": "sunid:19",
+      "@type": "",
+      "suni:ID": 82,
+      "suni:fid": 20,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dicker Wald 2",
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:31",
+      "@type": "",
+      "suni:ID": 94,
+      "suni:fid": 32,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kleindeinbach",
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "Großdeinbach"
+    },
+    {
+      "@id": "sunid:25",
+      "@type": "",
+      "suni:ID": 88,
+      "suni:fid": 26,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Haselburg",
+      "suni:limestown": "Walldürn",
+      "suni:limestownpart": "Reinhardsachsen"
+    },
+    {
+      "@id": "sunid:10",
+      "@type": "",
+      "suni:ID": 73,
+      "suni:fid": 11,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Saalburg 2",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:15",
+      "@type": "",
+      "suni:ID": 78,
+      "suni:fid": 16,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ockstädter Wald",
+      "suni:limestown": "Friedberg",
+      "suni:limestownpart": "Ockstadt"
+    },
+    {
+      "@id": "sunid:63",
+      "@type": "",
+      "suni:ID": 126,
+      "suni:fid": 64,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Holderbusch",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Rinschheim"
+    },
+    {
+      "@id": "sunid:64",
+      "@type": "",
+      "suni:ID": 127,
+      "suni:fid": 65,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Salzberg",
+      "suni:limestown": "Osterburken",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:7",
+      "@type": "",
+      "suni:ID": 70,
+      "suni:fid": 8,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Altes Jagdhaus",
+      "suni:limestown": "Oberursel",
+      "suni:limestownpart": "Oberstedten"
+    },
+    {
+      "@id": "sunid:12",
+      "@type": "",
+      "suni:ID": 75,
+      "suni:fid": 13,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rittergräber",
+      "suni:limestown": "Rosbach",
+      "suni:limestownpart": "Nieder-Rosbach"
+    },
+    {
+      "@id": "sunid:13",
+      "@type": "",
+      "suni:ID": 76,
+      "suni:fid": 14,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hunnenkirchhof 1",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:33",
+      "@type": "",
+      "suni:ID": 96,
+      "suni:fid": 34,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hinterer Schlossberg",
+      "suni:limestown": "Gunzenhausen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:62",
+      "@type": "",
+      "suni:ID": 125,
+      "suni:fid": 63,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Altheimer Straße",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
+    },
+    {
+      "@id": "suni:limesobject",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
         "@language": "en",
         "@value": "limesobject"
       }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/52",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 115
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 53
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Lochberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Echzell"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bingenheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/7",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 70
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 8
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altes Jagdhaus"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Oberursel"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Oberstedten"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/35",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 98
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 36
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Raitenbuch"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Raitenbuch"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/23",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 86
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 24
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Buchkopf"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altenstadt"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Höchst"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/5",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 68
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 6
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Eichelgarten"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Idstein"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Lenzhahn/Dasbach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/0",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 63
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 1
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Anhausen"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Neuwied"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heimbach-Weis"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/27",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 90
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 28
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hintere Kalbe"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Osterburken"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/31",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 94
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 32
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleindeinbach"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Schwäbisch Gmünd"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Großdeinbach"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/57",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 120
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 58
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Wingertsberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hungen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Steinheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/49",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 112
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 50
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Degerfeld"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Butzbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/48",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 111
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 49
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Alteburg-Heftrich 1"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Idstein"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heftrich"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/36",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 99
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 37
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kaldorf"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Titting"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kaldorf"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/63",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 126
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 64
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Holderbusch"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Buchen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rinschheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/10",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 73
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 11
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Saalburg 2"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bad Homburg"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/2",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 65
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 3
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Becheln"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Lahnstein"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Oberlahnstein/Becheln"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/59",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 122
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 60
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Massohl"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hungen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Steinheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/26",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 89
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 27
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Rehberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Buchen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hettingen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/50",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 113
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 51
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hainhaus"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Pohlheim"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Grüningen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/14",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 77
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 15
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hunnenkirchhof 2"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Butzbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Nieder-Weisel"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/33",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 96
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 34
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hinterer Schlossberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Gunzenhausen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/32",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 95
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 33
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Freimühle"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Schwäbisch Gmünd"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/37",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 100
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 38
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Biebig"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Titting"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Altdorf"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/60",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 123
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 61
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Stammheim"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Florstadt"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Stammheim"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/13",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 76
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 14
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hunnenkirchhof 1"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Butzbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Nieder-Weisel"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/4",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 67
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 5
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Dörsterberg"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Heidenrod"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Laufenselden"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/1",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 64
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 2
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hillscheid"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hillscheid"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "???"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/51",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 114
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 52
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Langsdorf"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Lich"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bettenhausen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/46",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 109
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 47
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Adolfseck"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Bad Schwalbach"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Adolfseck"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/34",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 97
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 35
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Gündersbach"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Pfofeld"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Sankt Veit, (Gündersbach)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/suni/data/54",
-    "@type": [
-      ""
-    ],
-    "http://purl.org/suni/ID": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 117
-      }
-    ],
-    "http://purl.org/suni/fid": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 55
-      }
-    ],
-    "http://purl.org/suni/limescategory": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Kleinkastell"
-      }
-    ],
-    "http://purl.org/suni/limesobject": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Inheiden 1"
-      }
-    ],
-    "http://purl.org/suni/limestown": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Hungen"
-      }
-    ],
-    "http://purl.org/suni/limestownpart": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Inheiden"
-      }
-    ]
-  }
-]
+    },
+    {
+      "@id": "sunid:51",
+      "@type": "",
+      "suni:ID": 114,
+      "suni:fid": 52,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Langsdorf",
+      "suni:limestown": "Lich",
+      "suni:limestownpart": "Bettenhausen"
+    }
+  ]
+}
