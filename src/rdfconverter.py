@@ -257,7 +257,7 @@ class RDFConverter:
                 g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
                 if "concept" in curcol:
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
-            elif thevalue.startswith("http"):
+            elif str(thevalue).startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                 g.add((URIRef(curid), theiri, URIRef(thevalue)))
