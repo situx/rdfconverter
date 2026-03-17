@@ -213,7 +213,7 @@ class RDFConverter:
                 thevalue=""
         else:
             thevalue=row[x]
-        if thevalue=="":
+        if thevalue=="" or (curcol["prop"]=="obj" and thevalue=="nan"):
             return [g,subclass]
         if "propiri" in curcol:
             theiri = URIRef(curcol["propiri"])
@@ -374,7 +374,7 @@ class RDFConverter:
                 g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[x].type)), RDFS.subClassOf,
                     URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
-                g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid), lang="en")))
+                g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
                 if "epsg" in typemap:
                     g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
