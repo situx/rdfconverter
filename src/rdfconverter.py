@@ -311,6 +311,7 @@ class RDFConverter:
     
     def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap):
         processedGeom=False
+        print("PROCCOL Graph: "+str(len(g)))
         for x in typemap["columns"]:
             # print("CConfig: "+str(x))
             subclass = False
