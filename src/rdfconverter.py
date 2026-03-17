@@ -292,6 +292,24 @@ class RDFConverter:
                 subclass=True
         return [g,subclass]
 
+    def processGeometryColumn(self,g,row,geometrycol,typemap,curid):
+        g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
+        g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type))))
+        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type)), RDF.type, OWL.Class))
+        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type)), RDFS.subClassOf,
+            URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
+        g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+        if "epsg" in typemap:
+            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[geometrycol]),
+                        datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        else:
+            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                Literal(str(row[geometrycol]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        return g
 
     def processLatLonGeometry(self,g,lat,lon,typemap,curid):
         g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
@@ -312,7 +330,7 @@ class RDFConverter:
                 Literal("POINT("+str(lon)+" "+str(lat)+")", datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
         return g
     
-    def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap):
+    def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts):
         processedGeom=False
         #print("PROCCOL Graph: "+str(len(g)))
         for x in typemap["columns"]:
@@ -331,13 +349,13 @@ class RDFConverter:
                 else:
                     theiri = URIRef(attns + x)
                 if prefix!="":
-                    res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap)
+                    res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap,geomatts)
                     g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                     if "concept" in typemap["columns"][x]:
                         g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
                 else:
-                    res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap)
+                    res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap,geomatts)
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                     if "concept" in typemap["columns"][x]:
@@ -372,7 +390,19 @@ class RDFConverter:
                 subclass = res[1]
                 seencols.add(x)
         if prefix=="" and processedGeom==False:
-            if "geometry" in row:
+            if len(geomatts)>0:
+                allin=True
+                for att in geomatts:
+                    if att not in row:
+                        allin=False
+                if len(geomatts)>1:
+                    self.processLatLonGeometry(g, row[geomatts[0]], row[geomatts[1]], typemap, curid)
+                    processedGeom = True
+                elif len(geomatts)==1:
+                    processGeometryColumn(self,g,row,geomatts[0],typemap,curid)
+            elif "geometry" in row:
+                processGeometryColumn(self,g,row,"geometry",typemap,curid)
+                """
                 g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
                 g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type))))
@@ -389,11 +419,13 @@ class RDFConverter:
                 else:
                     g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
                         Literal(str(row["geometry"]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                """
                 processedGeom=True
-            for pair in self.latlonpairs:
-                if pair[0] in row and pair[1] in row:
-                    self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
-                    processedGeom = True
+            else:
+                for pair in self.latlonpairs:
+                    if pair[0] in row and pair[1] in row:
+                        self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
+                        processedGeom = True
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
     def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},geosparql=True):
@@ -402,6 +434,7 @@ class RDFConverter:
         dns=None
         attns=None
         onlyschema=False
+        geomatts=[]
         if "id" in typemap:
             idcol=typemap["id"]
         if "namespace" in typemap:
@@ -426,6 +459,8 @@ class RDFConverter:
             onlyschema=True
         if "epsg" in typemap:
             self.epsg=typemap["epsg"]
+        if "geometry" in typemap and isinstance(typemap["geometry"],list):
+            geomatts=typemap["geometry"]
         if "prefixes" in typemap:
             for pref in typemap["prefixes"]:
                 if str(typemap["prefixes"][pref]).startswith("http"):
@@ -494,7 +529,7 @@ class RDFConverter:
             for x in typemap["columns"]:
                 subclass = False
                 intypemap=False
-                res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap)
+                res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
                 seencols=res["seencols"]
             counter+=1
             notseencols=thecols.symmetric_difference(seencols)
