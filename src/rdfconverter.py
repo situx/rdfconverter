@@ -152,7 +152,7 @@ class BibTexToRDF:
 
 class RDFConverter:
 
-    latlonpairs = [["lat", "lon"], ["lat", "long"], ["latitude", "longitude"], ["Lat", "Lon"], ["Lat", "Long"], ["Latitude", "Longitude"]]
+    latlonpairs = [["lat", "lon"], ["lat", "long"], ["latitude", "longitude"], ["LAT", "LON"], ["Lat", "Lon"], ["Lat", "Long"], ["LAT", "LONG"], ["Latitude", "Longitude"], ["LATITUDE", "LONGITUDE"]]
     
     def detectColumnType(self,resultmap,columnname=""):
         intcount,doublecount,datecount,uricount = 0,0,0,0
