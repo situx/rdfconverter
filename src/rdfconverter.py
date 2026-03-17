@@ -258,7 +258,7 @@ class RDFConverter:
             concept=""
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
-                g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
+                g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
                 if "concept" in curcol:
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif str(thevalue).startswith("http"):
@@ -270,8 +270,11 @@ class RDFConverter:
             else:
                 g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
         if curcol["prop"]=="anno":
+            thelang="en"
+            if "lang" in curcol:
+                thelang=curcol["lang"]
             g.add((theiri, RDF.type, OWL.AnnotationProperty))
-            g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
+            g.add((theiri, RDFS.label, Literal(propirilabel, lang=thelang)))
             g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
