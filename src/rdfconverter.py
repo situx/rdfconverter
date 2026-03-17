@@ -207,7 +207,7 @@ class RDFConverter:
 
     def addPropertyToGraph(self,row,x,g,ns,curid,thecls,lang,curcol):
         subclass=False
-        print("THE GRAPH: "+str(len(g)))
+        #print("THE GRAPH: "+str(len(g)))
         if row!=None and x not in row:
             return [g,False]
         if row is None:
@@ -311,7 +311,7 @@ class RDFConverter:
     
     def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap):
         processedGeom=False
-        print("PROCCOL Graph: "+str(len(g)))
+        #print("PROCCOL Graph: "+str(len(g)))
         for x in typemap["columns"]:
             # print("CConfig: "+str(x))
             subclass = False
