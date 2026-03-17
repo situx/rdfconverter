@@ -1,5 +1,7 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix suni: <http://purl.org/suni/> .
 @prefix sunid: <http://purl.org/suni/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -12,6 +14,7 @@ sunid:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Neuwied"^^xsd:string ;
     suni:limestownpart "Heimbach-Weis"^^xsd:string ;
+    geo:hasGeometry sunid:1_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -22,6 +25,7 @@ sunid:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown <https://www.wikidata.org/entity/Q4165> ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:10_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -32,6 +36,7 @@ sunid:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown <https://www.wikidata.org/entity/Q4165> ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:11_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -42,6 +47,7 @@ sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Friedrichsdorf"^^xsd:string ;
     suni:limestownpart "Köppern"^^xsd:string ;
+    geo:hasGeometry sunid:12_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -52,6 +58,7 @@ sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Rosbach"^^xsd:string ;
     suni:limestownpart "Nieder-Rosbach"^^xsd:string ;
+    geo:hasGeometry sunid:13_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -62,6 +69,7 @@ sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "Nieder-Weisel"^^xsd:string ;
+    geo:hasGeometry sunid:14_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -72,6 +80,7 @@ sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "Nieder-Weisel"^^xsd:string ;
+    geo:hasGeometry sunid:15_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -82,6 +91,7 @@ sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Friedberg"^^xsd:string ;
     suni:limestownpart "Ockstadt"^^xsd:string ;
+    geo:hasGeometry sunid:16_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -92,6 +102,7 @@ sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Ober-Mörlen"^^xsd:string ;
     suni:limestownpart "Langenhain-Ziegenberg"^^xsd:string ;
+    geo:hasGeometry sunid:17_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -102,6 +113,7 @@ sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Ober-Mörlen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:18_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -112,6 +124,7 @@ sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:19_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -122,6 +135,7 @@ sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hillscheid"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:2_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -132,6 +146,7 @@ sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Münzenberg"^^xsd:string ;
     suni:limestownpart "Gambach"^^xsd:string ;
+    geo:hasGeometry sunid:20_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -142,6 +157,7 @@ sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Münzenberg"^^xsd:string ;
     suni:limestownpart "Gambach"^^xsd:string ;
+    geo:hasGeometry sunid:21_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -152,6 +168,7 @@ sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Pohlheim"^^xsd:string ;
     suni:limestownpart "Holzheim"^^xsd:string ;
+    geo:hasGeometry sunid:22_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -162,6 +179,7 @@ sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Inheiden"^^xsd:string ;
+    geo:hasGeometry sunid:23_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -172,6 +190,7 @@ sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Altenstadt"^^xsd:string ;
     suni:limestownpart "Höchst"^^xsd:string ;
+    geo:hasGeometry sunid:24_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -182,6 +201,7 @@ sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hanau"^^xsd:string ;
     suni:limestownpart "Wolfgang"^^xsd:string ;
+    geo:hasGeometry sunid:25_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -192,6 +212,7 @@ sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Walldürn"^^xsd:string ;
     suni:limestownpart "Reinhardsachsen"^^xsd:string ;
+    geo:hasGeometry sunid:26_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -202,6 +223,7 @@ sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Buchen"^^xsd:string ;
     suni:limestownpart "Hettingen"^^xsd:string ;
+    geo:hasGeometry sunid:27_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -212,6 +234,7 @@ sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Osterburken"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:28_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -222,6 +245,7 @@ sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Mainhardt"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:29_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -232,6 +256,7 @@ sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Lahnstein"^^xsd:string ;
     suni:limestownpart "Oberlahnstein/Becheln"^^xsd:string ;
+    geo:hasGeometry sunid:3_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -242,6 +267,7 @@ sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Kaisersbach"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:30_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -252,6 +278,7 @@ sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Welzheim"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:31_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -262,6 +289,7 @@ sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Schwäbisch Gmünd"^^xsd:string ;
     suni:limestownpart "Großdeinbach"^^xsd:string ;
+    geo:hasGeometry sunid:32_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -272,6 +300,7 @@ sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Schwäbisch Gmünd"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:33_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -282,6 +311,7 @@ sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Gunzenhausen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:34_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -292,6 +322,7 @@ sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Pfofeld"^^xsd:string ;
     suni:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string ;
+    geo:hasGeometry sunid:35_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -302,6 +333,7 @@ sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Raitenbuch"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:36_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -312,6 +344,7 @@ sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Titting"^^xsd:string ;
     suni:limestownpart "Kaldorf"^^xsd:string ;
+    geo:hasGeometry sunid:37_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -322,6 +355,7 @@ sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Titting"^^xsd:string ;
     suni:limestownpart "Altdorf"^^xsd:string ;
+    geo:hasGeometry sunid:38_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -332,6 +366,7 @@ sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Titting"^^xsd:string ;
     suni:limestownpart "Altdorf"^^xsd:string ;
+    geo:hasGeometry sunid:39_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -342,6 +377,7 @@ sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Miehlen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:4_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -352,6 +388,7 @@ sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Altmannstein"^^xsd:string ;
     suni:limestownpart "Schambach"^^xsd:string ;
+    geo:hasGeometry sunid:40_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -362,6 +399,7 @@ sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Altmannstein"^^xsd:string ;
     suni:limestownpart "Steinsdorf (i), Schambach"^^xsd:string ;
+    geo:hasGeometry sunid:41_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -372,6 +410,7 @@ sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Rheinbrohl"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:42_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -382,6 +421,7 @@ sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Weitersburg / Höhr-Grenzhausen"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:43_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -392,6 +432,7 @@ sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Pohl"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:44_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -402,6 +443,7 @@ sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Heidenrod"^^xsd:string ;
     suni:limestownpart "Kemel"^^xsd:string ;
+    geo:hasGeometry sunid:45_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -412,6 +454,7 @@ sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Heidenrod"^^xsd:string ;
     suni:limestownpart "Kemel"^^xsd:string ;
+    geo:hasGeometry sunid:46_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -422,6 +465,7 @@ sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Bad Schwalbach"^^xsd:string ;
     suni:limestownpart "Adolfseck"^^xsd:string ;
+    geo:hasGeometry sunid:47_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -432,6 +476,7 @@ sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Idstein"^^xsd:string ;
     suni:limestownpart "Heftrich"^^xsd:string ;
+    geo:hasGeometry sunid:48_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -442,6 +487,7 @@ sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Idstein"^^xsd:string ;
     suni:limestownpart "Heftrich"^^xsd:string ;
+    geo:hasGeometry sunid:49_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -452,6 +498,7 @@ sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Heidenrod"^^xsd:string ;
     suni:limestownpart "Laufenselden"^^xsd:string ;
+    geo:hasGeometry sunid:5_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -462,6 +509,7 @@ sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Butzbach"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:50_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -472,6 +520,7 @@ sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Pohlheim"^^xsd:string ;
     suni:limestownpart "Grüningen"^^xsd:string ;
+    geo:hasGeometry sunid:51_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -482,6 +531,7 @@ sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Lich"^^xsd:string ;
     suni:limestownpart "Bettenhausen"^^xsd:string ;
+    geo:hasGeometry sunid:52_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -492,6 +542,7 @@ sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Echzell"^^xsd:string ;
     suni:limestownpart "Bingenheim"^^xsd:string ;
+    geo:hasGeometry sunid:53_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -502,6 +553,7 @@ sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Echzell"^^xsd:string ;
     suni:limestownpart "Bisses"^^xsd:string ;
+    geo:hasGeometry sunid:54_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -512,6 +564,7 @@ sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Inheiden"^^xsd:string ;
+    geo:hasGeometry sunid:55_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -522,6 +575,7 @@ sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Inheiden"^^xsd:string ;
+    geo:hasGeometry sunid:56_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -532,6 +586,7 @@ sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Nidda"^^xsd:string ;
     suni:limestownpart "Unter-Widdersheim"^^xsd:string ;
+    geo:hasGeometry sunid:57_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -542,6 +597,7 @@ sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Steinheim"^^xsd:string ;
+    geo:hasGeometry sunid:58_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -552,6 +608,7 @@ sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Florstadt"^^xsd:string ;
     suni:limestownpart "Staden"^^xsd:string ;
+    geo:hasGeometry sunid:59_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -562,6 +619,7 @@ sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Idstein"^^xsd:string ;
     suni:limestownpart "Lenzhahn/Dasbach"^^xsd:string ;
+    geo:hasGeometry sunid:6_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -572,6 +630,7 @@ sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Hungen"^^xsd:string ;
     suni:limestownpart "Steinheim"^^xsd:string ;
+    geo:hasGeometry sunid:60_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -582,6 +641,7 @@ sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Florstadt"^^xsd:string ;
     suni:limestownpart "Stammheim"^^xsd:string ;
+    geo:hasGeometry sunid:61_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -592,6 +652,7 @@ sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Erlensee"^^xsd:string ;
     suni:limestownpart "Langendiebach"^^xsd:string ;
+    geo:hasGeometry sunid:62_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -602,6 +663,7 @@ sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Buchen"^^xsd:string ;
     suni:limestownpart "Hettingen"^^xsd:string ;
+    geo:hasGeometry sunid:63_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -612,6 +674,7 @@ sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Buchen"^^xsd:string ;
     suni:limestownpart "Rinschheim"^^xsd:string ;
+    geo:hasGeometry sunid:64_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -622,6 +685,7 @@ sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Osterburken"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:65_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -632,6 +696,7 @@ sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Widdern"^^xsd:string ;
     suni:limestownpart "Unterkessach"^^xsd:string ;
+    geo:hasGeometry sunid:66_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -642,6 +707,7 @@ sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Forchtenberg"^^xsd:string ;
     suni:limestownpart "Sindringen"^^xsd:string ;
+    geo:hasGeometry sunid:67_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -652,6 +718,7 @@ sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Mainhardt"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:68_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -662,6 +729,7 @@ sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Glashütten"^^xsd:string ;
     suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:7_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -672,6 +740,7 @@ sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown "Oberursel"^^xsd:string ;
     suni:limestownpart "Oberstedten"^^xsd:string ;
+    geo:hasGeometry sunid:8_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
@@ -682,10 +751,15 @@ sunid:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         "Castrum"@en ;
     suni:limestown <https://www.wikidata.org/entity/Q4165> ;
     suni:limestownpart "Ober-Eschbach"^^xsd:string ;
+    geo:hasGeometry sunid:9_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 suni:limestownpart a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
+
+geo:asWKT a owl:DatatypeProperty .
+
+geo:hasGeometry a owl:ObjectProperty .
 
 rdfs:comment a owl:AnnotationProperty ;
     rdfs:label "limesobject"@en .
@@ -693,10 +767,287 @@ rdfs:comment a owl:AnnotationProperty ;
 rdfs:label a owl:AnnotationProperty ;
     rdfs:label "label"@en .
 
+sunid:10_geom a sf:Point ;
+    rdfs:label "Geometry of 10"@en ;
+    geo:asWKT "POINT (8.568471 50.272769)"^^geo:wktLiteral .
+
+sunid:11_geom a sf:Point ;
+    rdfs:label "Geometry of 11"@en ;
+    geo:asWKT "POINT (8.568939 50.27216)"^^geo:wktLiteral .
+
+sunid:12_geom a sf:Point ;
+    rdfs:label "Geometry of 12"@en ;
+    geo:asWKT "POINT (8.586331 50.28213)"^^geo:wktLiteral .
+
+sunid:13_geom a sf:Point ;
+    rdfs:label "Geometry of 13"@en ;
+    geo:asWKT "POINT (8.62539 50.305565)"^^geo:wktLiteral .
+
+sunid:14_geom a sf:Point ;
+    rdfs:label "Geometry of 14"@en ;
+    geo:asWKT "POINT (8.6284 50.414587)"^^geo:wktLiteral .
+
+sunid:15_geom a sf:Point ;
+    rdfs:label "Geometry of 15"@en ;
+    geo:asWKT "POINT (8.629062 50.41449)"^^geo:wktLiteral .
+
+sunid:16_geom a sf:Point ;
+    rdfs:label "Geometry of 16"@en ;
+    geo:asWKT "POINT (8.638337 50.319621)"^^geo:wktLiteral .
+
+sunid:17_geom a sf:Point ;
+    rdfs:label "Geometry of 17"@en ;
+    geo:asWKT "POINT (8.640278 50.356513)"^^geo:wktLiteral .
+
+sunid:18_geom a sf:Point ;
+    rdfs:label "Geometry of 18"@en ;
+    geo:asWKT "POINT (8.64676 50.336998)"^^geo:wktLiteral .
+
+sunid:19_geom a sf:Point ;
+    rdfs:label "Geometry of 19"@en ;
+    geo:asWKT "POINT (8.650381 50.432994)"^^geo:wktLiteral .
+
+sunid:1_geom a sf:Point ;
+    rdfs:label "Geometry of 1"@en ;
+    geo:asWKT "POINT (7.538413 50.481347)"^^geo:wktLiteral .
+
+sunid:20_geom a sf:Point ;
+    rdfs:label "Geometry of 20"@en ;
+    geo:asWKT "POINT (8.67608 50.470322)"^^geo:wktLiteral .
+
+sunid:21_geom a sf:Point ;
+    rdfs:label "Geometry of 21"@en ;
+    geo:asWKT "POINT (8.677771 50.466075)"^^geo:wktLiteral .
+
+sunid:22_geom a sf:Point ;
+    rdfs:label "Geometry of 22"@en ;
+    geo:asWKT "POINT (8.69936 50.499817)"^^geo:wktLiteral .
+
+sunid:23_geom a sf:Point ;
+    rdfs:label "Geometry of 23"@en ;
+    geo:asWKT "POINT (8.873857 50.471082)"^^geo:wktLiteral .
+
+sunid:24_geom a sf:Point ;
+    rdfs:label "Geometry of 24"@en ;
+    geo:asWKT "POINT (8.961192 50.260375)"^^geo:wktLiteral .
+
+sunid:25_geom a sf:Point ;
+    rdfs:label "Geometry of 25"@en ;
+    geo:asWKT "POINT (8.982996 50.11126)"^^geo:wktLiteral .
+
+sunid:26_geom a sf:Point ;
+    rdfs:label "Geometry of 26"@en ;
+    geo:asWKT "POINT (9.330439 49.633402)"^^geo:wktLiteral .
+
+sunid:27_geom a sf:Point ;
+    rdfs:label "Geometry of 27"@en ;
+    geo:asWKT "POINT (9.387543 49.542873)"^^geo:wktLiteral .
+
+sunid:28_geom a sf:Point ;
+    rdfs:label "Geometry of 28"@en ;
+    geo:asWKT "POINT (9.42348 49.449848)"^^geo:wktLiteral .
+
+sunid:29_geom a sf:Point ;
+    rdfs:label "Geometry of 29"@en ;
+    geo:asWKT "POINT (9.571011 49.055125)"^^geo:wktLiteral .
+
+sunid:2_geom a sf:Point ;
+    rdfs:label "Geometry of 2"@en ;
+    geo:asWKT "POINT (7.704296 50.412622)"^^geo:wktLiteral .
+
+sunid:30_geom a sf:Point ;
+    rdfs:label "Geometry of 30"@en ;
+    geo:asWKT "POINT (9.619291 48.925947)"^^geo:wktLiteral .
+
+sunid:31_geom a sf:Point ;
+    rdfs:label "Geometry of 31"@en ;
+    geo:asWKT "POINT (9.633845 48.88659)"^^geo:wktLiteral .
+
+sunid:32_geom a sf:Point ;
+    rdfs:label "Geometry of 32"@en ;
+    geo:asWKT "POINT (9.754924 48.797321)"^^geo:wktLiteral .
+
+sunid:33_geom a sf:Point ;
+    rdfs:label "Geometry of 33"@en ;
+    geo:asWKT "POINT (9.763711 48.791553)"^^geo:wktLiteral .
+
+sunid:34_geom a sf:Point ;
+    rdfs:label "Geometry of 34"@en ;
+    geo:asWKT "POINT (10.780904 49.116839)"^^geo:wktLiteral .
+
+sunid:35_geom a sf:Point ;
+    rdfs:label "Geometry of 35"@en ;
+    geo:asWKT "POINT (10.951999 49.0865)"^^geo:wktLiteral .
+
+sunid:36_geom a sf:Point ;
+    rdfs:label "Geometry of 36"@en ;
+    geo:asWKT "POINT (11.105936 49.015709)"^^geo:wktLiteral .
+
+sunid:37_geom a sf:Point ;
+    rdfs:label "Geometry of 37"@en ;
+    geo:asWKT "POINT (11.1511 48.983454)"^^geo:wktLiteral .
+
+sunid:38_geom a sf:Point ;
+    rdfs:label "Geometry of 38"@en ;
+    geo:asWKT "POINT (11.265951 48.975256)"^^geo:wktLiteral .
+
+sunid:39_geom a sf:Point ;
+    rdfs:label "Geometry of 39"@en ;
+    geo:asWKT "POINT (11.271316 48.975771)"^^geo:wktLiteral .
+
+sunid:3_geom a sf:Point ;
+    rdfs:label "Geometry of 3"@en ;
+    geo:asWKT "POINT (7.738396 50.28661)"^^geo:wktLiteral .
+
+sunid:40_geom a sf:Point ;
+    rdfs:label "Geometry of 40"@en ;
+    geo:asWKT "POINT (11.539056 48.913671)"^^geo:wktLiteral .
+
+sunid:41_geom a sf:Point ;
+    rdfs:label "Geometry of 41"@en ;
+    geo:asWKT "POINT (11.572464 48.905277)"^^geo:wktLiteral .
+
+sunid:42_geom a sf:Point ;
+    rdfs:label "Geometry of 42"@en ;
+    geo:asWKT "POINT (7.319315 50.503527)"^^geo:wktLiteral .
+
+sunid:43_geom a sf:Point ;
+    rdfs:label "Geometry of 43"@en ;
+    geo:asWKT "POINT (7.65227 50.430389)"^^geo:wktLiteral .
+
+sunid:44_geom a sf:Point ;
+    rdfs:label "Geometry of 44"@en ;
+    geo:asWKT "POINT (7.868022 50.251174)"^^geo:wktLiteral .
+
+sunid:45_geom a sf:Point ;
+    rdfs:label "Geometry of 45"@en ;
+    geo:asWKT "POINT (8.016199 50.167456)"^^geo:wktLiteral .
+
+sunid:46_geom a sf:Point ;
+    rdfs:label "Geometry of 46"@en ;
+    geo:asWKT "POINT (8.016542 50.167774)"^^geo:wktLiteral .
+
+sunid:47_geom a sf:Point ;
+    rdfs:label "Geometry of 47"@en ;
+    geo:asWKT "POINT (8.077694 50.16494)"^^geo:wktLiteral .
+
+sunid:48_geom a sf:Point ;
+    rdfs:label "Geometry of 48"@en ;
+    geo:asWKT "POINT (8.336425 50.21039)"^^geo:wktLiteral .
+
+sunid:49_geom a sf:Point ;
+    rdfs:label "Geometry of 49"@en ;
+    geo:asWKT "POINT (8.339083 50.211682)"^^geo:wktLiteral .
+
+sunid:4_geom a sf:Point ;
+    rdfs:label "Geometry of 4"@en ;
+    geo:asWKT "POINT (7.890201 50.226566)"^^geo:wktLiteral .
+
+sunid:50_geom a sf:Point ;
+    rdfs:label "Geometry of 50"@en ;
+    geo:asWKT "POINT (8.655724 50.443519)"^^geo:wktLiteral .
+
+sunid:51_geom a sf:Point ;
+    rdfs:label "Geometry of 51"@en ;
+    geo:asWKT "POINT (8.725101 50.52089)"^^geo:wktLiteral .
+
+sunid:52_geom a sf:Point ;
+    rdfs:label "Geometry of 52"@en ;
+    geo:asWKT "POINT (8.85455 50.482998)"^^geo:wktLiteral .
+
+sunid:53_geom a sf:Point ;
+    rdfs:label "Geometry of 53"@en ;
+    geo:asWKT "POINT (8.89565 50.361023)"^^geo:wktLiteral .
+
+sunid:54_geom a sf:Point ;
+    rdfs:label "Geometry of 54"@en ;
+    geo:asWKT "POINT (8.901594 50.388546)"^^geo:wktLiteral .
+
+sunid:55_geom a sf:Point ;
+    rdfs:label "Geometry of 55"@en ;
+    geo:asWKT "POINT (8.903685 50.46017)"^^geo:wktLiteral .
+
+sunid:56_geom a sf:Point ;
+    rdfs:label "Geometry of 56"@en ;
+    geo:asWKT "POINT (8.906795 50.461008)"^^geo:wktLiteral .
+
+sunid:57_geom a sf:Point ;
+    rdfs:label "Geometry of 57"@en ;
+    geo:asWKT "POINT (8.908644 50.422543)"^^geo:wktLiteral .
+
+sunid:58_geom a sf:Point ;
+    rdfs:label "Geometry of 58"@en ;
+    geo:asWKT "POINT (8.91015 50.451806)"^^geo:wktLiteral .
+
+sunid:59_geom a sf:Point ;
+    rdfs:label "Geometry of 59"@en ;
+    geo:asWKT "POINT (8.915133 50.326418)"^^geo:wktLiteral .
+
+sunid:5_geom a sf:Point ;
+    rdfs:label "Geometry of 5"@en ;
+    geo:asWKT "POINT (7.995022 50.197474)"^^geo:wktLiteral .
+
+sunid:60_geom a sf:Point ;
+    rdfs:label "Geometry of 60"@en ;
+    geo:asWKT "POINT (8.91616 50.437561)"^^geo:wktLiteral .
+
+sunid:61_geom a sf:Point ;
+    rdfs:label "Geometry of 61"@en ;
+    geo:asWKT "POINT (8.923034 50.31257)"^^geo:wktLiteral .
+
+sunid:62_geom a sf:Point ;
+    rdfs:label "Geometry of 62"@en ;
+    geo:asWKT "POINT (8.985621 50.167989)"^^geo:wktLiteral .
+
+sunid:63_geom a sf:Point ;
+    rdfs:label "Geometry of 63"@en ;
+    geo:asWKT "POINT (9.383568 49.545215)"^^geo:wktLiteral .
+
+sunid:64_geom a sf:Point ;
+    rdfs:label "Geometry of 64"@en ;
+    geo:asWKT "POINT (9.395263 49.515019)"^^geo:wktLiteral .
+
+sunid:65_geom a sf:Point ;
+    rdfs:label "Geometry of 65"@en ;
+    geo:asWKT "POINT (9.430446 49.43113)"^^geo:wktLiteral .
+
+sunid:66_geom a sf:Point ;
+    rdfs:label "Geometry of 66"@en ;
+    geo:asWKT "POINT (9.457339 49.350652)"^^geo:wktLiteral .
+
+sunid:67_geom a sf:Point ;
+    rdfs:label "Geometry of 67"@en ;
+    geo:asWKT "POINT (9.47859 49.279712)"^^geo:wktLiteral .
+
+sunid:68_geom a sf:Point ;
+    rdfs:label "Geometry of 68"@en ;
+    geo:asWKT "POINT (9.561952 49.080419)"^^geo:wktLiteral .
+
+sunid:6_geom a sf:Point ;
+    rdfs:label "Geometry of 6"@en ;
+    geo:asWKT "POINT (8.316399 50.201068)"^^geo:wktLiteral .
+
+sunid:7_geom a sf:Point ;
+    rdfs:label "Geometry of 7"@en ;
+    geo:asWKT "POINT (8.390579 50.218544)"^^geo:wktLiteral .
+
+sunid:8_geom a sf:Point ;
+    rdfs:label "Geometry of 8"@en ;
+    geo:asWKT "POINT (8.492966 50.244586)"^^geo:wktLiteral .
+
+sunid:9_geom a sf:Point ;
+    rdfs:label "Geometry of 9"@en ;
+    geo:asWKT "POINT (8.512934 50.253706)"^^geo:wktLiteral .
+
+geo:Geometry a owl:Class .
+
 <https://www.wikidata.org/entity/Q4165> rdfs:label "Bad Homburg"@en .
 
 suni:Kleinkastell rdfs:label "Kleinkastell"@en ;
     rdfs:subClassOf <http://archaeoinformatics.link/ontology#MilitaryCamp> .
+
+sf:Point a owl:Class ;
+    rdfs:subClassOf geo:Geometry .
 
 <http://archaeoinformatics.link/ontology#MilitaryCamp> a owl:Class ;
     rdfs:label "Militärcamp"@de,
