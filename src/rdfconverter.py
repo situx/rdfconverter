@@ -126,7 +126,10 @@ class BibTexToRDF:
 
     @staticmethod
     def processReference(g,bibmap,key,row,cururi):
-        refs=row[key].split(";")
+        theval=str(row[key])
+        if theval==None or theval=="" or theval=="nan":
+            return
+        refs=str(row[key]).split(";")
         for cref in refs:
             ref=cref.strip()
             if "," in cref:
