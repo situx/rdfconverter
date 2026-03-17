@@ -402,9 +402,9 @@ class RDFConverter:
                     self.processLatLonGeometry(g, row[geomatts[0]], row[geomatts[1]], typemap, curid)
                     processedGeom = True
                 elif len(geomatts)==1:
-                    processGeometryColumn(self,g,row,geomatts[0],typemap,curid)
+                    self.processGeometryColumn(self,g,row,geomatts[0],typemap,curid)
             elif "geometry" in row:
-                processGeometryColumn(self,g,row,"geometry",typemap,curid)
+                self.processGeometryColumn(self,g,row,"geometry",typemap,curid)
                 """
                 g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
                 g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
