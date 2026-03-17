@@ -6,6 +6,7 @@ import geopandas as gpd
 import os
 import os.path
 import json
+import requests
 
 
 def resolveWildcardPath(thepath):
@@ -22,6 +23,29 @@ def resolveWildcardPath(thepath):
             if file.endswith(".ttl") or file.endswith(".owl") or file.endswith(".ttl") or file.endswith(".n3") or file.endswith(".nt"):
                 result.append(normpath + file)
     return result
+
+def resolveWikidataIDFromArticleName(wikipediaurl):
+    pagename=wikipediaurl[wikipediaurl.rfind("wiki/")+5:]
+    lang=wikipediaurl[0:wikipediaurl.find(".")].replace("https://","").replace("http://","")
+    resturl=wikipediaurl[0:wikipediaurl.rfind("/wiki/")]
+    resolveurl=resturl+"/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&titles="+pagename
+    qid=None
+    try:
+        res=requests.get(resolveurl)
+        resjson=json.loads(res.text)
+        pagesres=resjson["query"]["pages"]
+        print(pagesres)
+
+        for pres in pagesres:
+            if "pageprops" in pagesres[pres]:
+                qid=pagesres[pres]["pageprops"]["wikibase_item"]
+            break
+    except:
+        print("error")
+    print(qid)
+    if qid!=None:
+        return {"qid":"http://www.wikidata.org/entity/"+qid,"label":pagename.replace("_"," "),"lang":lang}
+    return qid
 
 class BibTexToRDF:
 
