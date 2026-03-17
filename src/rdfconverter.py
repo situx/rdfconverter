@@ -421,6 +421,10 @@ class RDFConverter:
             attnsprefix="suni"
         if "onlyschema" in typemap and typemap["onlyschema"]==True:
             onlyschema=True
+        if "prefixes" in typemap:
+            for pref in typemap["prefixes"]:
+                if str(typemap["prefixes"][pref]).startswith("http"):
+                    g.bind(str(pref),str(typemap["prefixes"][pref]))
         g.bind(nsprefix,dns)
         g.bind(attnsprefix, attns)
         g.bind("sf","http://www.opengis.net/ont/sf#")
@@ -558,11 +562,11 @@ if os.path.exists(args.mapping[0]):
     publishers={}
     if len(args.bibtex)>0 and args.bibtex[0]!="":
         for col in typemap["columns"]:
-            if "bifref" in column and column["bibref"]==True:
+            if "bibref" in column and column["bibref"]==True:
                 if "issuers" in column:
                     issuers=column["issuers"]
                 if "publishers" in column:
-                    publishers=column["puslishers"]
+                    publishers=column["publishers"]
         with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
             bib_database = bibtexparser.load(bibtex_file)
             #print(bib_database.entries)
