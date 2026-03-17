@@ -275,7 +275,10 @@ class RDFConverter:
                 thelang=curcol["lang"]
             g.add((theiri, RDF.type, OWL.AnnotationProperty))
             g.add((theiri, RDFS.label, Literal(propirilabel, lang=thelang)))
-            g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
+            if "lang" in curcol:
+                g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), lang=curcol["lang"])))
+            else:
+                g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
