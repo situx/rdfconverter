@@ -213,7 +213,7 @@ class RDFConverter:
                 thevalue=""
         else:
             thevalue=row[x]
-        if thevalue=="" or (curcol["prop"]=="obj" and thevalue=="nan"):
+        if thevalue=="" or (curcol["prop"]=="obj" and str(thevalue)=="nan"):
             return [g,subclass]
         if "propiri" in curcol:
             theiri = URIRef(curcol["propiri"])
