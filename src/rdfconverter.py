@@ -562,7 +562,7 @@ if os.path.exists(args.mapping[0]):
                     publishers=column["puslishers"]
         with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
             bib_database = bibtexparser.load(bibtex_file)
-            print(bib_database.entries)
+            #print(bib_database.entries)
             if "namespace" in typemap:
                 ns=typemap["namespace"]
             else:
