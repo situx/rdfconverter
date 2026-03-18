@@ -80,6 +80,16 @@ This might be useful when a subpart of the relational table represents a (sub-)e
    }
 ```
 
+The result will be a new RDF instance linked to the created instance:
+
+```
+<http://example.org/myid> <http://example.org/myns#limesaddress> <http://example.org/myid_limesaddress> .
+<http://example.org/myid_limesaddress> <http://example.org/myns#limescategory> <http://example.org/myns#Castellum> .
+```
+
+Here, myid_limesaddress is a newly created subinstance.
+This can be repeated, i.e. it is possible to create collections of collections.
+
 ### Joining Columns
 
 The value of columns might be joined by defining join columns.
