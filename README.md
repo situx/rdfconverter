@@ -69,6 +69,17 @@ Columns may be grouped by defining column collections.
 
 This might be useful when a subpart of the relational table represents a (sub-)entity in RDF, which is related to the entity described by **id**.
 
+```
+"columns":{
+       "ID":{"prop":"obj","ignore":true},
+       "limesobject": {"proplabels":{"en":"label","de":"Label"},"prefix":"Kleinkastell ","suffix":"!","propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
+       "limesaddress": {"collection":true, "columns":{
+           "limescategory":{propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"data"},
+           "limestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}
+        }
+   }
+```
+
 ### Joining Columns
 
 The value of columns might be joined by defining join columns.
