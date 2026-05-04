@@ -251,7 +251,7 @@ class RDFConverter:
                     if "range" in curcol:
                         g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
                     else:
-                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string")))))
+                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
                 else:
                     g.add((theiri, RDF.type,OWL.DatatypeProperty)) 
                     g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
