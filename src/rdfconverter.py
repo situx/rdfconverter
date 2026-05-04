@@ -252,8 +252,11 @@ class RDFConverter:
                 else:
                     g.add((theiri, RDF.type,OWL.DatatypeProperty)) 
                     g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
-                    g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
-                        curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                    if "range" in curcol:
+                        g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
+                            curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                    else:
+                        g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
         if curcol["prop"]=="obj":
             concept=""
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
