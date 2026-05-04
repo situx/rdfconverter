@@ -270,11 +270,13 @@ class RDFConverter:
                             g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
                     if "definition" in curcol["valuemapping"][thevalue]:
                         g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en")))
+                    if "concept" in curcol:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
                 else:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
-                if "concept" in curcol:
-                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                    if "concept" in curcol:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif str(thevalue).startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
@@ -303,11 +305,13 @@ class RDFConverter:
                             g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
                     if "definition" in curcol["valuemapping"][thevalue]:
                         g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en")))
+                    if "concept" in curcol:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
                 else:
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
-                if "concept" in curcol:
-                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                    if "concept" in curcol:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
                 #g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
                 #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
                 #g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
