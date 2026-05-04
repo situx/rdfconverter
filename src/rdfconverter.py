@@ -267,9 +267,9 @@ class RDFConverter:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
                     if "labels" in curcol["valuemapping"][thevalue]:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
-                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
                     if "definition" in curcol["valuemapping"][thevalue]:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en")))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
                     if "concept" in curcol:
                         g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
                 else:
@@ -302,9 +302,9 @@ class RDFConverter:
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
                     if "labels" in curcol["valuemapping"][thevalue]:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
-                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
                     if "definition" in curcol["valuemapping"][thevalue]:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en")))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
                     if "concept" in curcol:
                         g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
                 else:
