@@ -248,7 +248,10 @@ class RDFConverter:
                     g.add((URIRef(valueinstanceiri),RDF.type,URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
                     g.add((URIRef(valueinstanceiri), RDFS.label,Literal("Value Result of "+str(theiri[theiri.rfind("/")+1:])+" for "+str(curid))))
                     g.add((URIRef(valueinstanceiri), URIRef(unitprop),URIRef(unit)))
-                    g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                    if "range" in curcol:
+                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                    else:
+                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string")))))
                 else:
                     g.add((theiri, RDF.type,OWL.DatatypeProperty)) 
                     g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
