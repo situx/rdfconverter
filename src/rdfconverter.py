@@ -295,7 +295,7 @@ class RDFConverter:
                 g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
-                if isinstance(curcol["valuemapping"][thevalue]),dict) and "uri" in curcol["valuemapping"][thevalue]:
+                if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
                     g.add((URIRef(curid), RDFS.subClassOf, thecls))
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
                     if "labels" in curcol["valuemapping"][thevalue]:
