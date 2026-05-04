@@ -263,8 +263,16 @@ class RDFConverter:
         if curcol["prop"]=="obj":
             concept=""
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
-                g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
-                g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
+                if isinstance(curcol["valuemapping"][thevalue]),dict) and "uri" in curcol["valuemapping"][thevalue]:
+                    g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                    if "labels" in curcol["valuemapping"][thevalue]:
+                        for lab in curcol["valuemapping"][thevalue]["labels"]:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                    if "definition" in curcol["valuemapping"][thevalue]:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en"))
+                else:
+                    g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
                 if "concept" in curcol:
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif str(thevalue).startswith("http"):
@@ -287,10 +295,23 @@ class RDFConverter:
                 g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
-                g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
+                if isinstance(curcol["valuemapping"][thevalue]),dict) and "uri" in curcol["valuemapping"][thevalue]:
+                    g.add((URIRef(curid), RDFS.subClassOf, thecls))
+                    g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                    if "labels" in curcol["valuemapping"][thevalue]:
+                        for lab in curcol["valuemapping"][thevalue]["labels"]:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                    if "definition" in curcol["valuemapping"][thevalue]:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en"))
+                else:
+                    g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang))
+                if "concept" in curcol:
+                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                #g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
                 #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
-                g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
-                g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
+                #g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                #g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
                 subclass=True
             else:
                 subclsuri=ns+thevalue.replace("/","").replace(" ","_")
@@ -384,6 +405,8 @@ class RDFConverter:
                     propirilabel = str(curcol["proplabels"]["en"])
                 else:
                     propirilabel = str(x)
+                if "definition" in curcol and "en" in curcol["definition"]:
+                    g.add((theiri, SKOS.definition, Literal(curcol["definition"]["en"], lang="en")))
                 aggval=""
                 for col in thejoincol["columns"]:
                     aggval+=str(row[col])+str(joinchar)
