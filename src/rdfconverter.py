@@ -263,7 +263,7 @@ class RDFConverter:
         if curcol["prop"]=="obj":
             concept=""
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
-                if isinstance(curcol["valuemapping"][thevalue]),dict) and "uri" in curcol["valuemapping"][thevalue]:
+                if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
                     if "labels" in curcol["valuemapping"][thevalue]:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
