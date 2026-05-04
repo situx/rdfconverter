@@ -302,7 +302,7 @@ class RDFConverter:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
                             g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
                     if "definition" in curcol["valuemapping"][thevalue]:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en"))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue],lang="en")))
                 else:
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang))
