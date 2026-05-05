@@ -40,300 +40,24 @@
       "@type": "owl:Class"
     },
     {
-      "@id": "sunid:41",
+      "@id": "sunid:49",
       "@type": "",
-      "suni:ID": 104,
-      "suni:fid": 42,
+      "suni:ID": 112,
+      "suni:fid": 50,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rheinbrohl",
-      "suni:limestown": "Rheinbrohl",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:23",
-      "@type": "",
-      "suni:ID": 86,
-      "suni:fid": 24,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Buchkopf",
-      "suni:limestown": "Altenstadt",
-      "suni:limestownpart": "Höchst"
-    },
-    {
-      "@id": "sunid:44",
-      "@type": "",
-      "suni:ID": 107,
-      "suni:fid": 45,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kemel 2",
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Kemel"
-    },
-    {
-      "@id": "sunid:27",
-      "@type": "",
-      "suni:ID": 90,
-      "suni:fid": 28,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hintere Kalbe",
-      "suni:limestown": "Osterburken",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:45",
-      "@type": "",
-      "suni:ID": 108,
-      "suni:fid": 46,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kemel 1",
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Kemel"
-    },
-    {
-      "@id": "suni:limesobject",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limesobject"
-      }
-    },
-    {
-      "@id": "sunid:43",
-      "@type": "",
-      "suni:ID": 106,
-      "suni:fid": 44,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Pohl",
-      "suni:limestown": "Pohl",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "suni:limestown",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limestown"
-      }
-    },
-    {
-      "@id": "sunid:15",
-      "@type": "",
-      "suni:ID": 78,
-      "suni:fid": 16,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Ockstädter Wald",
-      "suni:limestown": "Friedberg",
-      "suni:limestownpart": "Ockstadt"
-    },
-    {
-      "@id": "sunid:28",
-      "@type": "",
-      "suni:ID": 91,
-      "suni:fid": 29,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hankertsmühle",
-      "suni:limestown": "Mainhardt",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:1",
-      "@type": "",
-      "suni:ID": 64,
-      "suni:fid": 2,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hillscheid",
-      "suni:limestown": "Hillscheid",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:6",
-      "@type": "",
-      "suni:ID": 69,
-      "suni:fid": 7,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Maisel",
-      "suni:limestown": "Glashütten",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:38",
-      "@type": "",
-      "suni:ID": 101,
-      "suni:fid": 39,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hegelohe",
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "sunid:24",
-      "@type": "",
-      "suni:ID": 87,
-      "suni:fid": 25,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Neuwirtshaus",
-      "suni:limestown": "Hanau",
-      "suni:limestownpart": "Wolfgang"
-    },
-    {
-      "@id": "sunid:21",
-      "@type": "",
-      "suni:ID": 84,
-      "suni:fid": 22,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Holzheimer Unterwald",
-      "suni:limestown": "Pohlheim",
-      "suni:limestownpart": "Holzheim"
-    },
-    {
-      "@id": "sunid:3",
-      "@type": "",
-      "suni:ID": 66,
-      "suni:fid": 4,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Pfarrhofen",
-      "suni:limestown": "Miehlen",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:46",
-      "@type": "",
-      "suni:ID": 109,
-      "suni:fid": 47,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Adolfseck",
-      "suni:limestown": "Bad Schwalbach",
-      "suni:limestownpart": "Adolfseck"
-    },
-    {
-      "@id": "sunid:14",
-      "@type": "",
-      "suni:ID": 77,
-      "suni:fid": 15,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hunnenkirchhof 2",
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "Nieder-Weisel"
-    },
-    {
-      "@id": "sunid:37",
-      "@type": "",
-      "suni:ID": 100,
-      "suni:fid": 38,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Biebig",
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "sunid:20",
-      "@type": "",
-      "suni:ID": 83,
-      "suni:fid": 21,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Dicker Wald 1",
-      "suni:limestown": "Münzenberg",
-      "suni:limestownpart": "Gambach"
-    },
-    {
-      "@id": "sunid:61",
-      "@type": "",
-      "suni:ID": 124,
-      "suni:fid": 62,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Langendiebach",
-      "suni:limestown": "Erlensee",
-      "suni:limestownpart": "Langendiebach"
-    },
-    {
-      "@id": "sunid:9",
-      "@type": "",
-      "suni:ID": 72,
-      "suni:fid": 10,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Saalburg 1",
-      "suni:limestown": "Bad Homburg",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:56",
-      "@type": "",
-      "suni:ID": 119,
-      "suni:fid": 57,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Unter-Widdersheim",
-      "suni:limestown": "Nidda",
-      "suni:limestownpart": "Unter-Widdersheim"
-    },
-    {
-      "@id": "sunid:31",
-      "@type": "",
-      "suni:ID": 94,
-      "suni:fid": 32,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kleindeinbach",
-      "suni:limestown": "Schwäbisch Gmünd",
-      "suni:limestownpart": "Großdeinbach"
-    },
-    {
-      "@id": "sunid:55",
-      "@type": "",
-      "suni:ID": 118,
-      "suni:fid": 56,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Inheiden 2",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:18",
-      "@type": "",
-      "suni:ID": 81,
-      "suni:fid": 19,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Schrenzer",
+      "suni:limesobject": "Degerfeld",
       "suni:limestown": "Butzbach",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:16",
+      "@id": "sunid:17",
       "@type": "",
-      "suni:ID": 79,
-      "suni:fid": 17,
+      "suni:ID": 80,
+      "suni:fid": 18,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Eichkopf",
+      "suni:limesobject": "Kaisergrube",
       "suni:limestown": "Ober-Mörlen",
-      "suni:limestownpart": "Langenhain-Ziegenberg"
-    },
-    {
-      "@id": "sunid:7",
-      "@type": "",
-      "suni:ID": 70,
-      "suni:fid": 8,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Altes Jagdhaus",
-      "suni:limestown": "Oberursel",
-      "suni:limestownpart": "Oberstedten"
-    },
-    {
-      "@id": "sunid:29",
-      "@type": "",
-      "suni:ID": 92,
-      "suni:fid": 30,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Ebnisee",
-      "suni:limestown": "Kaisersbach",
       "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:13",
-      "@type": "",
-      "suni:ID": 76,
-      "suni:fid": 14,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hunnenkirchhof 1",
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "Nieder-Weisel"
     },
     {
       "@id": "sunid:36",
@@ -346,32 +70,254 @@
       "suni:limestownpart": "Kaldorf"
     },
     {
-      "@id": "suni:ID",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "ID"
-      }
-    },
-    {
-      "@id": "sunid:58",
+      "@id": "sunid:60",
       "@type": "",
-      "suni:ID": 121,
-      "suni:fid": 59,
+      "suni:ID": 123,
+      "suni:fid": 61,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Staden",
+      "suni:limesobject": "Stammheim",
       "suni:limestown": "Florstadt",
-      "suni:limestownpart": "Staden"
+      "suni:limestownpart": "Stammheim"
     },
     {
-      "@id": "sunid:48",
+      "@id": "sunid:63",
       "@type": "",
-      "suni:ID": 111,
-      "suni:fid": 49,
+      "suni:ID": 126,
+      "suni:fid": 64,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Alteburg-Heftrich 1",
+      "suni:limesobject": "Holderbusch",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Rinschheim"
+    },
+    {
+      "@id": "sunid:46",
+      "@type": "",
+      "suni:ID": 109,
+      "suni:fid": 47,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Adolfseck",
+      "suni:limestown": "Bad Schwalbach",
+      "suni:limestownpart": "Adolfseck"
+    },
+    {
+      "@id": "sunid:4",
+      "@type": "",
+      "suni:ID": 67,
+      "suni:fid": 5,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dörsterberg",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Laufenselden"
+    },
+    {
+      "@id": "sunid:27",
+      "@type": "",
+      "suni:ID": 90,
+      "suni:fid": 28,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hintere Kalbe",
+      "suni:limestown": "Osterburken",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:37",
+      "@type": "",
+      "suni:ID": 100,
+      "suni:fid": 38,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Biebig",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:18",
+      "@type": "",
+      "suni:ID": 81,
+      "suni:fid": 19,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Schrenzer",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:59",
+      "@type": "",
+      "suni:ID": 122,
+      "suni:fid": 60,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Massohl",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:47",
+      "@type": "",
+      "suni:ID": 110,
+      "suni:fid": 48,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Alteburg-Heftrich 2",
       "suni:limestown": "Idstein",
       "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:0",
+      "@type": "",
+      "suni:ID": 63,
+      "suni:fid": 1,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Anhausen",
+      "suni:limestown": "Neuwied",
+      "suni:limestownpart": "Heimbach-Weis"
+    },
+    {
+      "@id": "sunid:10",
+      "@type": "",
+      "suni:ID": 73,
+      "suni:fid": 11,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Saalburg 2",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:53",
+      "@type": "",
+      "suni:ID": 116,
+      "suni:fid": 54,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Haselheck",
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bisses"
+    },
+    {
+      "@id": "sunid:38",
+      "@type": "",
+      "suni:ID": 101,
+      "suni:fid": 39,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hegelohe",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:1",
+      "@type": "",
+      "suni:ID": 64,
+      "suni:fid": 2,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hillscheid",
+      "suni:limestown": "Hillscheid",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:29",
+      "@type": "",
+      "suni:ID": 92,
+      "suni:fid": 30,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ebnisee",
+      "suni:limestown": "Kaisersbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:7",
+      "@type": "",
+      "suni:ID": 70,
+      "suni:fid": 8,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Altes Jagdhaus",
+      "suni:limestown": "Oberursel",
+      "suni:limestownpart": "Oberstedten"
+    },
+    {
+      "@id": "sunid:30",
+      "@type": "",
+      "suni:ID": 93,
+      "suni:fid": 31,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rötelsee",
+      "suni:limestown": "Welzheim",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:31",
+      "@type": "",
+      "suni:ID": 94,
+      "suni:fid": 32,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kleindeinbach",
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "Großdeinbach"
+    },
+    {
+      "@id": "sunid:19",
+      "@type": "",
+      "suni:ID": 82,
+      "suni:fid": 20,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dicker Wald 2",
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:15",
+      "@type": "",
+      "suni:ID": 78,
+      "suni:fid": 16,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ockstädter Wald",
+      "suni:limestown": "Friedberg",
+      "suni:limestownpart": "Ockstadt"
+    },
+    {
+      "@id": "sunid:66",
+      "@type": "",
+      "suni:ID": 129,
+      "suni:fid": 67,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Sindringen",
+      "suni:limestown": "Forchtenberg",
+      "suni:limestownpart": "Sindringen"
+    },
+    {
+      "@id": "sunid:61",
+      "@type": "",
+      "suni:ID": 124,
+      "suni:fid": 62,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Langendiebach",
+      "suni:limestown": "Erlensee",
+      "suni:limestownpart": "Langendiebach"
+    },
+    {
+      "@id": "sunid:54",
+      "@type": "",
+      "suni:ID": 117,
+      "suni:fid": 55,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Inheiden 1",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:40",
+      "@type": "",
+      "suni:ID": 103,
+      "suni:fid": 41,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hinterer Seeberg",
+      "suni:limestown": "Altmannstein",
+      "suni:limestownpart": "Steinsdorf (i), Schambach"
+    },
+    {
+      "@id": "sunid:62",
+      "@type": "",
+      "suni:ID": 125,
+      "suni:fid": 63,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Altheimer Straße",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
     },
     {
       "@id": "sunid:67",
@@ -384,6 +330,56 @@
       "suni:limestownpart": "???"
     },
     {
+      "@id": "sunid:12",
+      "@type": "",
+      "suni:ID": 75,
+      "suni:fid": 13,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rittergräber",
+      "suni:limestown": "Rosbach",
+      "suni:limestownpart": "Nieder-Rosbach"
+    },
+    {
+      "@id": "sunid:16",
+      "@type": "",
+      "suni:ID": 79,
+      "suni:fid": 17,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Eichkopf",
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "Langenhain-Ziegenberg"
+    },
+    {
+      "@id": "sunid:14",
+      "@type": "",
+      "suni:ID": 77,
+      "suni:fid": 15,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hunnenkirchhof 2",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:43",
+      "@type": "",
+      "suni:ID": 106,
+      "suni:fid": 44,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Pohl",
+      "suni:limestown": "Pohl",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:22",
+      "@type": "",
+      "suni:ID": 85,
+      "suni:fid": 23,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Feldheimer Wald",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
       "@id": "suni:fid",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
@@ -392,14 +388,152 @@
       }
     },
     {
-      "@id": "sunid:39",
+      "@id": "sunid:35",
       "@type": "",
-      "suni:ID": 102,
-      "suni:fid": 40,
+      "suni:ID": 98,
+      "suni:fid": 36,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Güssgraben",
-      "suni:limestown": "Altmannstein",
-      "suni:limestownpart": "Schambach"
+      "suni:limesobject": "Raitenbuch",
+      "suni:limestown": "Raitenbuch",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:8",
+      "@type": "",
+      "suni:ID": 71,
+      "suni:fid": 9,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Heidenstock",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "Ober-Eschbach"
+    },
+    {
+      "@id": "sunid:5",
+      "@type": "",
+      "suni:ID": 68,
+      "suni:fid": 6,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Eichelgarten",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Lenzhahn/Dasbach"
+    },
+    {
+      "@id": "sunid:9",
+      "@type": "",
+      "suni:ID": 72,
+      "suni:fid": 10,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Saalburg 1",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:21",
+      "@type": "",
+      "suni:ID": 84,
+      "suni:fid": 22,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Holzheimer Unterwald",
+      "suni:limestown": "Pohlheim",
+      "suni:limestownpart": "Holzheim"
+    },
+    {
+      "@id": "sunid:32",
+      "@type": "",
+      "suni:ID": 95,
+      "suni:fid": 33,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Freimühle",
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:28",
+      "@type": "",
+      "suni:ID": 91,
+      "suni:fid": 29,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hankertsmühle",
+      "suni:limestown": "Mainhardt",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:44",
+      "@type": "",
+      "suni:ID": 107,
+      "suni:fid": 45,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kemel 2",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:34",
+      "@type": "",
+      "suni:ID": 97,
+      "suni:fid": 35,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Gündersbach",
+      "suni:limestown": "Pfofeld",
+      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
+    },
+    {
+      "@id": "sunid:51",
+      "@type": "",
+      "suni:ID": 114,
+      "suni:fid": 52,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Langsdorf",
+      "suni:limestown": "Lich",
+      "suni:limestownpart": "Bettenhausen"
+    },
+    {
+      "@id": "sunid:45",
+      "@type": "",
+      "suni:ID": 108,
+      "suni:fid": 46,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kemel 1",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:2",
+      "@type": "",
+      "suni:ID": 65,
+      "suni:fid": 3,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Becheln",
+      "suni:limestown": "Lahnstein",
+      "suni:limestownpart": "Oberlahnstein/Becheln"
+    },
+    {
+      "@id": "sunid:11",
+      "@type": "",
+      "suni:ID": 74,
+      "suni:fid": 12,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lochmühle",
+      "suni:limestown": "Friedrichsdorf",
+      "suni:limestownpart": "Köppern"
+    },
+    {
+      "@id": "suni:ID",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ID"
+      }
+    },
+    {
+      "@id": "sunid:26",
+      "@type": "",
+      "suni:ID": 89,
+      "suni:fid": 27,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rehberg",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
     },
     {
       "@id": "sunid:33",
@@ -422,94 +556,108 @@
       "suni:limestownpart": "Steinheim"
     },
     {
-      "@id": "sunid:8",
-      "@type": "",
-      "suni:ID": 71,
-      "suni:fid": 9,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Heidenstock",
-      "suni:limestown": "Bad Homburg",
-      "suni:limestownpart": "Ober-Eschbach"
+      "@id": "suni:limestownpart",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limestownpart"
+      }
     },
     {
-      "@id": "sunid:52",
+      "@id": "sunid:39",
       "@type": "",
-      "suni:ID": 115,
-      "suni:fid": 53,
+      "suni:ID": 102,
+      "suni:fid": 40,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Lochberg",
-      "suni:limestown": "Echzell",
-      "suni:limestownpart": "Bingenheim"
+      "suni:limesobject": "Güssgraben",
+      "suni:limestown": "Altmannstein",
+      "suni:limestownpart": "Schambach"
     },
     {
-      "@id": "sunid:12",
+      "@id": "sunid:13",
       "@type": "",
-      "suni:ID": 75,
-      "suni:fid": 13,
+      "suni:ID": 76,
+      "suni:fid": 14,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rittergräber",
-      "suni:limestown": "Rosbach",
-      "suni:limestownpart": "Nieder-Rosbach"
+      "suni:limesobject": "Hunnenkirchhof 1",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
     },
     {
-      "@id": "sunid:60",
+      "@id": "suni:limescategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limescategory"
+      }
+    },
+    {
+      "@id": "suni:limestown",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limestown"
+      }
+    },
+    {
+      "@id": "sunid:3",
       "@type": "",
-      "suni:ID": 123,
-      "suni:fid": 61,
+      "suni:ID": 66,
+      "suni:fid": 4,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Stammheim",
+      "suni:limesobject": "Pfarrhofen",
+      "suni:limestown": "Miehlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:58",
+      "@type": "",
+      "suni:ID": 121,
+      "suni:fid": 59,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Staden",
       "suni:limestown": "Florstadt",
-      "suni:limestownpart": "Stammheim"
+      "suni:limestownpart": "Staden"
     },
     {
-      "@id": "sunid:10",
+      "@id": "sunid:41",
       "@type": "",
-      "suni:ID": 73,
-      "suni:fid": 11,
+      "suni:ID": 104,
+      "suni:fid": 42,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Saalburg 2",
-      "suni:limestown": "Bad Homburg",
+      "suni:limesobject": "Rheinbrohl",
+      "suni:limestown": "Rheinbrohl",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:17",
+      "@id": "sunid:56",
       "@type": "",
-      "suni:ID": 80,
-      "suni:fid": 18,
+      "suni:ID": 119,
+      "suni:fid": 57,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kaisergrube",
-      "suni:limestown": "Ober-Mörlen",
-      "suni:limestownpart": "???"
+      "suni:limesobject": "Unter-Widdersheim",
+      "suni:limestown": "Nidda",
+      "suni:limestownpart": "Unter-Widdersheim"
     },
     {
-      "@id": "sunid:11",
+      "@id": "sunid:48",
       "@type": "",
-      "suni:ID": 74,
-      "suni:fid": 12,
+      "suni:ID": 111,
+      "suni:fid": 49,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Lochmühle",
-      "suni:limestown": "Friedrichsdorf",
-      "suni:limestownpart": "Köppern"
+      "suni:limesobject": "Alteburg-Heftrich 1",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
     },
     {
-      "@id": "sunid:32",
+      "@id": "sunid:55",
       "@type": "",
-      "suni:ID": 95,
-      "suni:fid": 33,
+      "suni:ID": 118,
+      "suni:fid": 56,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Freimühle",
-      "suni:limestown": "Schwäbisch Gmünd",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:0",
-      "@type": "",
-      "suni:ID": 63,
-      "suni:fid": 1,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Anhausen",
-      "suni:limestown": "Neuwied",
-      "suni:limestownpart": "Heimbach-Weis"
+      "suni:limesobject": "Inheiden 2",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
     },
     {
       "@id": "sunid:65",
@@ -522,6 +670,16 @@
       "suni:limestownpart": "Unterkessach"
     },
     {
+      "@id": "sunid:42",
+      "@type": "",
+      "suni:ID": 105,
+      "suni:fid": 43,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ferbach",
+      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
+      "suni:limestownpart": "???"
+    },
+    {
       "@id": "sunid:50",
       "@type": "",
       "suni:ID": 113,
@@ -530,192 +688,6 @@
       "suni:limesobject": "Hainhaus",
       "suni:limestown": "Pohlheim",
       "suni:limestownpart": "Grüningen"
-    },
-    {
-      "@id": "sunid:19",
-      "@type": "",
-      "suni:ID": 82,
-      "suni:fid": 20,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Dicker Wald 2",
-      "suni:limestown": "Münzenberg",
-      "suni:limestownpart": "Gambach"
-    },
-    {
-      "@id": "sunid:40",
-      "@type": "",
-      "suni:ID": 103,
-      "suni:fid": 41,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hinterer Seeberg",
-      "suni:limestown": "Altmannstein",
-      "suni:limestownpart": "Steinsdorf (i), Schambach"
-    },
-    {
-      "@id": "sunid:49",
-      "@type": "",
-      "suni:ID": 112,
-      "suni:fid": 50,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Degerfeld",
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:5",
-      "@type": "",
-      "suni:ID": 68,
-      "suni:fid": 6,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Eichelgarten",
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Lenzhahn/Dasbach"
-    },
-    {
-      "@id": "sunid:51",
-      "@type": "",
-      "suni:ID": 114,
-      "suni:fid": 52,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Langsdorf",
-      "suni:limestown": "Lich",
-      "suni:limestownpart": "Bettenhausen"
-    },
-    {
-      "@id": "sunid:66",
-      "@type": "",
-      "suni:ID": 129,
-      "suni:fid": 67,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Sindringen",
-      "suni:limestown": "Forchtenberg",
-      "suni:limestownpart": "Sindringen"
-    },
-    {
-      "@id": "sunid:35",
-      "@type": "",
-      "suni:ID": 98,
-      "suni:fid": 36,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Raitenbuch",
-      "suni:limestown": "Raitenbuch",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "suni:limescategory",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limescategory"
-      }
-    },
-    {
-      "@id": "sunid:30",
-      "@type": "",
-      "suni:ID": 93,
-      "suni:fid": 31,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rötelsee",
-      "suni:limestown": "Welzheim",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "suni:limestownpart",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limestownpart"
-      }
-    },
-    {
-      "@id": "sunid:62",
-      "@type": "",
-      "suni:ID": 125,
-      "suni:fid": 63,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Altheimer Straße",
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Hettingen"
-    },
-    {
-      "@id": "sunid:64",
-      "@type": "",
-      "suni:ID": 127,
-      "suni:fid": 65,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Salzberg",
-      "suni:limestown": "Osterburken",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:63",
-      "@type": "",
-      "suni:ID": 126,
-      "suni:fid": 64,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Holderbusch",
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Rinschheim"
-    },
-    {
-      "@id": "sunid:34",
-      "@type": "",
-      "suni:ID": 97,
-      "suni:fid": 35,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Gündersbach",
-      "suni:limestown": "Pfofeld",
-      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
-    },
-    {
-      "@id": "sunid:22",
-      "@type": "",
-      "suni:ID": 85,
-      "suni:fid": 23,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Feldheimer Wald",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:47",
-      "@type": "",
-      "suni:ID": 110,
-      "suni:fid": 48,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Alteburg-Heftrich 2",
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Heftrich"
-    },
-    {
-      "@id": "sunid:53",
-      "@type": "",
-      "suni:ID": 116,
-      "suni:fid": 54,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Haselheck",
-      "suni:limestown": "Echzell",
-      "suni:limestownpart": "Bisses"
-    },
-    {
-      "@id": "sunid:2",
-      "@type": "",
-      "suni:ID": 65,
-      "suni:fid": 3,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Becheln",
-      "suni:limestown": "Lahnstein",
-      "suni:limestownpart": "Oberlahnstein/Becheln"
-    },
-    {
-      "@id": "sunid:54",
-      "@type": "",
-      "suni:ID": 117,
-      "suni:fid": 55,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Inheiden 1",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
     },
     {
       "@id": "sunid:25",
@@ -728,44 +700,72 @@
       "suni:limestownpart": "Reinhardsachsen"
     },
     {
-      "@id": "sunid:42",
+      "@id": "sunid:23",
       "@type": "",
-      "suni:ID": 105,
-      "suni:fid": 43,
+      "suni:ID": 86,
+      "suni:fid": 24,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Ferbach",
-      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
+      "suni:limesobject": "Buchkopf",
+      "suni:limestown": "Altenstadt",
+      "suni:limestownpart": "Höchst"
+    },
+    {
+      "@id": "sunid:20",
+      "@type": "",
+      "suni:ID": 83,
+      "suni:fid": 21,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dicker Wald 1",
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:24",
+      "@type": "",
+      "suni:ID": 87,
+      "suni:fid": 25,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Neuwirtshaus",
+      "suni:limestown": "Hanau",
+      "suni:limestownpart": "Wolfgang"
+    },
+    {
+      "@id": "sunid:52",
+      "@type": "",
+      "suni:ID": 115,
+      "suni:fid": 53,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lochberg",
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bingenheim"
+    },
+    {
+      "@id": "suni:limesobject",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limesobject"
+      }
+    },
+    {
+      "@id": "sunid:64",
+      "@type": "",
+      "suni:ID": 127,
+      "suni:fid": 65,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Salzberg",
+      "suni:limestown": "Osterburken",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:26",
+      "@id": "sunid:6",
       "@type": "",
-      "suni:ID": 89,
-      "suni:fid": 27,
+      "suni:ID": 69,
+      "suni:fid": 7,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rehberg",
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Hettingen"
-    },
-    {
-      "@id": "sunid:59",
-      "@type": "",
-      "suni:ID": 122,
-      "suni:fid": 60,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Massohl",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Steinheim"
-    },
-    {
-      "@id": "sunid:4",
-      "@type": "",
-      "suni:ID": 67,
-      "suni:fid": 5,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Dörsterberg",
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Laufenselden"
+      "suni:limesobject": "Maisel",
+      "suni:limestown": "Glashütten",
+      "suni:limestownpart": "???"
     }
   ]
 }
