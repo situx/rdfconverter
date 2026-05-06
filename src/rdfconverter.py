@@ -194,6 +194,24 @@ class RDFConverter:
         return {"range":"xsd:string","prop":"data","unique":(stringcount==len(uniquestrings)),"category":(stringcount <= len(uniquestrings))}
 
 
+    @staticmethod
+    def shortenURI(uri,ns=False):
+        if uri is not None:
+            if ns:
+                if "#" in uri:
+                    return uri[0:uri.rfind('#')+1]
+                if "/" in uri:
+                    return uri[0:uri.rfind('/')+1]
+            if uri.endswith("/"):
+                uri = uri[0:-1]
+            if not ns:
+                if "#" in uri:
+                    return uri[uri.rfind('#') + 1:]
+                if "/" in uri:
+                    return uri[uri.rfind('/') + 1:]
+            return uri
+        else:
+            return ""
 
     def checkForBooleanAsString(self,uniquestrings):
         if len(uniquestrings)>2:
@@ -243,10 +261,11 @@ class RDFConverter:
                 if unit!=None:
                     g.add((theiri, RDF.type,OWL.ObjectProperty))
                     g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
-                    valueinstanceiri=curid+str("_")+str(theiri[theiri.rfind("/")+1:])+"_value"
+                    siri=RDFConverter.shortenURI(theiri)
+                    valueinstanceiri=curid+str("_")+str(siri)+"_value"
                     g.add((URIRef(curid), theiri, URIRef(valueinstanceiri)))
                     g.add((URIRef(valueinstanceiri),RDF.type,URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
-                    g.add((URIRef(valueinstanceiri), RDFS.label,Literal("Value Result of "+str(theiri[theiri.rfind("/")+1:])+" for "+str(curid))))
+                    g.add((URIRef(valueinstanceiri), RDFS.label,Literal("Value Result of "+str(siri)+" for "+str(curid))))
                     g.add((URIRef(valueinstanceiri), URIRef(unitprop),URIRef(unit)))
                     if "range" in curcol:
                         g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
