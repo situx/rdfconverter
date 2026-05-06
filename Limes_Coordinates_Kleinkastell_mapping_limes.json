@@ -36,6 +36,1562 @@
   },
   "@graph": [
     {
+      "@id": "sunid:47",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:47_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Adolfseck!"
+      ],
+      "suni:limestown": "Bad Schwalbach",
+      "suni:limestownpart": "Adolfseck"
+    },
+    {
+      "@id": "sunid:24_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.961192 50.260375)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 24"
+      }
+    },
+    {
+      "@id": "sunid:38",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:38_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Biebig!"
+      ],
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:32_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.754924 48.797321)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 32"
+      }
+    },
+    {
+      "@id": "sunid:62_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.985621 50.167989)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 62"
+      }
+    },
+    {
+      "@id": "sunid:37_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.1511 48.983454)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 37"
+      }
+    },
+    {
+      "@id": "sunid:16",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:16_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Ockstädter Wald!"
+      ],
+      "suni:limestown": "Friedberg",
+      "suni:limestownpart": "Ockstadt"
+    },
+    {
+      "@id": "sunid:5_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.995022 50.197474)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 5"
+      }
+    },
+    {
+      "@id": "sunid:24",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:24_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Buchkopf!"
+      ],
+      "suni:limestown": "Altenstadt",
+      "suni:limestownpart": "Höchst"
+    },
+    {
+      "@id": "sunid:54_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.901594 50.388546)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 54"
+      }
+    },
+    {
+      "@id": "sunid:26_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.330439 49.633402)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 26"
+      }
+    },
+    {
+      "@id": "sunid:36",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:36_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Raitenbuch!"
+      ],
+      "suni:limestown": "Raitenbuch",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:13_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.62539 50.305565)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 13"
+      }
+    },
+    {
+      "@id": "sunid:62",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:62_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Langendiebach!"
+      ],
+      "suni:limestown": "Erlensee",
+      "suni:limestownpart": "Langendiebach"
+    },
+    {
+      "@id": "sunid:49_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.339083 50.211682)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 49"
+      }
+    },
+    {
+      "@id": "sunid:9_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.512934 50.253706)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 9"
+      }
+    },
+    {
+      "@id": "sunid:41",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:41_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hinterer Seeberg!"
+      ],
+      "suni:limestown": "Altmannstein",
+      "suni:limestownpart": "Steinsdorf (i), Schambach"
+    },
+    {
+      "@id": "sunid:1",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:1_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Anhausen!"
+      ],
+      "suni:limestown": "Neuwied",
+      "suni:limestownpart": "Heimbach-Weis"
+    },
+    {
+      "@id": "sunid:68",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:68_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Herrenwiesen!"
+      ],
+      "suni:limestown": "Mainhardt",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:41_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.572464 48.905277)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 41"
+      }
+    },
+    {
+      "@id": "sunid:30_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.619291 48.925947)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 30"
+      }
+    },
+    {
+      "@id": "sunid:17_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.640278 50.356513)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 17"
+      }
+    },
+    {
+      "@id": "suni:limestownpart",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limestownpart"
+      }
+    },
+    {
+      "@id": "sunid:15_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.629062 50.41449)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 15"
+      }
+    },
+    {
+      "@id": "sunid:39_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.271316 48.975771)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 39"
+      }
+    },
+    {
+      "@id": "sunid:60",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:60_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Massohl!"
+      ],
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:40_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.539056 48.913671)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 40"
+      }
+    },
+    {
+      "@id": "sunid:51",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:51_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hainhaus!"
+      ],
+      "suni:limestown": "Pohlheim",
+      "suni:limestownpart": "Grüningen"
+    },
+    {
+      "@id": "sunid:12_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.586331 50.28213)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 12"
+      }
+    },
+    {
+      "@id": "sunid:8_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.492966 50.244586)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 8"
+      }
+    },
+    {
+      "@id": "sunid:10_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.568471 50.272769)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 10"
+      }
+    },
+    {
+      "@id": "sunid:55_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.903685 50.46017)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 55"
+      }
+    },
+    {
+      "@id": "sunid:18_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.64676 50.336998)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 18"
+      }
+    },
+    {
+      "@id": "sunid:45",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:45_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Kemel 2!"
+      ],
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:8",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:8_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Altes Jagdhaus!"
+      ],
+      "suni:limestown": "Oberursel",
+      "suni:limestownpart": "Oberstedten"
+    },
+    {
+      "@id": "sunid:20_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.67608 50.470322)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 20"
+      }
+    },
+    {
+      "@id": "sunid:16_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.638337 50.319621)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 16"
+      }
+    },
+    {
+      "@id": "sunid:21_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.677771 50.466075)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 21"
+      }
+    },
+    {
+      "@id": "sunid:55",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:55_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Inheiden 1!"
+      ],
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "geo:Geometry",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "sunid:47_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.077694 50.16494)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 47"
+      }
+    },
+    {
+      "@id": "sunid:14",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:14_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hunnenkirchhof 1!"
+      ],
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:29_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.571011 49.055125)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 29"
+      }
+    },
+    {
+      "@id": "sunid:19_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.650381 50.432994)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 19"
+      }
+    },
+    {
+      "@id": "sunid:68_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.561952 49.080419)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 68"
+      }
+    },
+    {
+      "@id": "sunid:59_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.915133 50.326418)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 59"
+      }
+    },
+    {
+      "@id": "sunid:56",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:56_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Inheiden 2!"
+      ],
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:22_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.69936 50.499817)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 22"
+      }
+    },
+    {
+      "@id": "sunid:7_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.390579 50.218544)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 7"
+      }
+    },
+    {
+      "@id": "sunid:51_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.725101 50.52089)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 51"
+      }
+    },
+    {
+      "@id": "sunid:18",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:18_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Kaisergrube!"
+      ],
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:58_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.91015 50.451806)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 58"
+      }
+    },
+    {
+      "@id": "sunid:49",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:49_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Alteburg-Heftrich 1!"
+      ],
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:23_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.873857 50.471082)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 23"
+      }
+    },
+    {
+      "@id": "sunid:9",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:9_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Heidenstock!"
+      ],
+      "suni:limestown": {
+        "@id": "https://www.wikidata.org/entity/Q4165"
+      },
+      "suni:limestownpart": "Ober-Eschbach"
+    },
+    {
+      "@id": "sunid:11_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.568939 50.27216)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 11"
+      }
+    },
+    {
+      "@id": "sunid:3_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.738396 50.28661)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 3"
+      }
+    },
+    {
+      "@id": "sunid:48",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:48_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Alteburg-Heftrich 2!"
+      ],
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:14_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.6284 50.414587)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 14"
+      }
+    },
+    {
+      "@id": "sunid:4_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.890201 50.226566)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 4"
+      }
+    },
+    {
+      "@id": "sunid:7",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:7_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Maisel!"
+      ],
+      "suni:limestown": "Glashütten",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:60_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.91616 50.437561)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 60"
+      }
+    },
+    {
+      "@id": "sunid:53",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:53_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Lochberg!"
+      ],
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bingenheim"
+    },
+    {
+      "@id": "sunid:63",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:63_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Altheimer Straße!"
+      ],
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
+    },
+    {
+      "@id": "sunid:46",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:46_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Kemel 1!"
+      ],
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:13",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:13_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rittergräber!"
+      ],
+      "suni:limestown": "Rosbach",
+      "suni:limestownpart": "Nieder-Rosbach"
+    },
+    {
+      "@id": "https://www.wikidata.org/entity/Q4165",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Bad Homburg"
+      }
+    },
+    {
+      "@id": "sunid:45_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.016199 50.167456)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 45"
+      }
+    },
+    {
+      "@id": "sunid:64",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:64_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Holderbusch!"
+      ],
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Rinschheim"
+    },
+    {
+      "@id": "sunid:28_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.42348 49.449848)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 28"
+      }
+    },
+    {
+      "@id": "sunid:53_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.89565 50.361023)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 53"
+      }
+    },
+    {
+      "@id": "sunid:30",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:30_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Ebnisee!"
+      ],
+      "suni:limestown": "Kaisersbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:3",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:3_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Becheln!"
+      ],
+      "suni:limestown": "Lahnstein",
+      "suni:limestownpart": "Oberlahnstein/Becheln"
+    },
+    {
+      "@id": "rdfs:label",
+      "@type": "owl:AnnotationProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "label"
+      }
+    },
+    {
+      "@id": "sunid:57",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:57_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Unter-Widdersheim!"
+      ],
+      "suni:limestown": "Nidda",
+      "suni:limestownpart": "Unter-Widdersheim"
+    },
+    {
+      "@id": "sunid:17",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:17_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Eichkopf!"
+      ],
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "Langenhain-Ziegenberg"
+    },
+    {
+      "@id": "sunid:54",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:54_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Haselheck!"
+      ],
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bisses"
+    },
+    {
+      "@id": "sunid:50",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:50_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Degerfeld!"
+      ],
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:43",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:43_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Ferbach!"
+      ],
+      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:33_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.763711 48.791553)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 33"
+      }
+    },
+    {
+      "@id": "sunid:46_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.016542 50.167774)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 46"
+      }
+    },
+    {
+      "@id": "sunid:33",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:33_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Freimühle!"
+      ],
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:2",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:2_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hillscheid!"
+      ],
+      "suni:limestown": "Hillscheid",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:27",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:27_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rehberg!"
+      ],
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
+    },
+    {
+      "@id": "sunid:2_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.704296 50.412622)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 2"
+      }
+    },
+    {
+      "@id": "sunid:37",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:37_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Kaldorf!"
+      ],
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Kaldorf"
+    },
+    {
+      "@id": "sunid:4",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:4_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Pfarrhofen!"
+      ],
+      "suni:limestown": "Miehlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:25",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:25_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Neuwirtshaus!"
+      ],
+      "suni:limestown": "Hanau",
+      "suni:limestownpart": "Wolfgang"
+    },
+    {
+      "@id": "sunid:65_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.430446 49.43113)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 65"
+      }
+    },
+    {
       "@id": "sunid:40",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
@@ -86,751 +1642,6 @@
       "suni:limestownpart": "Laufenselden"
     },
     {
-      "@id": "sunid:23",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:23_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Feldheimer Wald!"
-      ],
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "geo:hasGeometry",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "sunid:3_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.738396 50.28661)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 3"
-      }
-    },
-    {
-      "@id": "sunid:2",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:2_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hillscheid!"
-      ],
-      "suni:limestown": "Hillscheid",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:43_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.65227 50.430389)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 43"
-      }
-    },
-    {
-      "@id": "sunid:27",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:27_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Rehberg!"
-      ],
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Hettingen"
-    },
-    {
-      "@id": "sunid:50",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:50_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Degerfeld!"
-      ],
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:46_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.016542 50.167774)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 46"
-      }
-    },
-    {
-      "@id": "sunid:1",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:1_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Anhausen!"
-      ],
-      "suni:limestown": "Neuwied",
-      "suni:limestownpart": "Heimbach-Weis"
-    },
-    {
-      "@id": "sunid:23_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.873857 50.471082)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 23"
-      }
-    },
-    {
-      "@id": "sunid:22",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:22_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Holzheimer Unterwald!"
-      ],
-      "suni:limestown": "Pohlheim",
-      "suni:limestownpart": "Holzheim"
-    },
-    {
-      "@id": "sunid:10",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:10_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Saalburg 1!"
-      ],
-      "suni:limestown": {
-        "@id": "https://www.wikidata.org/entity/Q4165"
-      },
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:12_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.586331 50.28213)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 12"
-      }
-    },
-    {
-      "@id": "sunid:39_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.271316 48.975771)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 39"
-      }
-    },
-    {
-      "@id": "sunid:61",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:61_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Stammheim!"
-      ],
-      "suni:limestown": "Florstadt",
-      "suni:limestownpart": "Stammheim"
-    },
-    {
-      "@id": "sunid:9",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:9_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Heidenstock!"
-      ],
-      "suni:limestown": {
-        "@id": "https://www.wikidata.org/entity/Q4165"
-      },
-      "suni:limestownpart": "Ober-Eschbach"
-    },
-    {
-      "@id": "sunid:17",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:17_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Eichkopf!"
-      ],
-      "suni:limestown": "Ober-Mörlen",
-      "suni:limestownpart": "Langenhain-Ziegenberg"
-    },
-    {
-      "@id": "sunid:55",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:55_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Inheiden 1!"
-      ],
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:44",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:44_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Pohl!"
-      ],
-      "suni:limestown": "Pohl",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:51",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:51_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hainhaus!"
-      ],
-      "suni:limestown": "Pohlheim",
-      "suni:limestownpart": "Grüningen"
-    },
-    {
-      "@id": "sunid:1_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.538413 50.481347)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 1"
-      }
-    },
-    {
-      "@id": "sunid:36",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:36_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Raitenbuch!"
-      ],
-      "suni:limestown": "Raitenbuch",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "https://www.wikidata.org/entity/Q4165",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Bad Homburg"
-      }
-    },
-    {
-      "@id": "sunid:53",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:53_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Lochberg!"
-      ],
-      "suni:limestown": "Echzell",
-      "suni:limestownpart": "Bingenheim"
-    },
-    {
-      "@id": "sunid:31_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.633845 48.88659)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 31"
-      }
-    },
-    {
-      "@id": "sunid:22_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.69936 50.499817)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 22"
-      }
-    },
-    {
-      "@id": "sunid:32_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.754924 48.797321)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 32"
-      }
-    },
-    {
-      "@id": "sunid:45_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.016199 50.167456)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 45"
-      }
-    },
-    {
-      "@id": "sunid:58_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.91015 50.451806)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 58"
-      }
-    },
-    {
-      "@id": "sunid:36_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.105936 49.015709)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 36"
-      }
-    },
-    {
-      "@id": "sunid:59_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.915133 50.326418)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 59"
-      }
-    },
-    {
-      "@id": "sunid:37_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.1511 48.983454)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 37"
-      }
-    },
-    {
-      "@id": "sunid:33",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:33_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Freimühle!"
-      ],
-      "suni:limestown": "Schwäbisch Gmünd",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:66",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:66_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Lehnenwiesen!"
-      ],
-      "suni:limestown": "Widdern",
-      "suni:limestownpart": "Unterkessach"
-    },
-    {
-      "@id": "sunid:20",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:20_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Dicker Wald 2!"
-      ],
-      "suni:limestown": "Münzenberg",
-      "suni:limestownpart": "Gambach"
-    },
-    {
-      "@id": "sunid:42",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:42_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Rheinbrohl!"
-      ],
-      "suni:limestown": "Rheinbrohl",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:38",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:38_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Biebig!"
-      ],
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "sunid:56",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:56_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Inheiden 2!"
-      ],
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:8",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:8_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Altes Jagdhaus!"
-      ],
-      "suni:limestown": "Oberursel",
-      "suni:limestownpart": "Oberstedten"
-    },
-    {
       "@id": "sunid:27_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
@@ -840,43 +1651,6 @@
       "rdfs:label": {
         "@language": "en",
         "@value": "Geometry of 27"
-      }
-    },
-    {
-      "@id": "sunid:43",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:43_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Ferbach!"
-      ],
-      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:9_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.512934 50.253706)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 9"
       }
     },
     {
@@ -905,244 +1679,15 @@
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:3",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:3_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Becheln!"
-      ],
-      "suni:limestown": "Lahnstein",
-      "suni:limestownpart": "Oberlahnstein/Becheln"
-    },
-    {
-      "@id": "sunid:52",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:52_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Langsdorf!"
-      ],
-      "suni:limestown": "Lich",
-      "suni:limestownpart": "Bettenhausen"
-    },
-    {
-      "@id": "sunid:19_geom",
+      "@id": "sunid:36_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.650381 50.432994)"
+        "@value": "POINT (11.105936 49.015709)"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 19"
-      }
-    },
-    {
-      "@id": "sunid:4_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.890201 50.226566)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 4"
-      }
-    },
-    {
-      "@id": "sunid:54",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:54_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Haselheck!"
-      ],
-      "suni:limestown": "Echzell",
-      "suni:limestownpart": "Bisses"
-    },
-    {
-      "@id": "sunid:46",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:46_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kemel 1!"
-      ],
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Kemel"
-    },
-    {
-      "@id": "sunid:42_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.319315 50.503527)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 42"
-      }
-    },
-    {
-      "@id": "sunid:64",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:64_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Holderbusch!"
-      ],
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Rinschheim"
-    },
-    {
-      "@id": "sunid:14_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.6284 50.414587)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 14"
-      }
-    },
-    {
-      "@id": "sunid:54_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.901594 50.388546)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 54"
-      }
-    },
-    {
-      "@id": "sunid:21_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.677771 50.466075)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 21"
-      }
-    },
-    {
-      "@id": "sf:Point",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "geo:Geometry"
-      }
-    },
-    {
-      "@id": "sunid:7",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:7_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Maisel!"
-      ],
-      "suni:limestown": "Glashütten",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:16_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.638337 50.319621)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 16"
+        "@value": "Geometry of 36"
       }
     },
     {
@@ -1158,515 +1703,16 @@
       }
     },
     {
-      "@id": "sunid:33_geom",
+      "@id": "sunid:35_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (9.763711 48.791553)"
+        "@value": "POINT (10.951999 49.0865)"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 33"
+        "@value": "Geometry of 35"
       }
-    },
-    {
-      "@id": "sunid:29_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.571011 49.055125)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 29"
-      }
-    },
-    {
-      "@id": "sunid:49",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:49_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Alteburg-Heftrich 1!"
-      ],
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Heftrich"
-    },
-    {
-      "@id": "sunid:26_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.330439 49.633402)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 26"
-      }
-    },
-    {
-      "@id": "sunid:28",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:28_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hintere Kalbe!"
-      ],
-      "suni:limestown": "Osterburken",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:8_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.492966 50.244586)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 8"
-      }
-    },
-    {
-      "@id": "sunid:14",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:14_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hunnenkirchhof 1!"
-      ],
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "Nieder-Weisel"
-    },
-    {
-      "@id": "suni:Kleinkastell",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Kleinkastell"
-      },
-      "rdfs:subClassOf": {
-        "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      }
-    },
-    {
-      "@id": "sunid:30_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.619291 48.925947)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 30"
-      }
-    },
-    {
-      "@id": "sunid:52_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.85455 50.482998)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 52"
-      }
-    },
-    {
-      "@id": "sunid:49_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.339083 50.211682)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 49"
-      }
-    },
-    {
-      "@id": "sunid:48",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:48_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Alteburg-Heftrich 2!"
-      ],
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Heftrich"
-    },
-    {
-      "@id": "geo:asWKT",
-      "@type": "owl:DatatypeProperty"
-    },
-    {
-      "@id": "rdfs:label",
-      "@type": "owl:AnnotationProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "label"
-      }
-    },
-    {
-      "@id": "sunid:15_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.629062 50.41449)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 15"
-      }
-    },
-    {
-      "@id": "sunid:5_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.995022 50.197474)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 5"
-      }
-    },
-    {
-      "@id": "sunid:62",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:62_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Langendiebach!"
-      ],
-      "suni:limestown": "Erlensee",
-      "suni:limestownpart": "Langendiebach"
-    },
-    {
-      "@id": "sunid:13",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:13_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Rittergräber!"
-      ],
-      "suni:limestown": "Rosbach",
-      "suni:limestownpart": "Nieder-Rosbach"
-    },
-    {
-      "@id": "sunid:25",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:25_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Neuwirtshaus!"
-      ],
-      "suni:limestown": "Hanau",
-      "suni:limestownpart": "Wolfgang"
-    },
-    {
-      "@id": "sunid:51_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.725101 50.52089)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 51"
-      }
-    },
-    {
-      "@id": "sunid:17_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.640278 50.356513)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 17"
-      }
-    },
-    {
-      "@id": "sunid:19",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:19_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Schrenzer!"
-      ],
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:47",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:47_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Adolfseck!"
-      ],
-      "suni:limestown": "Bad Schwalbach",
-      "suni:limestownpart": "Adolfseck"
-    },
-    {
-      "@id": "rdfs:comment",
-      "@type": "owl:AnnotationProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limesobject"
-      }
-    },
-    {
-      "@id": "sunid:61_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.923034 50.31257)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 61"
-      }
-    },
-    {
-      "@id": "sunid:21",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:21_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Dicker Wald 1!"
-      ],
-      "suni:limestown": "Münzenberg",
-      "suni:limestownpart": "Gambach"
-    },
-    {
-      "@id": "sunid:68",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:68_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Herrenwiesen!"
-      ],
-      "suni:limestown": "Mainhardt",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:57_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.908644 50.422543)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 57"
-      }
-    },
-    {
-      "@id": "sunid:57",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:57_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Unter-Widdersheim!"
-      ],
-      "suni:limestown": "Nidda",
-      "suni:limestownpart": "Unter-Widdersheim"
-    },
-    {
-      "@id": "sunid:45",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:45_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kemel 2!"
-      ],
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Kemel"
     },
     {
       "@id": "sunid:66_geom",
@@ -1681,53 +1727,44 @@
       }
     },
     {
-      "@id": "sunid:38_geom",
+      "@id": "sunid:67_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (11.265951 48.975256)"
+        "@value": "POINT (9.47859 49.279712)"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 38"
+        "@value": "Geometry of 67"
       }
     },
     {
-      "@id": "sunid:41_geom",
+      "@id": "sunid:25_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (11.572464 48.905277)"
+        "@value": "POINT (8.982996 50.11126)"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 41"
+        "@value": "Geometry of 25"
       }
     },
     {
-      "@id": "sunid:4",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:4_geom"
+      "@id": "sunid:31_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.633845 48.88659)"
       },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Pfarrhofen!"
-      ],
-      "suni:limestown": "Miehlen",
-      "suni:limestownpart": "???"
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 31"
+      }
+    },
+    {
+      "@id": "geo:asWKT",
+      "@type": "owl:DatatypeProperty"
     },
     {
       "@id": "sunid:63_geom",
@@ -1740,6 +1777,31 @@
         "@language": "en",
         "@value": "Geometry of 63"
       }
+    },
+    {
+      "@id": "sunid:26",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:26_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Haselburg!"
+      ],
+      "suni:limestown": "Walldürn",
+      "suni:limestownpart": "Reinhardsachsen"
     },
     {
       "@id": "sunid:15",
@@ -1765,6 +1827,219 @@
       ],
       "suni:limestown": "Butzbach",
       "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:61_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.923034 50.31257)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 61"
+      }
+    },
+    {
+      "@id": "sunid:35",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:35_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Gündersbach!"
+      ],
+      "suni:limestown": "Pfofeld",
+      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
+    },
+    {
+      "@id": "sunid:48_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.336425 50.21039)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 48"
+      }
+    },
+    {
+      "@id": "sunid:57_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.908644 50.422543)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 57"
+      }
+    },
+    {
+      "@id": "sunid:42_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.319315 50.503527)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 42"
+      }
+    },
+    {
+      "@id": "sunid:61",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:61_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Stammheim!"
+      ],
+      "suni:limestown": "Florstadt",
+      "suni:limestownpart": "Stammheim"
+    },
+    {
+      "@id": "sunid:44",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:44_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Pohl!"
+      ],
+      "suni:limestown": "Pohl",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:42",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:42_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rheinbrohl!"
+      ],
+      "suni:limestown": "Rheinbrohl",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sf:Point",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "geo:Geometry"
+      }
+    },
+    {
+      "@id": "sunid:23",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:23_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Feldheimer Wald!"
+      ],
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "rdfs:comment",
+      "@type": "owl:AnnotationProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limesobject"
+      }
+    },
+    {
+      "@id": "sunid:31",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:31_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rötelsee!"
+      ],
+      "suni:limestown": "Welzheim",
+      "suni:limestownpart": "???"
     },
     {
       "@id": "sunid:11",
@@ -1794,50 +2069,26 @@
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:11_geom",
+      "@id": "sunid:1_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.568939 50.27216)"
+        "@value": "POINT (7.538413 50.481347)"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 11"
+        "@value": "Geometry of 1"
       }
     },
     {
-      "@id": "sunid:20_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.67608 50.470322)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 20"
-      }
-    },
-    {
-      "@id": "sunid:13_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.62539 50.305565)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 13"
-      }
-    },
-    {
-      "@id": "sunid:37",
+      "@id": "sunid:12",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:37_geom"
+        "@id": "sunid:12_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -1849,56 +2100,20 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Kaldorf!"
+        "Kleinkastell Lochmühle!"
       ],
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Kaldorf"
+      "suni:limestown": "Friedrichsdorf",
+      "suni:limestownpart": "Köppern"
     },
     {
-      "@id": "sunid:6_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.316399 50.201068)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 6"
-      }
-    },
-    {
-      "@id": "sunid:18_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.64676 50.336998)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 18"
-      }
-    },
-    {
-      "@id": "sunid:55_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.903685 50.46017)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 55"
-      }
-    },
-    {
-      "@id": "sunid:39",
+      "@id": "sunid:10",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:39_geom"
+        "@id": "sunid:10_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -1910,45 +2125,22 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Hegelohe!"
+        "Kleinkastell Saalburg 1!"
       ],
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "sunid:34",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:34_geom"
+      "suni:limestown": {
+        "@id": "https://www.wikidata.org/entity/Q4165"
       },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hinterer Schlossberg!"
-      ],
-      "suni:limestown": "Gunzenhausen",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:65",
+      "@id": "sunid:32",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:65_geom"
+        "@id": "sunid:32_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -1960,32 +2152,20 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Salzberg!"
+        "Kleinkastell Kleindeinbach!"
       ],
-      "suni:limestown": "Osterburken",
-      "suni:limestownpart": "???"
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "Großdeinbach"
     },
     {
-      "@id": "sunid:48_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.336425 50.21039)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 48"
-      }
-    },
-    {
-      "@id": "sunid:59",
+      "@id": "sunid:20",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:59_geom"
+        "@id": "sunid:20_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -1997,83 +2177,10 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Staden!"
+        "Kleinkastell Dicker Wald 2!"
       ],
-      "suni:limestown": "Florstadt",
-      "suni:limestownpart": "Staden"
-    },
-    {
-      "@id": "sunid:40_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.539056 48.913671)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 40"
-      }
-    },
-    {
-      "@id": "sunid:2_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.704296 50.412622)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 2"
-      }
-    },
-    {
-      "@id": "sunid:67_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.47859 49.279712)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 67"
-      }
-    },
-    {
-      "@id": "sunid:28_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.42348 49.449848)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 28"
-      }
-    },
-    {
-      "@id": "sunid:60",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:60_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Massohl!"
-      ],
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Steinheim"
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
     },
     {
       "@id": "sunid:58",
@@ -2101,41 +2208,40 @@
       "suni:limestownpart": "Steinheim"
     },
     {
-      "@id": "sunid:62_geom",
+      "@id": "sunid:52_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.985621 50.167989)"
+        "@value": "POINT (8.85455 50.482998)"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 62"
+        "@value": "Geometry of 52"
       }
     },
     {
-      "@id": "sunid:63",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:63_geom"
+      "@id": "sunid:38_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.265951 48.975256)"
       },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Altheimer Straße!"
-      ],
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Hettingen"
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 38"
+      }
+    },
+    {
+      "@id": "sunid:6_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.316399 50.201068)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 6"
+      }
     },
     {
       "@id": "sunid:44_geom",
@@ -2150,14 +2256,42 @@
       }
     },
     {
-      "@id": "sunid:24",
+      "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Military Camp"
+        },
+        {
+          "@language": "de",
+          "@value": "Militärcamp"
+        }
+      ]
+    },
+    {
+      "@id": "suni:Kleinkastell",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Kleinkastell"
+      },
+      "rdfs:subClassOf": {
+        "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      }
+    },
+    {
+      "@id": "geo:hasGeometry",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "sunid:65",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:24_geom"
+        "@id": "sunid:65_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2169,81 +2303,20 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Buchkopf!"
+        "Kleinkastell Salzberg!"
       ],
-      "suni:limestown": "Altenstadt",
-      "suni:limestownpart": "Höchst"
-    },
-    {
-      "@id": "sunid:24_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.961192 50.260375)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 24"
-      }
-    },
-    {
-      "@id": "sunid:64_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.395263 49.515019)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 64"
-      }
-    },
-    {
-      "@id": "sunid:68_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.561952 49.080419)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 68"
-      }
-    },
-    {
-      "@id": "sunid:18",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:18_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kaisergrube!"
-      ],
-      "suni:limestown": "Ober-Mörlen",
+      "suni:limestown": "Osterburken",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:41",
+      "@id": "sunid:6",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:41_geom"
+        "@id": "sunid:6_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2255,10 +2328,60 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Hinterer Seeberg!"
+        "Kleinkastell Eichelgarten!"
       ],
-      "suni:limestown": "Altmannstein",
-      "suni:limestownpart": "Steinsdorf (i), Schambach"
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Lenzhahn/Dasbach"
+    },
+    {
+      "@id": "sunid:39",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:39_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hegelohe!"
+      ],
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:52",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:52_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Langsdorf!"
+      ],
+      "suni:limestown": "Lich",
+      "suni:limestownpart": "Bettenhausen"
     },
     {
       "@id": "sunid:56_geom",
@@ -2298,6 +2421,81 @@
       "suni:limestownpart": "Sindringen"
     },
     {
+      "@id": "sunid:22",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:22_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Holzheimer Unterwald!"
+      ],
+      "suni:limestown": "Pohlheim",
+      "suni:limestownpart": "Holzheim"
+    },
+    {
+      "@id": "sunid:28",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:28_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hintere Kalbe!"
+      ],
+      "suni:limestown": "Osterburken",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:66",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:66_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Lehnenwiesen!"
+      ],
+      "suni:limestown": "Widdern",
+      "suni:limestownpart": "Unterkessach"
+    },
+    {
       "@id": "sunid:50_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
@@ -2310,34 +2508,14 @@
       }
     },
     {
-      "@id": "suni:limestownpart",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limestownpart"
-      }
-    },
-    {
-      "@id": "sunid:65_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.430446 49.43113)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 65"
-      }
-    },
-    {
-      "@id": "sunid:32",
+      "@id": "sunid:34",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:32_geom"
+        "@id": "sunid:34_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2349,247 +2527,20 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Kleindeinbach!"
+        "Kleinkastell Hinterer Schlossberg!"
       ],
-      "suni:limestown": "Schwäbisch Gmünd",
-      "suni:limestownpart": "Großdeinbach"
-    },
-    {
-      "@id": "sunid:7_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.390579 50.218544)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 7"
-      }
-    },
-    {
-      "@id": "sunid:26",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:26_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Haselburg!"
-      ],
-      "suni:limestown": "Walldürn",
-      "suni:limestownpart": "Reinhardsachsen"
-    },
-    {
-      "@id": "sunid:47_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.077694 50.16494)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 47"
-      }
-    },
-    {
-      "@id": "sunid:60_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.91616 50.437561)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 60"
-      }
-    },
-    {
-      "@id": "sunid:35_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (10.951999 49.0865)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 35"
-      }
-    },
-    {
-      "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp",
-      "@type": "owl:Class",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Military Camp"
-        },
-        {
-          "@language": "de",
-          "@value": "Militärcamp"
-        }
-      ]
-    },
-    {
-      "@id": "sunid:12",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:12_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Lochmühle!"
-      ],
-      "suni:limestown": "Friedrichsdorf",
-      "suni:limestownpart": "Köppern"
-    },
-    {
-      "@id": "geo:Geometry",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "sunid:25_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.982996 50.11126)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 25"
-      }
-    },
-    {
-      "@id": "sunid:53_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.89565 50.361023)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 53"
-      }
-    },
-    {
-      "@id": "sunid:16",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:16_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Ockstädter Wald!"
-      ],
-      "suni:limestown": "Friedberg",
-      "suni:limestownpart": "Ockstadt"
-    },
-    {
-      "@id": "sunid:10_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.568471 50.272769)"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 10"
-      }
-    },
-    {
-      "@id": "sunid:6",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:6_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Eichelgarten!"
-      ],
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Lenzhahn/Dasbach"
-    },
-    {
-      "@id": "sunid:30",
-      "@type": [
-        "https://www.wikidata.org/wiki/Q88205",
-        "suni:Kleinkastell",
-        "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:30_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Ebnisee!"
-      ],
-      "suni:limestown": "Kaisersbach",
+      "suni:limestown": "Gunzenhausen",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:35",
+      "@id": "sunid:19",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:35_geom"
+        "@id": "sunid:19_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2601,20 +2552,32 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Gündersbach!"
+        "Kleinkastell Schrenzer!"
       ],
-      "suni:limestown": "Pfofeld",
-      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:31",
+      "@id": "sunid:43_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.65227 50.430389)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 43"
+      }
+    },
+    {
+      "@id": "sunid:59",
       "@type": [
         "https://www.wikidata.org/wiki/Q88205",
         "suni:Kleinkastell",
         "http://archaeoinformatics.link/ontology#MilitaryCamp"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:31_geom"
+        "@id": "sunid:59_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2626,10 +2589,47 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Rötelsee!"
+        "Kleinkastell Staden!"
       ],
-      "suni:limestown": "Welzheim",
-      "suni:limestownpart": "???"
+      "suni:limestown": "Florstadt",
+      "suni:limestownpart": "Staden"
+    },
+    {
+      "@id": "sunid:64_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.395263 49.515019)"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 64"
+      }
+    },
+    {
+      "@id": "sunid:21",
+      "@type": [
+        "https://www.wikidata.org/wiki/Q88205",
+        "suni:Kleinkastell",
+        "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:21_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Dicker Wald 1!"
+      ],
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
     }
   ]
 }
