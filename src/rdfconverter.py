@@ -440,7 +440,7 @@ class RDFConverter:
                 g.add((theiri, RDF.type, OWL.DatatypeProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                 g.add((URIRef(curid), theiri, Literal(str(aggval), datatype="http://www.w3.org/2001/XMLSchema#string")))
-            elif x in typemap["columns"] and x != idcol and x != "geometry":
+            elif x in typemap["columns"] and x != "geometry": #and x != idcol
                 intypemap = True
                 curcol = typemap["columns"][x]
                 res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
