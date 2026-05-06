@@ -318,6 +318,7 @@ class RDFConverter:
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
                     g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDFS.subClassOf, thecls))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, OWL.Class))
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
                     if "labels" in curcol["valuemapping"][thevalue]:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
@@ -329,6 +330,7 @@ class RDFConverter:
                 else:
                     g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]), RDF.type, OWL.Class))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
                     if "concept" in curcol:
                         g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
