@@ -282,7 +282,7 @@ class RDFConverter:
                             g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
                                 curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
                         else:
-                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")),lang=curlang)))
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))
                     else:
                         if curlang=="":
                             g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
