@@ -254,7 +254,7 @@ class RDFConverter:
                 spl=[thevalue]
             unit=None
             unitprop="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"
-            unithasvalue = "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
+            unithasvalue = "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
             if "unit" in curcol:
                 unit=str(curcol["unit"]).replace("om:","http://www.ontology-of-units-of-measure.org/resource/om-2/").replace("qudt:","http://qudt.org/schema/qudt#")
             for sp in spl:
