@@ -268,7 +268,7 @@ class RDFConverter:
                     valueinstanceiri=curid+str("_")+str(siri)+"_value"
                     g.add((URIRef(curid), theiri, URIRef(valueinstanceiri)))
                     g.add((URIRef(valueinstanceiri),RDF.type,URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
-                    g.add((URIRef(valueinstanceiri), RDFS.label,Literal("Value Result of "+str(siri)+" for "+str(curid))))
+                    g.add((URIRef(valueinstanceiri), RDFS.label,Literal("Value Result of "+str(siri)+" for "+RDFConverter.shortenURI(str(curid)))))
                     g.add((URIRef(valueinstanceiri), URIRef(unitprop),URIRef(unit)))
                     if "range" in curcol:
                         g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
