@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/suni/ID> a owl:DatatypeProperty ;
+    rdfs:label "ID"@en .
+
+<http://purl.org/suni/fid> a owl:DatatypeProperty ;
+    rdfs:label "fid"@en .
+
+<http://purl.org/suni/limescategory> a owl:DatatypeProperty ;
+    rdfs:label "limescategory"@en .
+
+<http://purl.org/suni/limesobject> a owl:DatatypeProperty ;
+    rdfs:label "limesobject"@en .
+
+<http://purl.org/suni/limestown> a owl:DatatypeProperty ;
+    rdfs:label "limestown"@en .
+
+<http://purl.org/suni/limestownpart> a owl:DatatypeProperty ;
+    rdfs:label "limestownpart"@en .
+
