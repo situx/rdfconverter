@@ -279,6 +279,9 @@ class RDFConverter:
                             curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
                     else:
                         g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
+            if "propiri" not in column:
+                ownvocabg.add((URIRef(theiri),RDF.type,OWL.DatatypeProperty))
+                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"]=="obj":
             concept=""
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
@@ -304,6 +307,9 @@ class RDFConverter:
                     g.add((URIRef(thevalue),RDF.type,URIRef(curcol["concept"])))
             else:
                 g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
+            if "propiri" not in column:
+                ownvocabg.add((URIRef(theiri),RDF.type,OWL.ObjectProperty))
+                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"]=="anno":
             thelang="en"
             if "lang" in curcol:
@@ -314,6 +320,9 @@ class RDFConverter:
                 g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), lang=curcol["lang"])))
             else:
                 g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
+            if "propiri" not in column:
+                ownvocabg.add((URIRef(theiri),RDF.type,OWL.AnnotationProperty))
+                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
@@ -637,6 +646,7 @@ for path in args.input:
 
 
 g = Graph()
+ownvocabg=Graph()
 subrend=None
 
 
@@ -688,4 +698,4 @@ g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,True)
 print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
-
+ownvocabg.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_ont.ttl")
