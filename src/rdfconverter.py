@@ -248,10 +248,13 @@ class RDFConverter:
         prefix=curcol.get("prefix","")
         suffix=curcol.get("suffix","")
         if curcol["prop"]=="data":
+            curlang=""
             if "sepchar" in curcol:
                 spl=thevalue.split(curcol["sepchar"])
             else:
                 spl=[thevalue]
+            if "lang" in curcol:
+               curlang=curcol["lang"]
             unit=None
             unitprop="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"
             unithasvalue = "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
@@ -275,10 +278,16 @@ class RDFConverter:
                     g.add((theiri, RDF.type,OWL.DatatypeProperty)) 
                     g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
                     if "range" in curcol:
-                        g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
-                            curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                        if curlang=="":
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
+                                curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                        else:
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype==URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")),lang=curlang)))
                     else:
-                        g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
+                        if curlang=="":
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
+                        else:
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))
             if "propiri" not in column:
                 ownvocabg.add((URIRef(theiri),RDF.type,OWL.DatatypeProperty))
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
